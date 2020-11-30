@@ -270,3 +270,25 @@ input {
 	 padding: 20px;
 	 min-width: 1000px;
  }
+/* global */
+.contentWrapper{
+	width: 100%;
+	margin: auto;
+}
+
+/* 导航 */
+
+ @media(min-width:768px){
+
+ }
+ @media(min-width:992px){
+	.contentWrapper{
+		width: 1000px;
+	}
+ }
+
+ @media(min-width:1200px){
+	  .contentWrapper{
+			width: 1200px;
+		}
+ }
