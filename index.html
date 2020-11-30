@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+		<meta charset="UTF-8">
+		<meta name="format-detection" content="telephone=no">
+	<!--	<meta http-equiv="X-UA-Compatible" content="IE=edge">-->
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="renderer" content="webkit">
+		<meta name="viewport" content="width=device-width">
+		<meta name="description" content="美国上市公司，让工作找你，快人一步" />
+		<meta name="keywords" content="工作,就业,达内" />
+		<meta name="robots" content="all" />
+		<meta name="author" content="达内" />
+		<meta name="Copyright" content="达内" />
+		<meta property="og:image" content="http://www.tedu.cn/logo.jpg"/>
+		<link href="http://www.tedu.cn/bitbug_favicon.ico" rel="bitbug_favicon.ico" />
+		<title>学IT，达内包就业。美国上市公司,让工作找你,快人一步！</title>
+		<link type="text/css" rel="stylesheet" href="css/base.css">
+	    <link type="text/css" rel="stylesheet" href="css/swiper.3.1.2.min.css">
+	    <link type="text/css" rel="stylesheet" href="css/nav.css">
+
+	</head>
+<body>
+<div class="nav_box">
+	<div class="nav_bg">
+		<div class="w-container nav_div clear_fix position_rel">
+			<div class="nav_left">
+				<span class="logo"><img src="img/logo.png"></span>
+				<p>美国上市公司<br>
+					亿元级外企IT培训企业</p>
+			</div>
+			<ul class="nav_ul clear_fix">
+				<li><a href="http://sh.java.tedu.cn/zt/java" target="_blank">java就业课程<span></span></a></li>
+				<li><a href="">java培优课程</a><span></span></li>
+				<li><a href="http://sh.java.tedu.cn/zt/java/data" target="_blank">大数据才高课程</a><span></span></li>
+			</ul>
+			<p class="navTel">15026646813</p>
+		</div>
+	</div>
+</div>
+<!--banner-->
+<div class="banner">
+	<div class="swiper-container" id="banner">
+		<div class="swiper-wrapper">
+			<div class="swiper-slide">
+				<div class="banner-img">
+					<a href="#" target="_blank">
+						<img src="img/banner2.jpg" />
+					</a>
+				</div>
+			</div>
+			<div class="swiper-slide">
+				<div class="banner-img">
+					<a href="#" target="_blank">
+						<img src="img/banner3.jpg" />
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="pagination banner_pagination"></div>
+	</div>
+</div>
+
+
+<div class="w-container">
+	<div class="tit tit_zp">
+		<h3>作品<span>不酷炫？</span>创意<span>没新意？</span></h3>
+		<p>不是设计太难，是你该学C4D了！</p>
+	</div>
+
+	<p class="link_a link_a_top">
+		<a href="#" target="_blank" class="position_rel"><span>C4D是什么？</span></a>
+	</p>
+</div>
+
+
+<script src="js/jquery.min.js"></script>
+<script src="js/swiper.3.1.2.min.js"></script>
+<script src="js/index.js"></script>
+<!--<script src="http://www.tedu.cn/zhuzhan/js/tongji.js" type="text/javascript" charset="utf-8"></script>-->
+
+
+<script>
+	$(document).ready(function(){
+  $("p").html("This browser can create XMLHttpRequest object: " + jQuery.support.ajax);
+});
+ //$.support.cors = false;
+
+let key = "f04c2c771c088b4ffd34514459291105";
+$.ajax({
+	url:"http://v.juhe.cn/joke/content/list.php?key=f04c2c771c088b4ffd34514459291105&page=2&pagesize=10&sort=asc&time=1418745237",
+	type:"GET",
+	//crossDomain: false,
+	dataType:"JSON",
+	success:function(res){
+		console.log('---',res)
+	}
+})
+</script>
+</body>
+</html>
