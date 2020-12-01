@@ -293,6 +293,34 @@ input {
 .navbar-toggle .icon-bar{
 	background: #646464;
 }
+.logo-brand{
+	display: flex;
+	align-items: center;
+ 	height: 60px; 
+	padding: 0;
+	font-size: 18px;
+	line-height: 1;
+}
+.logo-brand>img{
+	height: 40px;
+}
+.logo-brand>span{
+	display: inline-block;
+	line-height: 40px;
+}
+.navbar {
+	position: relative;
+	height: 60px;
+	margin-bottom:0;
+	border: 1px solid transparent;
+}
+@media(max-width:992px){
+	.nav-right{
+		background: rgb(255, 255, 255);
+    margin-left: -16px;
+    margin-right: -16px;
+	 }
+}
  @media(min-width:768px){
 
  }
