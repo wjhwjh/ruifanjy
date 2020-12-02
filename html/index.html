@@ -1,89 +1,114 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
+
 <head>
-		<meta charset="UTF-8">
-		<meta name="format-detection" content="telephone=no">
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
 	<!--	<meta http-equiv="X-UA-Compatible" content="IE=edge">-->
-			<!-- <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> -->
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
-		<meta name="renderer" content="webkit">
-		<meta name="viewport" content="width=device-width">
-		<meta name="description" content="这是描述" />
-		<meta name="keywords" content="这是关键字" />
-		<meta name="robots" content="all" />
-		<meta name="author" content="教育" />
-		<meta name="Copyright" content="教育" />
-		<!-- <meta property="og:image" content="http://www.tedu.cn/logo.jpg"/> -->
-		<!-- <link href="http://www.tedu.cn/bitbug_favicon.ico" rel="bitbug_favicon.ico" /> -->
-		<title>这是标题</title>
-		<link rel="stylesheet" href="../css/bootstrap-3.3.7-dist/css/bootstrap.min.css">
-		<link type="text/css" rel="stylesheet" href="../css/base.css">
-		<link type="text/css" rel="stylesheet" href="../css/swiper.3.1.2.min.css">
-		<link type="text/css" rel="stylesheet" href="../css/nav.css">
-	</head>
+	<!-- <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+	<meta name="renderer" content="webkit">
+	<meta name="viewport" content="width=device-width">
+	<meta name="description" content="这是描述" />
+	<meta name="keywords" content="这是关键字" />
+	<meta name="robots" content="all" />
+	<meta name="author" content="教育" />
+	<meta name="Copyright" content="教育" />
+	<!-- <meta property="og:image" content="http://www.tedu.cn/logo.jpg"/> -->
+	<!-- <link href="http://www.tedu.cn/bitbug_favicon.ico" rel="bitbug_favicon.ico" /> -->
+	<title>这是标题</title>
+	<link rel="stylesheet" href="../css/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+	<link type="text/css" rel="stylesheet" href="../css/swiper.3.1.2.min.css">
+	<link type="text/css" rel="stylesheet" href="../css/base.css">
+	<link type="text/css" rel="stylesheet" href="../css/nav.css">
+</head>
+
 <body>
+	<!-- 导航 -->
 	<div class="nav-wrapper" style="position: relative; z-index: 100;">
 		<div class="container">
 			<nav class="navbar">
 				<!-- <div class="container-fluid"> -->
-					<!-- 左边icon-->
-					<div class="navbar-header">
-						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-							<span class="sr-only">Toggle navigation</span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-						</button>
-						<a class="navbar-brand logo-brand" href="#"><img src="../img/global/navlogo.png" alt=""><span class="hidden-xs">专注河南本土中高考</span></a>
-					</div>
-			
-					<!-- 内容-->
-					<div class="collapse navbar-collapse nav-right" id="bs-example-navbar-collapse-1">
-						<ul class="nav navbar-nav">
-							<li class="active"><a href="#">首页 <span class="sr-only">(current)</span></a></li>
-							<li><a href="#">教学理念</a></li>
-							<li><a href="#">全省校区</a></li>
-							<li><a href="#">关于睿凡</a></li>
-						</ul>
-						<span>40012345670</span>
-					</div><!-- /.navbar-collapse -->
+				<!-- 左边icon-->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+						data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<!-- <a class="navbar-brand logo-brand" href="#"><img src="../img/global/navlogo.png" alt=""><span class="hidden-xs">专注河南本土中高考</span></a> -->
+				</div>
+
+				<!-- 内容-->
+				<div class="collapse navbar-collapse nav-right" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="#">首页 <span class="sr-only">(current)</span></a></li>
+						<li><a href="#">教学理念</a></li>
+						<li><a href="#">全省校区</a></li>
+						<li><a href="#">关于睿凡</a></li>
+					</ul>
+					<span class="hidden-xs nav-tel">40012345670</span>
+				</div><!-- /.navbar-collapse -->
 				<!-- </div>/.container-fluid -->
 			</nav>
 		</div>
 	</div>
-	<div class="banner-img">
-			<img src="../img/banner2.jpg" alt="">
-	</div>
+	<!-- 导航 end-->
+	<!-- banner -->
+	<div class="uidWrapper">
+		<div class="banner-wrapper">
+			<div class="swiper-container banner" id="banner">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide slideimg1">
+						<img src="../img/index/banner01.jpg" alt="">
+					</div>
+					<div class="swiper-slide slideimg2">
+						<img src="../img/index/banner01.jpg" alt="">
+					</div>
+					<div class="swiper-slide slideimg3">
+						<img src="../img/index/banner01.jpg" alt="">
+					</div>
+				</div>
+				<!-- 如果需要分页器 -->
+				<div class="swiper-pagination swiper-pagination1"></div>
+				<!-- 如果需要导航按钮 -->
+				<!-- <div class="swiper-button-prev"></div>
+						<div class="swiper-button-next"></div> -->
+			</div>
+			<!-- 表单 -->
+			<div class="banner-form hidden-xs"></div>
+		</div> <!-- /.banner-wrapper-->
+	</div> <!-- /.uidWrapper-->
+	<!-- part1 -->
+	<div class="container-fluit part1">
+			<div class="container index-part1">
+				<div class="row">
+					<div class="col-md-3"></div>
+				</div>
+			</div>
+	</div> <!--/. part1-->
 
 
-<script src="../js/jquery.min.js"></script>
-<script src="../css/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
-<script src="../js/swiper.3.1.2.min.js"></script>
-<script src="../js/index.js"></script>
-<!--<script src="http://www.tedu.cn/zhuzhan/js/tongji.js" type="text/javascript" charset="utf-8"></script>-->
+	<script src="../js/jquery.min.js"></script>
+	<script src="../css/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+	<script src="../js/swiper.3.1.2.min.js"></script>
+	<script src="../js/index.js"></script>
 
+	<script>
+		var mySwiper1 = new Swiper('.uidWrapper #banner', {
+			//如果需要分页器
+			pagination: '.swiper-pagination1',
+			paginationClickable: true,
+			loop: true
 
-<script>
-// 	$(document).ready(function(){
-//   $("p").html("This browser can create XMLHttpRequest object: " + jQuery.support.ajax);
-// });
-//  //$.support.cors = false;
-
-// let key = "f04c2c771c088b4ffd34514459291105";
-// $.ajax({
-// 	url:"http://v.juhe.cn/joke/content/list.php?key=f04c2c771c088b4ffd34514459291105&page=2&pagesize=10&sort=asc&time=1418745237",
-// 	type:"GET",
-// 	//crossDomain: false,
-// 	dataType:"JSON",
-// 	success:function(res){
-// 		console.log('---',res)
-// 	}
-// })
-</script>
-
-<script>
-	
-</script>
+			//如果需要前进后退按钮
+			// nextButton: '.swiper-button-next',
+			// prevButton: '.swiper-button-prev',
+		})
+	</script>
 
 </body>
+
 </html>
