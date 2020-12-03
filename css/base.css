@@ -1,3 +1,8 @@
+ 
+ /* @media(max-width:768px){}
+ @media(min-width:768px){}
+ @media(min-width:992px){}
+ @media(min-width:1200px){} */
  html {
 	font-size: 62.5%;
 }
@@ -196,78 +201,7 @@ input {
  }
 
 /*banner部分*/
-.uidWrapper .banner-wrapper {
-	position: relative;
-	width: 100%;
-	height: 570px;
-	overflow: hidden;
-}
-.uidWrapper .banner-wrapper .swiper-container {
-	width: 100%;
-	height: 520px;
-}
 
-.uidWrapper .banner-wrapper .swiper-container .swiper-slide {
-	width: 100%;
-	height: 520px;
-	overflow: hidden;
-}
-
-.uidWrapper .banner-wrapper .swiper-container .swiper-slide a {
-	display: block;
-}
-.uidWrapper .banner-wrapper .swiper-container .swiper-slide img{
-	width: 100%;
-}
-
-/* .uidWrapper .banner-wrapper .slideimg1 {
-	background: url('../img/index/banner01.jpg') no-repeat center;
-	background-size: 1920px 500px;
-}
-
-.uidWrapper .banner-wrapper .slideimg2 {
-	background: url('../img/index/banner02.jpg') no-repeat center;
-	background-size: 1920px 500px;
-}
-
-.uidWrapper .banner-wrapper .slideimg3 {
-	background: url('../img/index/banner03.jpg') no-repeat center;
-	box-sizing: 1920px 500px;
-} */
-
-.uidWrapper .banner-wrapper .swiper-container .swiper-slide img {
-	top: 0;
-	left: 50%;
-	margin-left: -960px;
-	width: 1920px;
-	height: 520px;
-	display: block;
-	position: absolute;
-	transition: 0.2s;
-}
-
-.uidWrapper .banner-wrapper .swiper-pagination {
-	position: absolute;
-	bottom: -50px;
-	left: 0;
-	width: 100%;
-	text-align: center;
-}
-
-.uidWrapper .banner-wrapper .swiper-pagination .swiper-pagination-bullet {
-	margin: 0 5px;
-	width: 20px;
-	height: 20px;
-	border-radius: 100%;
-	background: transparent;
-	border: 1px solid #f15e04;
-	opacity: 1;
-	display: inline-block;
-	float: inherit;
-}
-.uidWrapper .banner-wrapper .swiper-pagination .swiper-pagination-bullet-active {
-	background: #f15e04;
-}
 
  /* 二级页面 */
 .banner-img{
@@ -375,9 +309,12 @@ input {
 }
 }
 @media(min-width:992px){
-.contentWrapper{
-	width: 1000px;
-}
+	.contentWrapper{
+		width: 1000px;
+	}
+	.banner-form{
+		right: 10%;
+	}
 }
 
 @media(min-width:1200px){
@@ -389,10 +326,7 @@ input {
 	}
 }
 
-.index-part1{
-	background: #000;
-	height: 500px;
-}
+
  /* .list{
 	 display: flex;
 	 justify-content: space-between;
