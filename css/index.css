@@ -331,11 +331,27 @@
 	bottom: 0;
 	left: 0;
 	right: 0;
+	opacity: 0;
 	background: url('../img/index/p2-index-pic1.jpg') no-repeat right center #fff;
 	/* background-size: 100% auto; */
 }
+.index-part2 .box-wrapper .right .item.show{
+	opacity: 1;
+}
 .index-part2 .box-wrapper .right .item.item1{
-
+	background: url('../img/index/p2-index-pic1.jpg') no-repeat right center #fff;
+}
+.index-part2 .box-wrapper .right .item.item2{
+	background: url('../img/index/p2-index-pic2.jpg') no-repeat right center #fff;
+}
+.index-part2 .box-wrapper .right .item.item3{
+	background: url('../img/index/p2-index-pic3.jpg') no-repeat right center #fff;
+}
+.index-part2 .box-wrapper .right .item.item4{
+	background: url('../img/index/p2-index-pic4.jpg') no-repeat right center #fff;
+}
+.index-part2 .box-wrapper .right .item.item5{
+	background: url('../img/index/p2-index-pic5.jpg') no-repeat right center #fff;
 }
 .index-part2 .box-wrapper .right .item .text{
 	position: absolute;

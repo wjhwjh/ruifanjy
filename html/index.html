@@ -175,9 +175,29 @@
 					</li>
 				</ul>
 				<div class="right">
-					<div class="item">
+					<div class="item item1">
 						<div class="text">
 							通过分析学生目前分数，基础，优劣势科目，帮助孩子规划合理/科学/阶段性/可达成的⽬标，帮助学⽣建⽴信⼼，提升学习动⼒，培养⾃驱⼒。
+						</div>
+					</div>
+					<div class="item item2">
+						<div class="text">
+							没有学不会的学生，只有不愿学和不能持续努力的学生。睿凡首先解决学习动力不足问题，帮助孩子激活学习热情，塑造长远学习动力，有效解决孩子厌学问题，让孩子持续热爱学习。
+						</div>
+					</div>
+					<div class="item item3">
+						<div class="text">
+							同样85分的学⽣，提升⽅案可能截然不同。个性化的辅导就是根据每个学生的情况，结合不同类型，不同程度，不同科目，不同目标，甚至不同性格的学生，制定定制化的学习提升方案。
+						</div>
+					</div>
+					<div class="item item4">
+						<div class="text">
+							睿凡的终极⽬标是服务于升学，载体是学⽣考试分数的提升，所以会学习，会考试两者同样重要。学习≠学会，学会≠会考，会考≠⾼分，睿凡为学生提供考试管理规划，让学生考出高分。
+						</div>
+					</div>
+					<div class="item item5">
+						<div class="text">
+							睿凡专注河南中高考，对河南的中高考政策有深度研究。我们会定期为学生和家长解读高考政策，梳理入学途径，多维度帮助孩子更早进入理想院校。河南中高考，选睿凡。
 						</div>
 					</div>
 				</div>
@@ -203,7 +223,13 @@
 			// prevButton: '.swiper-button-prev',
 		})
 	</script>
-
+<script>
+	$('.part2 .box-wrapper .left li').click(function(){
+		 let index = $(this).index();
+		 $(this).addClass('act').siblings().removeClass('act');
+		 $('.part2 .box-wrapper .right .item').eq(index).addClass('show').siblings().removeClass('show');
+	});
+</script>
 </body>
 
 </html>
