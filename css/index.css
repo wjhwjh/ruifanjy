@@ -497,6 +497,7 @@
 		width: 60%;
 		top: 83px;
 		left: 60px;
+		line-height: 1.8;
 	}
 	.index-part2 .box-wrapper .right .item .text::after,
 	.index-part2 .box-wrapper .right .item .text::before{
@@ -505,7 +506,7 @@
 	}
 	.index-part2 .box-wrapper .right .item .text::after{
 		left: -20px;
-		top: -10px;
+		top: -15px;
 	}
 	.index-part2 .box-wrapper .right .item .text::before{
 		right: -20px;
