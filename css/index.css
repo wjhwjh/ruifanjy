@@ -228,9 +228,150 @@
 .part2{
 	background: #fd9e66;
 }
+.index-part2 .box-wrapper{
+	display: flex;
+}
+.index-part2 .box-wrapper .left{
+	border-radius: 4px 0 0 4px;
+	background: #fdcda7;
+}
+.index-part2 .box-wrapper .left{
+	margin-bottom: 0;
+	width: 100px;
+	flex: 0 0 100px;
+}
+.index-part2 .box-wrapper .right{
+	position: relative;
+	flex: 1;
+}
+.index-part2 .box-wrapper .left li{
+	border-bottom: 1px solid #fd9056;
+	text-align: left;
+	color: #000;
+	padding:10px 0 10px 5px;
+}
+.index-part2 .box-wrapper .left li:first-child{
+	border-radius: 4px 0 0 0;
+}
+.index-part2 .box-wrapper .left li:last-child{
+	border: none;
+	border-radius:0 0 0 4px;
+}
+.index-part2 .box-wrapper .left li span{
+	position: relative;
+	padding-left: 20px;
+}
+.index-part2 .box-wrapper .left li span::after{
+	content: "";
+	display: block;
+	clear: both;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.index-part2 .box-wrapper .left li span::after{
+	width: 15px;
+	height: 16px;
+	top: 50%;
+	margin-top: -8px;
+	background: url('../img/index/p2-xuexi-icon.png') no-repeat 0 0;
+	background-size: 100% auto;
+}
+.index-part2 .box-wrapper .left li:nth-child(1) span::after{
+	background: url('../img/index/p2-xuexi-icon.png') no-repeat 0 0;
+	background-size: 200% auto;
+}
+.index-part2 .box-wrapper .left li:nth-child(2) span::after{
+	background: url('../img/index/p2-xuexi-icon.png') no-repeat 0 -16px;
+	background-size: 200% auto;
+}
+.index-part2 .box-wrapper .left li:nth-child(3) span::after{
+	background: url('../img/index/p2-xuexi-icon.png') no-repeat 0 -32px;
+	background-size: 200% auto;
+}
+.index-part2 .box-wrapper .left li:nth-child(4) span::after{
+	background: url('../img/index/p2-xuexi-icon.png') no-repeat 0 -48px;
+	background-size: 200% auto;
+}
+.index-part2 .box-wrapper .left li:nth-child(5) span::after{
+	background: url('../img/index/p2-xuexi-icon.png') no-repeat 0 -64px;
+	background-size: 200% auto;
+}
+.index-part2 .box-wrapper .left li.act span::after{
+	background: url('../img/index/p2-xuexi-icon.png') no-repeat -15px 0;
+	background-size: 200% auto;
+}
+.index-part2 .box-wrapper .left li:nth-child(1).act span::after{
+	background: url('../img/index/p2-xuexi-icon.png') no-repeat -15px 0;
+	background-size: 200% auto;
+}
+.index-part2 .box-wrapper .left li:nth-child(2).act span::after{
+	background: url('../img/index/p2-xuexi-icon.png') no-repeat -15px -16px;
+	background-size: 200% auto;
+}
+.index-part2 .box-wrapper .left li:nth-child(3).act span::after{
+	background: url('../img/index/p2-xuexi-icon.png') no-repeat -15px -32px;
+	background-size: 200% auto;
+}
+.index-part2 .box-wrapper .left li:nth-child(4).act span::after{
+	background: url('../img/index/p2-xuexi-icon.png') no-repeat -15px -48px;
+	background-size: 200% auto;
+}
+.index-part2 .box-wrapper .left li:nth-child(5).act span::after{
+	background: url('../img/index/p2-xuexi-icon.png') no-repeat -15px -64px;
+	background-size: 200% auto;
+}
+.index-part2 .box-wrapper .left li.act{
+	color: #fff;
+	background: #fd9056;
+}
+.index-part2 .box-wrapper .right .item{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: url('../img/index/p2-index-pic1.jpg') no-repeat right center #fff;
+	/* background-size: 100% auto; */
+}
+.index-part2 .box-wrapper .right .item.item1{
 
+}
+.index-part2 .box-wrapper .right .item .text{
+	position: absolute;
+	color: #000;
+}
+.index-part2 .box-wrapper .right .item .text{
+	width: 60%;
+	top: 83px;
+	left: 60px;
+	font-size: 16px;
+}
+.index-part2 .box-wrapper .right .item .text::after,
+.index-part2 .box-wrapper .right .item .text::before{
+	content: '';
+	display: block;
+	clear: both;
+	position: absolute;
+	width:32px;
+	height: 31px;
+}
+.index-part2 .box-wrapper .right .item .text::after{
+	left: -20px;
+	top: -10px;
+}
+.index-part2 .box-wrapper .right .item .text::before{
+	right: -20px;
+	bottom:-10px;
+}
+.index-part2 .box-wrapper .right .item .text::after{
+	background: url('../img/index/p2-text-left.png') no-repeat left top;
+}
+.index-part2 .box-wrapper .right .item .text::before{
+	background: url('../img/index/p2-text-right.png') no-repeat left top;
+}
 
-
+/* 适配********************* */
 @media(max-width:768px){
 	 /* 导航 */
 	 .title-wrapper{
@@ -252,6 +393,11 @@
 		width: 80px;
 		height: auto;
 	}
+	/* part2 */
+	.index-part2 .box-wrapper .left li span{
+		display: flex;
+		line-height: 1.2;
+	}
 }
 @media(min-width:768px){
   .banner-form{
@@ -259,14 +405,19 @@
 	}
 	 /* 导航 */
 	 .title-wrapper{
-    padding: 120px 0 70px;
-    font-size: 48px;
-  }
+    padding: 110px 0 70px;
+		font-size: 48px;
+		line-height: 1.5;
+	}
   .title-wrapper span{
     padding: 0 10px;
     font-size: 70px;
     vertical-align: bottom;
 	}
+	.index-part2 .title-wrapper{
+    padding: 60px 0 50px;
+    font-size: 48px;
+  }
 	/* part1 */
 	.index-part1, .index-part2{
 		padding-bottom: 60px;
@@ -281,7 +432,95 @@
 		font-size: 16px;
 		line-height: 30px;
 	}
+	/* part2 */
+	.index-part2 .box-wrapper .left{
+		width: 300px;
+		flex: 0 0 300px;
+	}
+	.index-part2 .box-wrapper .left li{
+		padding: 24px 0 22px 50px;
+		font-size: 22px;
+	}
+	.index-part2 .box-wrapper .left li span{
+		padding-left: 40px;
+	}
+	.index-part2 .box-wrapper .left li span::after{
+		width: 30px;
+		height: 32px;
+		background: url('../img/index/p2-xuexi-icon.png') no-repeat 0 0;
+	}
+	.index-part2 .box-wrapper .left li:nth-child(1) span::after{
+		background: url('../img/index/p2-xuexi-icon.png') no-repeat 0 0;
+	}
+	.index-part2 .box-wrapper .left li:nth-child(2) span::after{
+		background: url('../img/index/p2-xuexi-icon.png') no-repeat 0 -32px;
+	}
+	.index-part2 .box-wrapper .left li:nth-child(3) span::after{
+		background: url('../img/index/p2-xuexi-icon.png') no-repeat 0 -64px;
+	}
+	.index-part2 .box-wrapper .left li:nth-child(4) span::after{
+		background: url('../img/index/p2-xuexi-icon.png') no-repeat 0 -96px;
+	}
+	.index-part2 .box-wrapper .left li:nth-child(5) span::after{
+		background: url('../img/index/p2-xuexi-icon.png') no-repeat 0 -128px;
+	}
+	.index-part2 .box-wrapper .left li.act span::after{
+		width: 30px;
+		height: 32px;
+		background: url('../img/index/p2-xuexi-icon.png') no-repeat -30px 0;
+	}
+	.index-part2 .box-wrapper .left li:nth-child(1).act span::after{
+		background: url('../img/index/p2-xuexi-icon.png') no-repeat -30px 0;
+	}
+	.index-part2 .box-wrapper .left li:nth-child(2).act span::after{
+		background: url('../img/index/p2-xuexi-icon.png') no-repeat -30px -32px;
+	}
+	.index-part2 .box-wrapper .left li:nth-child(3).act span::after{
+		background: url('../img/index/p2-xuexi-icon.png') no-repeat -30px -64px;
+	}
+	.index-part2 .box-wrapper .left li:nth-child(4).act span::after{
+		background: url('../img/index/p2-xuexi-icon.png') no-repeat -30px -96px;
+	}
+	.index-part2 .box-wrapper .left li:nth-child(5).act span::after{
+		background: url('../img/index/p2-xuexi-icon.png') no-repeat -30px -128px;
+	}
+	.index-part2 .box-wrapper .right .item{
+		 position: absolute;
+		 top: 0;
+		 bottom: 0;
+		 left: 0;
+		 right: 0;
+		 background: url('../img/index/p2-index-pic1.jpg') no-repeat right center #fff;
+		 /* background-size: 100% auto; */
+	}
+  .index-part2 .box-wrapper .right .item .text{
+		width: 60%;
+		top: 83px;
+		left: 60px;
+	}
+	.index-part2 .box-wrapper .right .item .text::after,
+	.index-part2 .box-wrapper .right .item .text::before{
+		width:32px;
+		height: 31px;
+	}
+	.index-part2 .box-wrapper .right .item .text::after{
+		left: -20px;
+		top: -10px;
+	}
+	.index-part2 .box-wrapper .right .item .text::before{
+		right: -20px;
+		bottom:-10px;
+	}
+	.index-part2 .box-wrapper .right .item .text::after{
+		background: url('../img/index/p2-text-left.png') no-repeat left top;
+	}
+	.index-part2 .box-wrapper .right .item .text::before{
+		background: url('../img/index/p2-text-right.png') no-repeat left top;
+	}
 }
+
+
+
 @media(min-width:992px){
   .banner-form{
 		right: 2%;
