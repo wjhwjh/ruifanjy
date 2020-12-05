@@ -1,0 +1,140 @@
+@charset 'utf-8';
+
+/*  */
+body {font-size:14px;font-family:'microsoft YaHei','PingFangSC-Regular', Tahoma, Helvetica, Arial, "\5FAE\8F6F\96C5\9ED1", sans-serif,"iconfont";color:#666;background: #F5F6F9;}
+/* 移动端手机浏览器页面出现上下滑动页面是涩的感觉，不流畅 */
+body {
+    -webkit-overflow-scrolling: touch;
+    overflow-scrolling: touch;
+}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, span, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td {margin:0; padding:0; }
+ul,li,dl,dt,dd,ol {list-style:none;}
+a:link, a:focus, a:hover {text-decoration: none;outline:none;}
+em {font-style:normal;}
+
+/* 子页banner */
+.sonPageBanner {
+	width:100%;
+	height:520px;	
+}
+.sonPageBanner .banner-item {
+	height:100%;
+	background-repeat: no-repeat!important;
+	background-position: center center !important;
+	background-size:cover!important;
+}
+
+/* 全省校区 */
+.provCampBanner .banner-item {
+	background-image:url(../img/provincialCampuses/banner-bg.jpg);
+}
+
+.prov_schools .item {
+	background-color:#f2f2f2;
+	box-shadow: 0 5px 15px rgba(0,0,0,.25);
+}
+.prov_schools .item .scName {
+	font-size:26px;
+	color:#000000;
+	line-height: 36px;
+}
+.prov_schools .item .contact-way {
+	font-size:16px;
+	color:#000000;
+	line-height:30px;
+}
+.prov_schools .item:hover, .prov_schools .item.hover {
+	background-color:#f16814;
+}
+.prov_schools .item:hover .scName, .prov_schools .item:hover .contact-way, .prov_schools .item.hover .scName, .prov_schools .item.hover .contact-way {
+	color:#ffffff;
+}
+
+
+
+/* 适配********************* */
+
+@media (min-width:768px) {
+	.sonPageBanner {height:325px;}
+	.provCampBanner .banner-item .left-text {width:50%;margin-top:123px;}
+	.provCampBanner .banner-item .right-pic {width:40%;margin-top:18px;margin-right:22px;}
+	.prov_schools .item {
+		padding:18px 24px;
+	    margin-bottom:20px;
+	}
+	.prov_schools .item .scName {
+		margin-bottom:10px;
+	    font-size:18px;
+		line-height: 28px;
+	}
+	.prov_schools {padding-top:64px;}
+	.prov_schools .item .contact-way {
+		font-size:14px;
+		line-height:22px;
+	}
+
+}
+@media (min-width:992px) {
+	.sonPageBanner {height:420px;}
+	.provCampBanner .banner-item .left-text {width:50%;margin-top:159px;}
+	.provCampBanner .banner-item .right-pic {width:40%;margin-top:23px;margin-right:29px;}
+	.prov_schools .item {
+		padding:24px 30px;
+	    margin-bottom:24px;
+	}
+	.prov_schools .item .scName {
+		margin-bottom:14px;
+	    font-size:21px;
+		line-height: 31px;
+	}
+	.prov_schools {padding-top:82px;}
+	.prov_schools .item .contact-way {
+		font-size:15px;
+		line-height:26px;
+	}
+
+}
+@media (min-width:1200px) {
+	.container {
+	    width: 1200px;
+	}
+	.sonPageBanner {height:520px;}
+	.provCampBanner .banner-item .left-text {margin-top:197px;}
+	.provCampBanner .banner-item .right-pic {margin-top:28px;margin-right:36px;}
+	.prov_schools .item {
+		padding:28px 40px;
+	    margin-bottom:30px;
+	}
+	.prov_schools .item .scName {
+		margin-bottom:15px;
+	}
+	.prov_schools {padding-top:102px;}
+}
+
+
+@media (min-width:992px) and (max-width:1199px) {
+	.prov_schools .item {
+		height:171px;
+	}
+}
+
+@media (min-width:768px) and (max-width:991px) {
+	.prov_schools .item {
+		height:140px;
+	}
+}
+
+@media (max-width:767px) {
+	.sonPageBanner {height:162px;}
+	.provCampBanner .banner-item .left-text {margin:0 auto;width:70%;float:none;margin-top:0.60rem;}
+	.provCampBanner .banner-item .left-text img {max-height:102px;max-width:242px;}
+	.prov_schools .item {
+		padding:10px 12px;
+		margin-bottom:15px;
+	}
+	.prov_schools .item .scName {
+		margin-bottom:10px;
+	}
+	.prov_schools {padding-top:30px;}
+
+}
