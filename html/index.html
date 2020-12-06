@@ -233,16 +233,66 @@
 	<div class="container-fluit part4">
 		<div class="container index-part4">
 			<div class="title-wrapper">睿凡<span><img src="../img/index/p1-title3.png" alt=""></span>层<span><img src="../img/index/p1-title8.png" alt=""></span>严好老师  保障老师实力过硬</div>
+		  <!-- 导航 -->
+			<div class="row p4Menu">
+				<div class="col-lg-4 col-xs-4 col-sm-4 col-md-4">
+					<div class="item item1 act">
+						<div class="num-box hidden-xs">
+							<span class="num num1"></span>
+							<span class="num num2"></span>
+							<span class="num num3"></span>
+						</div>
+						<h2>严选</h2>
+					</div>
+				</div>
+				<div class="col-lg-6 col-xs-4 col-sm-4 col-md-4">
+					<div class="item item2">
+						<div class="num-box hidden-xs">
+							<span class="num num1"></span>
+							<span class="num num2"></span>
+							<span class="num num3"></span>
+							<span class="num num4"></span>
+						</div>
+						<h2>严训</h2>
+					</div>
+				</div>
+				<div class="col-lg-2 col-xs-4 col-sm-4 col-md-4">
+					<div class="item item3">
+						<div class="num-box hidden-xs">
+							<span class="num num1"></span>
+						</div>
+						<h2>严考</h2>
+					</div>
+				</div>
+			</div>
+			<!-- 内容 -->
+			<div class="p4-content">
+				<div class="content-item1 show">
+					<h3>1、严选简历</h3>
+					<p>必须是名牌大学出身，所教授科目成绩优异， 必须是真正会教学、爱孩子，有责任感的老师，简历筛选通过率仅为1/80！</p>
+					<h3>2、三轮面试</h3>
+					<p>HR初试综合素质，教学经理复试、教研总监终试都需要进行实际讲课演示，真正全方位、多层次、立体化把控老师的综合能力。</p>
+					<h3>3、详细背调</h3>
+					<p>面试通过后，HR会进行详细的背景调查，包含工作履历、授课能力、职业道德等，从而保证入职老师的综合能力与师德师风并重。</p>
+				</div>
+				<div class="content-item2">
+					<h3>4、入职培训</h3>
+					<p>入职后，需通过新员工培训和新讲师培训，快速了解与融入公司讲师团队，明确岗位职责与要求标准，并进一步提升授课能力。</p>
+					<h3>5、磨课内测</h3>
+					<p>走上正式讲台前，讲师需和教研负责人进行数十次磨课，以提升授课质量为目标，达到合格标准后会挑选学生进行内测。</p>
+					<h3>6、试讲评分</h3>
+					<p>内测通过后，讲师正式走上讲台试讲，专职的教学质量督导全程听课，并从讲解清晰度、知识点覆盖度、学生参与度、学习效果、师德师风5个维度进行打分。</p>
+					<h3>7、三方会考</h3>
+					<p>讲师连续6次课5个维度均被评优后，由教学质量督导发起转正考核，并与教研团队一起作为考官，对讲师进行三方会考，会考通过后正式转正。</p>
+				</div>
+				<div class="content-item3">
+					<h3>8、年度考核</h3>
+					<p>老师的授课能力与学生的学习成绩密切相关，为了保障老师能持续性的输出优质内容，持续性的帮助学生提升。睿凡每年对会对老师进行一次年度严格考
+						核，以保证讲师始终能够对最新的考试内容，最新的河南中高考政策熟练掌握，并保持对学生的持续热情。</p>
+				</div>
+			</div>
 		</div>
-		<div class="row hidden-xs">
-			<div class="col-md-1"></div>
-			<div class="col-md-1"></div>
-		</div>
-    
-	  <div class="row">
-
-		</div> 	
-	</div>
+	</div><!--/. part4-->
 
 
 
@@ -269,6 +319,15 @@
 		 let index = $(this).index();
 		 $(this).addClass('act').siblings().removeClass('act');
 		 $('.part2 .box-wrapper .right .item').eq(index).addClass('show').siblings().removeClass('show');
+	});
+  $('.p4-content').height($('.p4-content>div').eq(0).height());
+	$('.index-part4 .p4Menu .item').click(function(){
+		 let index = $(this).parent().index();
+		 $(this).parent().siblings().find('.item').removeClass('act')
+		 $(this).addClass('act');
+		 $('.p4-content>div').eq(index).addClass('show').siblings().removeClass('show');
+     let h = $('.p4-content>div').eq(index).height(); 
+		 $('.p4-content').height(h);
 	});
 </script>
 </body>
