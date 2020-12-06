@@ -12,6 +12,72 @@ ul,li,dl,dt,dd,ol {list-style:none;}
 a:link, a:focus, a:hover {text-decoration: none;outline:none;}
 em {font-style:normal;}
 
+/* footer */
+.foot_conact {
+  position: relative;
+  width:100%;
+  height:124px;
+  background-color:#f15e04;
+  padding:13px 0;
+}
+.foot_conact .fc_service label,
+.foot_conact .fc_service .service_time {
+  font-size:16px;
+  color:#ffffff;
+  line-height:30px;
+  margin-bottom: 0;
+}
+.foot_conact .fc_service .tel_num {
+  font-size:27px;
+  color:#ffffff;
+  font-weight:bold;
+  line-height:40px;
+}
+.foot_conact .fc_service_number .fsn_logo .item {
+  padding-top:2px;
+}
+.foot_conact .foot_search_box {
+  position: relative;
+  width:100%;
+  height:63px;
+  border-radius:63px;
+  background-color:#ffffff;
+  margin-top:18px;
+  padding-top:10px;
+  padding-left:30px;
+}
+.foot_conact .foot_search_box input {
+  width:52%;
+  height:46px;
+  line-height: 46px;
+  font-size:20px;
+  color:#333333;
+}
+.foot_conact .foot_search_box .btn_free_exp {
+  display: block;
+  position: absolute;
+  right:10px;
+  top:9px;
+  width:36%;
+  height:46px;
+  border-radius: 46px;
+  background-color:#f15e04;
+  text-align: center;
+  line-height:46px;
+  color:#ffffff;
+  font-size:16px;
+}
+.foot_copyright {
+  width:100%;
+  background-color:#1b1b1b;
+  padding:32px 0;
+}
+.foot_copyright .foot_copyright_con {
+  color:#999999;
+  line-height:24px;
+  font-size:12px;
+}
+
 /* 子页banner */
 .sonPageBanner {
   position: relative;
@@ -30,10 +96,8 @@ em {font-style:normal;}
 .provCampBanner .banner-item {
 	background-image:url(../img/provincialCampuses/banner-bg.jpg);
 }
-
 .prov_schools .item {
 	background-color:#f2f2f2;
-	box-shadow: 0 5px 15px rgba(0,0,0,.25);
 }
 .prov_schools .item .scName {
 	font-size:26px;
@@ -47,6 +111,7 @@ em {font-style:normal;}
 }
 .prov_schools .item:hover, .prov_schools .item.hover {
 	background-color:#f16814;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, .25);
 }
 .prov_schools .item:hover .scName, .prov_schools .item:hover .contact-way, .prov_schools .item.hover .scName, .prov_schools .item.hover .contact-way {
 	color:#ffffff;
@@ -143,6 +208,10 @@ em {font-style:normal;}
 
 /* 适配********************* */
 @media (min-width:768px) {
+  /* footer */
+  .foot_conact .fc_service_number .fsn_logo .item {
+    margin-right: 15px;
+  }
   /* 全省校区 */
 	.sonPageBanner {height:325px;margin-bottom:64px;}
   .provCampBanner .banner-item .left-text,
@@ -205,6 +274,13 @@ em {font-style:normal;}
   
 }
 @media (min-width:992px) {
+  /* footer */
+  .foot_conact .customer_service {
+    margin-top: -58px;
+  }
+  .foot_conact .fc_service_number .fsn_logo .item {
+    margin-right: 12px;
+  }
   /* 全省校区 */
 	.sonPageBanner {height:420px;margin-bottom:82px;}
 	.provCampBanner .banner-item .left-text {width:50%;margin-top:159px;}
@@ -236,6 +312,17 @@ em {font-style:normal;}
 	.container {
 	    width: 1200px;
   }
+  /* footer */
+  .foot_conact .customer_service {
+    margin-top: -107px;
+  }
+  .foot_conact .fc_service_number {
+    margin-left:-40px;
+  }
+  .foot_conact .fc_service_number .fsn_logo .item {
+    margin-right: 38px;
+  }
+
   /* 全省校区 */
   .sonPageBanner {height:520px;margin-bottom:102px;}
   .sonPageBanner .banner-item .left-text,
@@ -363,6 +450,47 @@ em {font-style:normal;}
 }
 
 @media (max-width:767px) {
+  /* footer */
+  .foot_conact {
+    height:auto;
+  }
+  .foot_conact .fc_service label,
+  .foot_conact .fc_service .service_time {
+    font-size: 0.26rem;
+    line-height: 30px;
+  }
+  .foot_conact .fc_service .tel_num {
+    font-size: 0.40rem;
+    line-height: 30px;
+  }
+  .foot_conact .fc_service_number .fsn_logo .item {
+    padding-top: 2px;
+    width:26%;
+    margin-right:8px;
+  }
+  .foot_conact .foot_search_box {
+    height: 50px;
+    border-radius: 50px;
+    margin-top: 10px;
+    padding-top: 5px;
+    padding-left: 26px;
+  }
+  .foot_conact .foot_search_box input {
+    width: 56%;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+  }
+  .foot_conact .foot_search_box .btn_free_exp {
+    right: 5px;
+    top: 5px;
+    height: 40px;
+    border-radius: 40px;
+    line-height: 40px;
+  }
+  .foot_copyright {
+    padding: 12px 0;
+  }
   /* 全省校区 */
 	.sonPageBanner {height:162px;margin-bottom:30px;}
   .provCampBanner .banner-item .left-text,
@@ -383,8 +511,14 @@ em {font-style:normal;}
 		margin-bottom:15px;
 	}
 	.prov_schools .item .scName {
-		margin-bottom:10px;
-	}
+    margin-bottom:10px;
+    font-size:20px;
+    line-height:28px;
+  }
+  .prov_schools .item .contact-way {
+    font-size:14px;
+    line-height:28px;
+  }
   /* 关于睿凡 */
   .aboutRfBanner .banner-item .left-text {
     width: 80%;
