@@ -50,10 +50,12 @@
 
 .uidWrapper .banner-wrapper .swiper-pagination {
 	position: absolute;
-	bottom: -50px;
+	bottom: 0;
 	left: 0;
 	width: 100%;
 	text-align: center;
+	z-index: 10;
+
 }
 
 .uidWrapper .banner-wrapper .swiper-pagination .swiper-pagination-bullet {
@@ -161,7 +163,7 @@
 <768 2 
 >768 4
 */
-.index-part1,.index-part2{
+.index-part1,.index-part2 ,.index-part3,.index-part4{
 	padding-bottom: 40px;
 }
 .index-part1{
@@ -386,6 +388,11 @@
 .index-part2 .box-wrapper .right .item .text::before{
 	background: url('../img/index/p2-text-right.png') no-repeat left top;
 }
+/* part4 */
+.part4{
+	background: #fef3f0;
+}
+
 
 /* 适配********************* */
 @media(max-width:768px){
@@ -421,7 +428,7 @@
 	}
 	 /* 导航 */
 	 .title-wrapper{
-    padding: 110px 0 70px;
+    padding: 10px 0 70px;
 		font-size: 48px;
 		line-height: 1.5;
 	}
@@ -552,7 +559,7 @@
   }
   /* 导航 */
   .title-wrapper{
-    padding: 120px 0 70px;
+    padding: 100px 0 70px;
     font-size: 48px;
   }
   .title-wrapper span{

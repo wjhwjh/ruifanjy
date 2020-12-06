@@ -1,0 +1,101 @@
+@charset "utf-8";
+/* CSS Document */
+
+#certify {
+	position: relative;
+	width: 100%;
+	/* margin: 0 auto */
+}
+
+#certify .swiper-container {
+	padding-bottom: 20px;
+}
+
+#certify  .swiper-slide {
+	width: 570px;
+	/* height: 450px; */
+	opacity: 0.6 !important;
+	background: #fff;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
+}
+#certify  .swiper-slide img{
+	width: 100%;
+}
+#certify  .swiper-slide.swiper-slide-active{
+	opacity: 1 !important;
+}
+#certify  .swiper-slide img{
+	display:block;
+}
+#certify  .swiper-slide .text {
+	padding-top: 0;
+	padding-bottom: 20px;
+	text-align: center;
+	color: #636363;
+	margin: 0;
+}
+#certify  .swiper-slide .text p{
+	line-height:1.6;
+}
+#certify .swiper-slide .text h2{
+	font-weight: normal;
+	font-size: 26px;
+	color: #f15e04;
+}
+#certify .swiper-pagination {
+	width: 100%;
+	bottom: 20px;
+}
+
+#certify .swiper-pagination-bullets .swiper-pagination-bullet {
+	margin: 0 5px;
+	border: 3px solid #fff;
+	background-color: #d5d5d5;
+	width: 10px;
+	height: 10px;
+	opacity: 1;
+}
+
+#certify .swiper-pagination-bullets .swiper-pagination-bullet-active {
+	border: 3px solid #00aadc;
+	background-color: #fff;
+}
+
+#certify .swiper-button-prev {
+	left: 20px;
+	width: 82px;
+	height: 82px;
+	top: 50%;
+	margin-top: -51px;
+	background: url(../img/index/leftjiantou.png) no-repeat;
+	background-position: 0 0;
+	background-size: 100%;
+}
+
+#certify .swiper-button-prev:hover {
+	/* background-position: 0 -46px;
+	background-size: 100% */
+}
+
+#certify .swiper-button-next {
+	right: 20px;
+	width: 82px;
+	height: 82px;
+	top: 50%;
+	margin-top: -51px;
+	background: url(../img/index/rightjiantou.png) no-repeat;
+	background-size: 100%;
+}
+
+#certify .swiper-button-next:hover {
+	/* background-position: 0 -139px; */
+	/* background-size: 100% */
+}
+@media(max-width:768px){
+	#certify .swiper-slide .text h2{
+		font-size: 16px;
+	}
+}
+@media(min-width:768px){}
+@media(min-width:992px){}
+@media(min-width:1200px){}
