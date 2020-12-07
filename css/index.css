@@ -463,9 +463,11 @@
 	padding-bottom: 40px;
 	background: #fef3f0;
 }
-.index-part4 .p4Menu{
+
+.index-part4 .p4Menu {
 	margin-bottom: 20px;
 }
+
 .index-part4 .p4Menu .item {
 	position: relative;
 }
@@ -506,17 +508,20 @@
 .index-part4 .p4Menu .item>img {
 	width: 100%;
 }
+
 /* 内容部分 */
-.p4-content{
+
+.p4-content {
 	/* min-height: 420px; */
 	position: relative;
 	padding-left: 15px;
 	padding-right: 15px;
 }
-.p4-content>div{
+
+.p4-content>div {
 	padding: 20px 15px 10px;
 	position: absolute;
-	top:0;
+	top: 0;
 	left: 0;
 	width: 100%;
 	border: 1px solid #fd8142;
@@ -525,23 +530,25 @@
 	background: #fff;
 	opacity: 0;
 }
-.p4-content>div h3{
+
+.p4-content>div h3 {
 	margin: 0 0 10px;
 	font-size: 22px;
 	font-weight: normal;
 }
-.p4-content>div p{
+
+.p4-content>div p {
 	padding-bottom: 20px;
 	font-size: 16px;
 }
-.p4-content>div p:last-child{
+
+.p4-content>div p:last-child {
 	padding-bottom: 0;
 }
-.p4-content>div.show{
+
+.p4-content>div.show {
 	opacity: 1;
-} 
-
-
+}
 
 /* 适配********************* */
 
@@ -760,7 +767,7 @@
 
 @media(min-width:1200px) {
 	.container {
-    width: 1200px;
+		width: 1200px;
 	}
 	.banner-form {
 		right: 10%;
@@ -802,16 +809,16 @@
 	}
 	.index-part4 .p4Menu .item.item1 {
 		background: url('../img/index/p4-index-listbg1.png') no-repeat center bottom transparent;
-		background-size:100% auto;
+		background-size: 100% auto;
 	}
 	.index-part4 .p4Menu .item.item2 {
 		margin: 0 20px;
 		background: url('../img/index/p4-index-listbg2.png') no-repeat center bottom transparent;
-		background-size:100% auto;
+		background-size: 100% auto;
 	}
 	.index-part4 .p4Menu .item.item3 {
 		background: url('../img/index/p4-index-listbg3.png') no-repeat center bottom transparent;
-		background-size:100% auto;
+		background-size: 100% auto;
 	}
 	.index-part4 .p4Menu .item .num {
 		position: absolute;
@@ -835,148 +842,163 @@
 	.index-part4 .p4Menu .item3 h2 {
 		margin-top: -25px;
 	}
-
-	.index-part4 .p4Menu .item1 .num1{
+	.index-part4 .p4Menu .item1 .num1 {
 		top: -6px;
 		left: 60px;
-    background: url('../img/index/p4-index-num1.png') no-repeat center center;
+		background: url('../img/index/p4-index-num1.png') no-repeat center center;
 		transition: 0.3s;
 	}
-	.index-part4 .p4Menu .item1 .num2{
+	.index-part4 .p4Menu .item1 .num2 {
 		top: -14px;
 		left: 184px;
-    background: url('../img/index/p4-index-num2.png') no-repeat center center;
+		background: url('../img/index/p4-index-num2.png') no-repeat center center;
 		transition: 0.3s;
 	}
-	.index-part4 .p4Menu .item1 .num3{
+	.index-part4 .p4Menu .item1 .num3 {
 		top: -20px;
 		left: 315px;
-    background: url('../img/index/p4-index-num3.png') no-repeat center center;
+		background: url('../img/index/p4-index-num3.png') no-repeat center center;
 		transition: 0.3s;
 	}
-	.index-part4 .p4Menu .item2 .num1{
+	.index-part4 .p4Menu .item2 .num1 {
 		top: -40px;
 		left: 50px;
-    background: url('../img/index/p4-index-num4.png') no-repeat center center;
+		background: url('../img/index/p4-index-num4.png') no-repeat center center;
 		background-size: 100% auto;
 		transition: 0.3s;
 	}
-	.index-part4 .p4Menu .item2 .num2{
+	.index-part4 .p4Menu .item2 .num2 {
 		top: -50px;
 		left: 190px;
-    background: url('../img/index/p4-index-num5.png') no-repeat center center;
+		background: url('../img/index/p4-index-num5.png') no-repeat center center;
 		background-size: 100% auto;
 		transition: 0.3s;
 	}
-	.index-part4 .p4Menu .item2 .num3{
+	.index-part4 .p4Menu .item2 .num3 {
 		top: -54px;
 		left: 340px;
-    background: url('../img/index/p4-index-num6.png') no-repeat center center;
+		background: url('../img/index/p4-index-num6.png') no-repeat center center;
 		background-size: 100% auto;
 		transition: 0.3s;
 	}
-	.index-part4 .p4Menu .item2 .num4{
+	.index-part4 .p4Menu .item2 .num4 {
 		top: -60px;
 		left: 475px;
-    background: url('../img/index/p4-index-num7.png') no-repeat center center;
+		background: url('../img/index/p4-index-num7.png') no-repeat center center;
 		background-size: 100% auto;
 		transition: 0.3s;
 	}
-	.index-part4 .p4Menu .item3 .num1{
+	.index-part4 .p4Menu .item3 .num1 {
 		top: -70px;
 		left: 60px;
-    background: url('../img/index/p4-index-num8.png') no-repeat center center;
+		background: url('../img/index/p4-index-num8.png') no-repeat center center;
 		background-size: 100% auto;
 		transition: 0.3s;
 	}
-
-	.index-part4 .p4Menu .item1.act .num1{
+	.index-part4 .p4Menu .item1.act .num1 {
 		top: -6px;
 		left: 60px;
-    background: url('../img/index/p4-index-num1-1.png') no-repeat center center;
+		background: url('../img/index/p4-index-num1-1.png') no-repeat center center;
 		transition: 0.3s;
 	}
-	.index-part4 .p4Menu .item1.act .num2{
+	.index-part4 .p4Menu .item1.act .num2 {
 		top: -14px;
 		left: 184px;
-    background: url('../img/index/p4-index-num2-1.png') no-repeat center center;
+		background: url('../img/index/p4-index-num2-1.png') no-repeat center center;
 		transition: 0.3s;
 	}
-	.index-part4 .p4Menu .item1.act .num3{
+	.index-part4 .p4Menu .item1.act .num3 {
 		top: -20px;
 		left: 315px;
-    background: url('../img/index/p4-index-num3-1.png') no-repeat center center;
+		background: url('../img/index/p4-index-num3-1.png') no-repeat center center;
 		transition: 0.3s;
 	}
-	.index-part4 .p4Menu .item2.act .num1{
+	.index-part4 .p4Menu .item2.act .num1 {
 		top: -40px;
 		left: 50px;
-    background: url('../img/index/p4-index-num4-1.png') no-repeat center center;
+		background: url('../img/index/p4-index-num4-1.png') no-repeat center center;
 		background-size: 100% auto;
 		transition: 0.3s;
 	}
-	.index-part4 .p4Menu .item2.act .num2{
+	.index-part4 .p4Menu .item2.act .num2 {
 		top: -50px;
 		left: 190px;
-    background: url('../img/index/p4-index-num5-1.png') no-repeat center center;
+		background: url('../img/index/p4-index-num5-1.png') no-repeat center center;
 		background-size: 100% auto;
 		transition: 0.3s;
 	}
-	.index-part4 .p4Menu .item2.act .num3{
+	.index-part4 .p4Menu .item2.act .num3 {
 		top: -54px;
 		left: 340px;
-    background: url('../img/index/p4-index-num6-1.png') no-repeat center center;
+		background: url('../img/index/p4-index-num6-1.png') no-repeat center center;
 		background-size: 100% auto;
 		transition: 0.3s;
 	}
-	.index-part4 .p4Menu .item2.act .num4{
+	.index-part4 .p4Menu .item2.act .num4 {
 		top: -60px;
 		left: 475px;
-    background: url('../img/index/p4-index-num7-1.png') no-repeat center center;
+		background: url('../img/index/p4-index-num7-1.png') no-repeat center center;
 		background-size: 100% auto;
 		transition: 0.3s;
 	}
-	.index-part4 .p4Menu .item3.act .num1{
+	.index-part4 .p4Menu .item3.act .num1 {
 		top: -70px;
 		left: 60px;
-    background: url('../img/index/p4-index-num8-1.png') no-repeat center center;
+		background: url('../img/index/p4-index-num8-1.png') no-repeat center center;
 		background-size: 100% auto;
 		transition: 0.3s;
 	}
 	/* 内容部分 */
-	.p4-content{
+	.p4-content {
 		min-height: 420px;
 		position: relative;
 		padding-left: 15px;
 		padding-right: 15px;
 	}
-	.p4-content>div{
+	.p4-content>div {
 		padding: 40px 35px 20px 30px;
 		position: absolute;
-		top:0;
+		top: 0;
 		left: 0;
 		width: 100%;
 		border: 1px solid #fd8142;
 		border-radius: 4px;
 		color: #000;
 	}
-	.p4-content>div h3{
+	.p4-content>div h3 {
 		margin: 0 0 10px;
 		font-size: 26px;
 		font-weight: normal;
 	}
-	.p4-content>div p{
+	.p4-content>div p {
 		padding-bottom: 20px;
 		font-size: 16px;
 	}
-	.p4-content .content-item1{
+	.p4-content .content-item1 {
 		background: url('../img/index/p4-bg1.jpg') no-repeat right center #fff;
 	}
-	.p4-content .content-item2{
+	.p4-content .content-item2 {
 		background: url('../img/index/p4-bg2.jpg') no-repeat right center #fff;
 	}
-	.p4-content .content-item3{
+	.p4-content .content-item3 {
 		background: url('../img/index/p4-bg3.jpg') no-repeat right center #fff;
 	}
-
+	/* par5 教师模块 */
+	.part5 {
+		padding: 60px 0 120px;
+		background: #fff;
+	}
+	.index-part5 {}
+	.index-part5 .teacher-box {
+		padding: 0 60px;
+		position: relative;
+	}
+	.index-part5 .swiper-container {}
+	.index-part5 .swiper-container .swiper-wrapper {}
+	.index-part5 .swiper-container .slide .slideBox{
+		position: relative;
+	}
+	.index-part5 .swiper-container .swiper-slide img{
+		display: block;
+	}
 }
