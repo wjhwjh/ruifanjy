@@ -9,8 +9,8 @@ function swiperFn(slideNum){
     //loopedSlides: 2,
     autoplay: false,
     resizeReInit : true,
-    prevButton: '.swiper-button-prev',
-    nextButton: '.swiper-button-next',
+    prevButton: '#certify .swiper-button-prev',
+    nextButton: '#certify .swiper-button-next',
     // pagination: '#certify .swiper-pagination',
     //paginationClickable :true,
     onProgress: function(swiper, progress) {
@@ -62,10 +62,6 @@ function wChange(){
     slideNum = 2
    }
    swiperFn(slideNum);
-  //  console.log(slideNum);
-  //  certifySwiper.slidesPerView=1;
-  //  console.log(certifySwiper.slidesPerView);
-  //  certifySwiper.update();
 }
 wChange();
 $(window).resize(function(){
@@ -73,3 +69,29 @@ $(window).resize(function(){
   wChange();
   //certifySwiper.init();
 });
+
+//banner模块轮播
+var mySwiper1 = new Swiper('.uidWrapper #banner', {
+  //如果需要分页器
+  pagination: '.swiper-pagination1',
+  paginationClickable: true,
+  loop: true
+
+  //如果需要前进后退按钮
+  // nextButton: '.swiper-button-next',
+  // prevButton: '.swiper-button-prev',
+})
+
+// 老师模块轮播
+var teacherSwiper = new Swiper('#teacherSwiper', {
+  //如果需要分页器
+  // pagination: '.swiper-pagination1',
+  slidesPerView: 4,
+  spaceBetween : 10
+  //paginationClickable: true,
+  //loop: true
+
+  //如果需要前进后退按钮
+  // nextButton: '.swiper-button-next',
+  // prevButton: '.swiper-button-prev',
+})

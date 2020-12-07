@@ -295,6 +295,73 @@
 	</div><!--/. part4-->
 
 
+	<!-- part5 -->
+	<div class="container-fluit part5">
+		<div class="container index-part5">
+			<div class="teacher-box">
+				<div class="swiper-container" id="teacherSwiper">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<div class="slideBox">
+								<div class="imgBox">
+									<img src="../img/index/p5-index-pic1.jpg" alt="">
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="slideBox">
+									<img src="../img/index/p5-index-pic1.jpg" alt="">
+									<div class="textBox">
+										<div class="textTit">陈鑫<span>初高中数学</span></div>
+										<p><span>教龄6年</span></p>
+										<p><span>授课风格：</span>耐心细致，灵活多变，条理清晰；对于初升高学生教法思路把控灵活。</p>
+										<p><span>教学成果：</span>所带学生超过300余人，满意度达100%，其中单学生续费频次最高达10次；
+											曾2次获得集团赛课奖和优秀教师奖；
+											睿凡教育数学组口碑教师；</p>
+									</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="slideBox">
+								<div class="imgBox">
+									<img src="../img/index/p5-index-pic1.jpg" alt="">
+								</div>
+
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="slideBox">
+								<div class="imgBox">
+									<img src="../img/index/p5-index-pic1.jpg" alt="">
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="slideBox">
+								<div class="imgBox">
+									<img src="../img/index/p5-index-pic1.jpg" alt="">
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="slideBox">
+								<div class="imgBox">
+									<img src="../img/index/p5-index-pic1.jpg" alt="">
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="slideBox">
+								<div class="imgBox">
+									<img src="../img/index/p5-index-pic1.jpg" alt="">
+								</div>
+							</div>
+						</div>
+					</div>	
+				 </div>
+				</div>
+		</div>
+	</div>
 
 
 	<script src="../plugins/jquery.min.js"></script>
@@ -302,24 +369,16 @@
 	<script src="../plugins/swiper.min.js"></script>
 	<script src="../js/index.js"></script>
 
-	<script>
-		var mySwiper1 = new Swiper('.uidWrapper #banner', {
-			//如果需要分页器
-			pagination: '.swiper-pagination1',
-			paginationClickable: true,
-			loop: true
-
-			//如果需要前进后退按钮
-			// nextButton: '.swiper-button-next',
-			// prevButton: '.swiper-button-prev',
-		})
-	</script>
+	 
 <script>
+	// part2切换
 	$('.part2 .box-wrapper .left li').click(function(){
 		 let index = $(this).index();
 		 $(this).addClass('act').siblings().removeClass('act');
 		 $('.part2 .box-wrapper .right .item').eq(index).addClass('show').siblings().removeClass('show');
 	});
+
+		// part4切换
   $('.p4-content').height($('.p4-content>div').eq(0).height());
 	$('.index-part4 .p4Menu .item').click(function(){
 		 let index = $(this).parent().index();
