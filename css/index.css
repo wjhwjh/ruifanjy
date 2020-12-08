@@ -606,6 +606,86 @@
 		color: #fff;
 		font-size: 20px;
 	}
+
+		/* par5 教师模块 */
+		.part5 {
+			padding: 60px 0 120px;
+			background: #fff;
+		}
+		.index-part5 {}
+		.index-part5 .teacher-box {
+			padding: 0 0;
+			position: relative;
+		}
+		.index-part5 .swiper-container {}
+		.index-part5 .swiper-container .swiper-wrapper {}
+		.index-part5  .slideBox{
+			position: relative;
+			overflow: hidden;
+		}
+		.index-part5 .swiper-container .swiper-slide img{
+			display: block;
+			width: 100%;
+		}
+		.index-part5 .textBox{
+			padding: 0 18px 0;
+			position: absolute;
+			z-index: 10;
+			width: 100%;
+			height:74%;
+			/* height: 45px; */
+			bottom: 0;
+			left: 0;
+			color: #fff;
+			border-radius: 0 0 4px 4px;
+			background: rgba(241, 94, 4, 0.8);
+			transition: 0.3s;
+		}
+		.index-part5 .textBox .textTit{
+			padding:15px 0 10px;
+			margin-bottom: 10px;
+			line-height: 1;
+			font-size: 20px;
+			border-bottom: 1px solid #fff;
+		}
+		.index-part5 .textBox .textTit span{
+			float: right;
+		}
+		.index-part5 .textBox p{
+			font-size: 12px;
+			margin-bottom: 0;
+			text-align: justify;
+		}
+		.index-part5 .textBox p span{
+			font-weight: bold;
+		}
+		.index-part5 .slideBox:hover .textBox{
+			height: 76%;
+			background: rgba(241, 94, 4, 0.8);
+			transition: 0.3s;
+		}
+		.index-part5 .teacher-box .teachBtn{
+			position: absolute;
+			top: 50%;
+			cursor: pointer;
+			width: 56px;
+			height: 56px;
+			margin-top: -28px;
+			display: none;
+		}
+		.index-part5 .teacher-box .preBtn{
+			left: 0;
+			background: url('../img/index/teachpre.png') no-repeat center center;
+			background-size: 100% auto;
+		}
+		.index-part5 .teacher-box .nextBtn{
+			right: 0;
+			background: url('../img/index/teachnext.png') no-repeat center center;
+			background-size: 100% auto;
+		}
+
+
+
 }
 
 @media(min-width:768px) {
@@ -754,6 +834,83 @@
 		color: #fff;
 		font-size: 20px;
 	}
+
+	/* par5 教师模块 */
+	.part5 {
+		padding: 60px 0 120px;
+		background: #fff;
+	}
+	.index-part5 {}
+	.index-part5 .teacher-box {
+		padding: 0 60px;
+		position: relative;
+	}
+	.index-part5 .swiper-container {}
+	.index-part5 .swiper-container .swiper-wrapper {}
+	.index-part5  .slideBox{
+		position: relative;
+		overflow: hidden;
+	}
+	.index-part5 .swiper-container .swiper-slide img{
+		display: block;
+		width: 100%;
+	}
+	.index-part5 .textBox{
+		padding: 0 18px 0;
+		position: absolute;
+		z-index: 10;
+		width: 100%;
+		/* height:76%; */
+		height: 45px;
+		bottom: 0;
+		left: 0;
+		color: #fff;
+		border-radius: 0 0 4px 4px;
+		background: rgba(241, 94, 4, 1);
+		transition: 0.3s;
+	}
+	.index-part5 .textBox .textTit{
+		padding:15px 0 10px;
+		margin-bottom: 10px;
+		line-height: 1;
+		font-size: 20px;
+		border-bottom: 1px solid #fff;
+	}
+	.index-part5 .textBox .textTit span{
+		float: right;
+	}
+	.index-part5 .textBox p{
+		font-size: 12px;
+		margin-bottom: 0;
+		text-align: justify;
+	}
+	.index-part5 .textBox p span{
+		font-weight: bold;
+	}
+	.index-part5 .slideBox:hover .textBox{
+		height: 76%;
+		background: rgba(241, 94, 4, 0.8);
+		transition: 0.3s;
+	}
+  .index-part5 .teacher-box .teachBtn{
+		position: absolute;
+		top: 50%;
+		cursor: pointer;
+		width: 56px;
+		height: 56px;
+		margin-top: -28px;
+	}
+	.index-part5 .teacher-box .preBtn{
+		left: 0;
+		background: url('../img/index/teachpre.png') no-repeat center center;
+		background-size: 100% auto;
+	}
+	.index-part5 .teacher-box .nextBtn{
+		right: 0;
+		background: url('../img/index/teachnext.png') no-repeat center center;
+		background-size: 100% auto;
+	}
+
 }
 
 @media(min-width:992px) {
@@ -995,10 +1152,49 @@
 	}
 	.index-part5 .swiper-container {}
 	.index-part5 .swiper-container .swiper-wrapper {}
-	.index-part5 .swiper-container .slide .slideBox{
+	.index-part5  .slideBox{
 		position: relative;
+		overflow: hidden;
 	}
 	.index-part5 .swiper-container .swiper-slide img{
 		display: block;
+		width: 100%;
+	}
+	.index-part5 .textBox{
+		padding: 0 18px 0;
+		position: absolute;
+		z-index: 10;
+		width: 100%;
+		/* height:76%; */
+		height: 45px;
+		bottom: 0;
+		left: 0;
+		color: #fff;
+		border-radius: 0 0 4px 4px;
+		background: rgba(241, 94, 4, 1);
+		transition: 0.3s;
+	}
+	.index-part5 .textBox .textTit{
+		padding:15px 0 10px;
+		margin-bottom: 10px;
+		line-height: 1;
+		font-size: 20px;
+		border-bottom: 1px solid #fff;
+	}
+	.index-part5 .textBox .textTit span{
+		float: right;
+	}
+	.index-part5 .textBox p{
+		font-size: 12px;
+		margin-bottom: 0;
+		text-align: justify;
+	}
+	.index-part5 .textBox p span{
+		font-weight: bold;
+	}
+	.index-part5 .slideBox:hover .textBox{
+		height: 76%;
+		background: rgba(241, 94, 4, 0.8);
+		transition: 0.3s;
 	}
 }

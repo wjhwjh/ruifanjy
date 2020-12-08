@@ -64,11 +64,7 @@ function wChange(){
    swiperFn(slideNum);
 }
 wChange();
-$(window).resize(function(){
-  windowWidth=$(window).width();
-  wChange();
-  //certifySwiper.init();
-});
+
 
 //banner模块轮播
 var mySwiper1 = new Swiper('.uidWrapper #banner', {
@@ -83,15 +79,40 @@ var mySwiper1 = new Swiper('.uidWrapper #banner', {
 })
 
 // 老师模块轮播
-var teacherSwiper = new Swiper('#teacherSwiper', {
-  //如果需要分页器
-  // pagination: '.swiper-pagination1',
-  slidesPerView: 4,
-  spaceBetween : 10
-  //paginationClickable: true,
-  //loop: true
-
-  //如果需要前进后退按钮
-  // nextButton: '.swiper-button-next',
-  // prevButton: '.swiper-button-prev',
-})
+let teacherSlideNum = 1;
+function teacherSwiperFn(){
+  var teacherSwiper = new Swiper('#teacherSwiper', {
+    //如果需要分页器
+    // pagination: '.swiper-pagination1',
+    slidesPerView: teacherSlideNum,
+    spaceBetween : 10,
+    //paginationClickable: true,
+    loop: true,
+    //如果需要前进后退按钮
+    nextButton: '.part5 .preBtn',
+    prevButton: '.part5 .nextBtn'
+  })
+}
+function teacherSwiperChange(){
+  if(windowWidth<=768){
+    teacherSlideNum = 1.4
+  }
+  if(windowWidth>768&&windowWidth<992){
+    teacherSlideNum = 2
+  }
+  if(windowWidth>=992){
+    teacherSlideNum = 4
+  }
+  console.log(teacherSlideNum);
+  teacherSwiperFn();
+}
+teacherSwiperChange();
+// 改变窗口
+$(window).resize(function(){
+  // 重新获取窗口的宽度
+  windowWidth=$(window).width();
+  // part3 精品班轮播切换
+  wChange();
+  // 教师部分切换
+  teacherSwiperChange();
+});
