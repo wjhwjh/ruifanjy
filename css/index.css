@@ -182,7 +182,7 @@
 >768 4
 */
 
-.index-part1, .index-part2, .index-part3, .index-part4 {
+.index-part1, .index-part2, .index-part3, .index-part4 ,.index-part6{
 	padding-bottom: 40px;
 }
 
@@ -549,7 +549,42 @@
 .p4-content>div.show {
 	opacity: 1;
 }
-
+/* part6 */
+.part6{
+	background: -moz-linear-gradient(to bottom,#fef0ea 0%,#fcfcf9 100%);
+	background: -webkit-linear-gradient(to bottom,#fef0ea 0%,#fcfcf9 100%);
+	background: -ms-linear-gradient(to bottom,#fef0ea 0%,#fcfcf9 100%);
+	background: -o-linear-gradient(to bottom,#fef0ea 0%,#fcfcf9 100%);
+	background: linear-gradient(to bottom,#fef0ea 0%,#fcfcf9 100%);
+}
+.child-wrapper{
+	position: relative;
+	padding-bottom: 60px;
+}
+#childSwiper .child-swiper{
+	position: relative;
+	height: 200px;
+	border: 1px solid #000;
+}
+.child-wrapper .swiper-pagination{
+	width: 100%;
+	bottom: 0;
+}
+.child-wrapper .swiper-pagination-bullet{
+	margin: 0 20px;
+	width: 25px;
+	height: 25px;
+	opacity: 1;
+	border: 1px solid #f15e04;
+	background: transparent;
+}
+.child-wrapper .swiper-pagination-bullet-active{
+	background: #f15e04;
+}
+/* 以上是全局样式 
+	 全局样式例如定位、颜色、透明度。
+	 其它独立的样式需要根据不同屏的尺寸自适应
+*/
 /* 适配********************* */
 
 @media(max-width:768px) {
@@ -574,9 +609,38 @@
 		height: auto;
 	}
 	/* part2 */
+	.index-part2 .box-wrapper .right .item{
+		background: #fff !important;
+	}
 	.index-part2 .box-wrapper .left li span {
 		display: flex;
 		line-height: 1.2;
+	}
+	.index-part2 .box-wrapper .right .item .text {
+    width: 70%;
+    top: 45px;
+    left: 40px;
+    font-size: 16px;
+}
+	/* part3 */
+	#certify .swiper-button-prev{
+		left: 10px;
+    width: 50px;
+    height: 50px;
+    top: 50%;
+    margin-top: -55px;
+    background: url(../img/index/leftjiantou.png) no-repeat;
+    background-position: 0 0;
+    background-size: 100%;
+	}
+	#certify .swiper-button-next {
+		right: 10px;
+		width: 50px;
+    height: 50px;
+    top: 50%;
+    margin-top: -55px;
+		background: url(../img/index/rightjiantou.png) no-repeat;
+		background-size: 100%;
 	}
 	/* part4 */
 	.index-part4 .p4Menu {
@@ -609,7 +673,7 @@
 
 		/* par5 教师模块 */
 		.part5 {
-			padding: 60px 0 120px;
+			padding: 40px 0 40px;
 			background: #fff;
 		}
 		.index-part5 {}
@@ -888,7 +952,7 @@
 		font-weight: bold;
 	}
 	.index-part5 .slideBox:hover .textBox{
-		height: 76%;
+		height: 85%;
 		background: rgba(241, 94, 4, 0.8);
 		transition: 0.3s;
 	}
@@ -1147,8 +1211,10 @@
 	}
 	.index-part5 {}
 	.index-part5 .teacher-box {
-		padding: 0 60px;
 		position: relative;
+		padding: 0 60px;
+		margin-left: -15px;
+    margin-right: -15px;
 	}
 	.index-part5 .swiper-container {}
 	.index-part5 .swiper-container .swiper-wrapper {}

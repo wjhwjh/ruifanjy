@@ -80,11 +80,11 @@ var mySwiper1 = new Swiper('.uidWrapper #banner', {
 
 // 老师模块轮播
 let teacherSlideNum = 1;
-function teacherSwiperFn(){
+function teacherSwiperFn(slideNum){
   var teacherSwiper = new Swiper('#teacherSwiper', {
     //如果需要分页器
     // pagination: '.swiper-pagination1',
-    slidesPerView: teacherSlideNum,
+    slidesPerView: slideNum,
     spaceBetween : 10,
     //paginationClickable: true,
     loop: true,
@@ -100,11 +100,14 @@ function teacherSwiperChange(){
   if(windowWidth>768&&windowWidth<992){
     teacherSlideNum = 2
   }
-  if(windowWidth>=992){
+  if(windowWidth>=992&&windowWidth<1200){
+    teacherSlideNum = 3
+  }
+  if(windowWidth>=1200){
     teacherSlideNum = 4
   }
-  console.log(teacherSlideNum);
-  teacherSwiperFn();
+  //console.log(teacherSlideNum);
+  teacherSwiperFn(teacherSlideNum);
 }
 teacherSwiperChange();
 // 改变窗口
@@ -116,3 +119,12 @@ $(window).resize(function(){
   // 教师部分切换
   teacherSwiperChange();
 });
+
+// part6 每个孩子的心声
+var childSwiper = new Swiper('#childSwiper', {
+  //如果需要分页器
+  pagination: '.child-pagination',
+  slidesPerView: 1, 
+  paginationClickable: true,
+  // loop: true,
+})
