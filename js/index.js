@@ -128,3 +128,38 @@ var childSwiper = new Swiper('#childSwiper', {
   paginationClickable: true,
   // loop: true,
 })
+
+	// part2切换
+	$('.part2 .box-wrapper .left li').click(function(){
+    let index = $(this).index();
+    $(this).addClass('act').siblings().removeClass('act');
+    $('.part2 .box-wrapper .right .item').eq(index).addClass('show').siblings().removeClass('show');
+ });
+
+   // part4切换
+ $('.p4-content').height($('.p4-content>div').eq(0).height());
+ $('.index-part4 .p4Menu .item').mouseenter(function(){
+    let index = $(this).parent().index();
+    $(this).parent().siblings().find('.item').removeClass('act')
+    $(this).addClass('act');
+    $('.p4-content>div').eq(index).addClass('show').siblings().removeClass('show');
+    let h = $('.p4-content>div').eq(index).height(); 
+    $('.p4-content').height(h);
+ });
+
+   // part8切换
+   let p8Item = document.querySelectorAll('.part8 .item');
+   let p8Content=document.querySelectorAll('.part8 .center-content>div');
+   let removeStyle=function(){
+     p8Item.forEach(function(item,index){
+       item.setAttribute('class','item');
+       p8Content[index].classList.remove('show');
+     });
+   };
+   for(let i=0; i<p8Item.length;i++){
+     p8Item[i].onmouseenter=function(){
+       removeStyle();
+       this.setAttribute('class','item act');
+       p8Content[i].classList.add('show');
+     };
+   }

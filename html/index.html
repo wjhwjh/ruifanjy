@@ -21,6 +21,7 @@
 	<link type="text/css" rel="stylesheet" href="../plugins/swiper.min.css">
 	<link type="text/css" rel="stylesheet" href="../plugins/certify.css">
 	<link type="text/css" rel="stylesheet" href="../css/base.css">
+	<link rel="stylesheet" href="../css/style-sonpage.css">
 	<link type="text/css" rel="stylesheet" href="../css/index.css">
 </head>
 
@@ -48,10 +49,10 @@
 				<!-- 内容-->
 				<div class="collapse navbar-collapse nav-right" id="bs-example-navbar-collapse-1">
 					<ul class="nav navbar-nav">
-						<li class="active"><a href="#">首页 <span class="sr-only">(current)</span></a></li>
-						<li><a href="#">教学理念</a></li>
-						<li><a href="#">全省校区</a></li>
-						<li><a href="#">关于睿凡</a></li>
+						<li class="active"><a href="javascript:void(0)">首页 <span class="sr-only">(current)</span></a></li>
+						<li><a href="./teach-philosophy.html" target="_blank">教学理念</a></li>
+						<li><a href="./provincial-campuses.html" target="_blank">全省校区</a></li>
+						<li><a href="./about-ruifan.html" target="_blank">关于睿凡</a></li>
 					</ul>
 					<span class="hidden-xs nav-tel">40012345670</span>
 				</div><!-- /.navbar-collapse -->
@@ -670,52 +671,72 @@
 		</div>
 	</div><!--/. part8-->	
 
+	<footer>
+    <div class="foot_conact clearfix">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="row">
+              <div class="col-xs-2 col-sm-2 col-md-2 hidden-xs hidden-sm">
+                <div class="customer_service">
+                  <img src="../img/global/foot-customer-service.png" class="img-responsive">
+                </div>
+              </div>
+              <div class="col-xs-6 col-sm-4 col-md-3">
+                <div class="fc_service fc_service_tel clearfix">
+                  <label for="" class="lab">电话咨询</label>
+                  <h4 class="tel_num">400-12345670</h4>
+                  <span class="service_time">上午08:30-晚上22:00</span>
+                </div>
+              </div>
+              <dic class="col-xs-6 col-sm-4 col-md-3">
+                <div class="fc_service fc_service_number clearfix">
+                  <label for="" class="lab">服务号</label>
+                  <div class="fsn_logo clearfix">
+                    <div class="float_l item weixin">
+                      <img src="../img/global/weixin.png" class="img-responsive">
+                    </div>
+                    <div class="float_l item douyin">
+                      <img src="../img/global/douyin.png" class="img-responsive">
+                    </div>
+                    <div class="float_l item xinlang">
+                      <img src="../img/global/xinlang.png" class="img-responsive">
+                    </div>
+                  </div>
+                </div>
+              </dic>
+              <div class="col-xs-12 col-sm-4 col-md-4">
+                <div class="free_experience clearfix">
+                  <form action="">
+                    <div class="foot_search_box clearfix">
+                      <input type="text" class="input_text" value="">
+                      <a href="javascript:;" class="btn_free_exp">免费体验</a>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="foot_copyright clearfix">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="foot_copyright_con text-center">
+              <p>这是一些小字，一些内容，现在还不确定，放个位置p这是一些小字，一些内容，现在还不确定，放个位置p这是一些小字，一些内容，现在还</p>
+              <p>这是一些小字，一些内容，现在还不确定，放个位置p这是一些小字，一些内容，现在还不确定，放个位置p这是一些小字，一些内容，现在还</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
 
 	<script src="../plugins/jquery.min.js"></script>
 	<script src="../plugins/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
 	<script src="../plugins/swiper.min.js"></script>
 	<script src="../js/index.js"></script>
-
-	 
-<script>
-	// part2切换
-	$('.part2 .box-wrapper .left li').click(function(){
-		 let index = $(this).index();
-		 $(this).addClass('act').siblings().removeClass('act');
-		 $('.part2 .box-wrapper .right .item').eq(index).addClass('show').siblings().removeClass('show');
-	});
-
-		// part4切换
-  $('.p4-content').height($('.p4-content>div').eq(0).height());
-	$('.index-part4 .p4Menu .item').mouseenter(function(){
-		 let index = $(this).parent().index();
-		 $(this).parent().siblings().find('.item').removeClass('act')
-		 $(this).addClass('act');
-		 $('.p4-content>div').eq(index).addClass('show').siblings().removeClass('show');
-     let h = $('.p4-content>div').eq(index).height(); 
-		 $('.p4-content').height(h);
-	});
-
-		// part8切换
-		let p8Item = document.querySelectorAll('.part8 .item');
-		let p8Content=document.querySelectorAll('.part8 .center-content>div');
-		let removeStyle=function(){
-			p8Item.forEach(function(item,index){
-				item.setAttribute('class','item');
-				p8Content[index].classList.remove('show');
-			});
-		};
-	  for(let i=0; i<p8Item.length;i++){
-			p8Item[i].onmouseenter=function(){
-				removeStyle();
-				this.setAttribute('class','item act');
-				p8Content[i].classList.add('show');
-			};
-		}
-
-
-	 
-</script>
 </body>
-
 </html>
