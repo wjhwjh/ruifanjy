@@ -698,13 +698,88 @@
 }
 
 /* part8 */
-.box-wrapper{
+.part8 .box-wrapper{
+	position: relative;
+	display: flex;
+	align-items: stretch;
+}
+.part8 .box-wrapper ul{
+	margin-bottom: 0;
+}
+.part8 .box-wrapper ul li:last-child{
+	margin-bottom: 0;
+}
+.part8 .box-wrapper .left{
+
+}
+.part8 .box-wrapper .center-content{
+	flex: 1;
+}
+.part8 .box-wrapper .center-content>div{
+	opacity: 0;
+	transition: 0.4s;
+}
+.part8 .box-wrapper .center-content>div.show{
+	opacity: 1;
+	transition: 0.4s;
+}
+.part8 .box-wrapper .right{}
+.part8 .box-wrapper .item{
+	border-radius: 4px;
+	font-size: 26px;
+	color: #000;
+	background: #e5e5e5;
+	cursor: pointer;
+	transition: 0.3s;
+}
+.part8 .box-wrapper .item.act{
+	transition: 0.3s;
+	color: #fff;
+	background: #f15e04;
+}
+.part8 .box-wrapper .item span{
 	position: relative;
 }
+.part8 .box-wrapper .item span::after{
+	content: "";
+	display: block;
+	clear: both;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+/* 移动端 */
+.part8 .yd-box-wrapper{
+	/* display: flex;
+	align-items: stretch; */
+}
+.part8 .yd-box-wrapper .left-menu{
+	flex: 0 0 100px;
+}
+.part8 .yd-box-wrapper .left-menu li{
+	padding:0;
+	margin-bottom: 10px;
+	border-radius: 6px;
+	font-size:20px;
+	color: #000;
+	background: #fafafa;
+}
+.part8 .yd-box-wrapper .left-menu li .text{
+	padding: 10px 15px 20px;
+	font-size: 18px;
+	text-align: justify;
+}
+.part8 .yd-box-wrapper .left-menu li h2{
+	padding: 15px;
+	margin: 0;
+	border-radius: 6px 6px 0 0;
+	font-weight: normal;
+	color: #fff;
+	font-size: 20px;
+	background: #f15e04;
+}
 
-
-
-/* 以上是全局样式 
+/* 以上是全局样式样式
 	 全局样式例如定位、颜色、透明度。
 	 其它独立的样式需要根据不同屏的尺寸自适应
 */
@@ -955,7 +1030,7 @@
 		padding-bottom: 60px;
 	}
 	.index-part1 .list .item {
-		padding: 38px 30px 10px;
+		padding: 38px 25px 10px;
 	}
 	.index-part1 .list .item h2 {
 		font-size: 26px;
@@ -1152,6 +1227,110 @@
 		right: 0;
 		background: url('../img/index/teachnext.png') no-repeat center center;
 		background-size: 100% auto;
+	}
+	.index-part7 .list .item{
+		min-height: 360px;
+	}
+	/* part8 */
+	.part8 .box-wrapper .left{
+		flex: 0 0 286px;
+		width: 286px;
+	}
+	.part8 .box-wrapper .right{
+		flex: 0 0 286px;
+		width: 286px;
+	}
+	.part8 .box-wrapper .item{
+		padding:0 0 0 68px;
+		height: 123px;
+		line-height: 123px;
+		margin-bottom: 15px;
+    font-size: 26px;
+	}
+	.part8 .box-wrapper .center-content{
+		flex: 1;
+		margin: 0 10px;
+		position: relative;
+	}
+	.part8 .box-wrapper .center-content>div{
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		border-radius: 6px;
+	}
+	.part8 .box-wrapper .center-content>div .text{
+		position: absolute;
+		width: 100%;
+		padding: 40px 35px 30px;
+		left: 0;
+		bottom: 10%;
+		font-size: 16px;
+		color: #fff;
+		background: rgba(241, 94, 4, 0.8);
+	}
+	.part8 .box-wrapper .center-content .item-cont1{
+		background: url('../img/index/p8-index-pic1.jpg') no-repeat center center;
+	}
+	.part8 .box-wrapper .center-content .item-cont2{
+		background: url('../img/index/p8-index-pic2.jpg') no-repeat center center;
+	}
+	.part8 .box-wrapper .center-content .item-cont3{
+		background: url('../img/index/p8-index-pic3.jpg') no-repeat center center;
+	}
+	.part8 .box-wrapper .center-content .item-cont4{
+		background: url('../img/index/p8-index-pic4.jpg') no-repeat center center;
+	}
+	.part8 .box-wrapper .center-content .item-cont5{
+		background: url('../img/index/p8-index-pic5.jpg') no-repeat center center;
+	}
+	.part8 .box-wrapper .center-content .item-cont6{
+		background: url('../img/index/p8-index-pic6.jpg') no-repeat center center;
+	}
+	.part8 .box-wrapper .item span::after{
+		top: 50%;
+		left: -40px;
+		width: 34px;
+		height: 30px;
+		margin-top: -15px;
+		background: url('../img/index/p8-index-icon.png') no-repeat 0 0;
+	}
+	.part8 .box-wrapper .left li:nth-child(1) span::after{
+		background: url('../img/index/p8-index-icon.png') no-repeat 0 0;
+	}
+	.part8 .box-wrapper .left li:nth-child(2) span::after{
+		background: url('../img/index/p8-index-icon.png') no-repeat 0 -30px;
+	}
+	.part8 .box-wrapper .left li:nth-child(3) span::after{
+		background: url('../img/index/p8-index-icon.png') no-repeat 0 -60px;
+	}
+	.part8 .box-wrapper .right li:nth-child(1) span::after{
+		background: url('../img/index/p8-index-icon.png') no-repeat 0 -90px;
+	}
+	.part8 .box-wrapper .right li:nth-child(2) span::after{
+		background: url('../img/index/p8-index-icon.png') no-repeat 0 -120px;
+	}
+	.part8 .box-wrapper .right li:nth-child(3) span::after{
+		background: url('../img/index/p8-index-icon.png') no-repeat 0 -150px;
+	}
+	.part8 .box-wrapper .left li.act:nth-child(1) span::after{
+		background: url('../img/index/p8-index-icon.png') no-repeat -34px 0;
+	}
+	.part8 .box-wrapper .left li.act:nth-child(2) span::after{
+		background: url('../img/index/p8-index-icon.png') no-repeat -34px -30px;
+	}
+	.part8 .box-wrapper .left li.act:nth-child(3) span::after{
+		background: url('../img/index/p8-index-icon.png') no-repeat -34px -60px;
+	}
+	.part8 .box-wrapper .right li.act:nth-child(1) span::after{
+		background: url('../img/index/p8-index-icon.png') no-repeat -34px -90px;
+	}
+	.part8 .box-wrapper .right li.act:nth-child(2) span::after{
+		background: url('../img/index/p8-index-icon.png') no-repeat -34px -120px;
+	}
+	.part8 .box-wrapper .right li.act:nth-child(3) span::after{
+		background: url('../img/index/p8-index-icon.png') no-repeat -34px -150px;
 	}
 
 }
