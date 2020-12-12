@@ -563,8 +563,8 @@
 }
 #childSwiper .child-swiper{
 	position: relative;
-	height: 200px;
-	border: 1px solid #000;
+	/* height: 200px;
+	border: 1px solid #000; */
 }
 .child-wrapper .swiper-pagination{
 	width: 100%;
@@ -581,6 +581,29 @@
 .child-wrapper .swiper-pagination-bullet-active{
 	background: #f15e04;
 }
+#childSwiper .child-swiper{
+	display: flex;
+	align-items: center;
+}
+#childSwiper .child-swiper .child-user{
+	flex: 0 0 236px;
+	 width: 236px;
+	 height: 236px;
+}
+#childSwiper .child-swiper .child-user img{
+	border-radius: 100%;
+	width: 100%;
+	height: 100%;
+}
+#childSwiper .child-swiper .child-result{
+	margin-left: 75px;
+	padding: 60px 90px;
+	border-radius: 6px;
+	border: 1px solid #bfbfbf;
+  background: #fff;
+}
+
+
 /* 以上是全局样式 
 	 全局样式例如定位、颜色、透明度。
 	 其它独立的样式需要根据不同屏的尺寸自适应
