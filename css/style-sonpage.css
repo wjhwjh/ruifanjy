@@ -12,6 +12,12 @@ ul,li,dl,dt,dd,ol {list-style:none;}
 a:link, a:focus, a:hover {text-decoration: none;outline:none;}
 em {font-style:normal;}
 
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 /* footer */
 .foot_conact {
   position: relative;
@@ -204,6 +210,58 @@ em {font-style:normal;}
   line-height:24px;
   color:#666666;
 }
+/* 教学理念 */
+.teach_philosophy .tp_todo {
+  width:100%;
+  background:url(../img/teachPhilosophy/serviceRequire-bg-pic.jpg) no-repeat center center;
+  background-size:cover;
+}
+.teach_philosophy .fg_block_gray {
+  width:100%;
+  height:20px;
+  background-color:#f2f2f2;
+}
+.tp-five_tactics .item .left_pic,
+.tp-five_tactics .item .right_con {
+  position:relative;
+  width:50%;
+  height:100%;
+  float:left;
+  overflow: hidden;
+}
+.tp-five_tactics .item .left_pic.float_r {
+  float:right;
+}
+.tp-five_tactics .item .left_pic img {
+  min-height: 100%;
+}
+.tp-five_tactics .item .left_pic .mtext {
+  position:absolute;
+  left:0;
+  bottom:40px;
+  width:100%;
+  height:72px;
+  line-height:72px;
+  font-size:18px;
+  background-color:#ed772f;
+  color:#ffffff;
+  font-weight: lighter;
+  text-align:center;
+}
+.tp-five_tactics .item .right_con {
+  background-color:#fde9dc;
+}
+.tp-five_tactics .item .right_con .i_tit {
+  font-size:26px;
+  line-height:30px;
+  color:#000000;
+  font-weight:bold;
+}
+.tp-five_tactics .item .right_con .i_con {
+  font-size:16px;
+  line-height:28px;
+  color:#333333;
+}
 
 
 /* 适配********************* */
@@ -213,10 +271,12 @@ em {font-style:normal;}
     margin-right: 15px;
   }
   /* 全省校区 */
-	.sonPageBanner {height:325px;margin-bottom:64px;}
+  .sonPageBanner {height:325px;margin-bottom:64px;}
+  .sonPageBanner .banner-item .left-text {
+    width: 50%;
+  }
   .provCampBanner .banner-item .left-text,
   .aboutRfBanner .banner-item .left-text {
-    width: 50%;
     margin-top: 123px;
   }
   .provCampBanner .banner-item .right-pic {
@@ -247,8 +307,7 @@ em {font-style:normal;}
     width: 31%;
     margin-top: 40px;
     margin-right: 68px;
-  }
-  
+  }  
   .rf_mission .center_declaration {
     width: 300px;
     padding-top: 30px;
@@ -271,7 +330,27 @@ em {font-style:normal;}
   .ruifan_intro .text_area p {
     margin-bottom: 30px;
   }
-  
+  /* 教学理念 */
+  .teachPhyBanner .banner-item .left-text {
+    margin-top: 97px;
+    width:56%;
+  }
+
+  .teach_philosophy .title-wrapper {
+    font-size: 30px;
+  }
+  .teach_philosophy .title-wrapper {
+    padding-bottom:56px;
+  }
+  .teach_philosophy .title-wrapper span {
+    padding:0;
+    vertical-align: baseline;
+    position:relative;
+    top:5px;
+  }
+  .teach_philosophy .tp_todo {
+    margin-bottom:74px;
+  }  
 }
 @media (min-width:992px) {
   /* footer */
@@ -299,14 +378,55 @@ em {font-style:normal;}
 		font-size:15px;
 		line-height:26px;
   }
-
+  /* 关于睿凡 */
   .aboutRfBanner .banner-item .right-pic {
     width: 31%;
     margin-top: 52px;
     margin-right: 88px;
   }
+  /* 教学理念 */
+  .teachPhyBanner .banner-item .left-text {
+    margin-top: 126px;
+  }
+  .title-wrapper {
+    font-size:39px;
+  }
+  .teach_philosophy .title-wrapper {
+    padding-bottom: 56px;
+  }
+  .teach_philosophy .tp_todo {
+    margin-bottom:74px;
+  }
 
-
+  .tp-five_tactics .ft_list {
+    margin-bottom:150px;
+  }
+  .tp-five_tactics .title-wrapper {
+    padding-top: 55px;
+  }
+  .tp-five_tactics .item {
+    height:323px;
+    overflow: hidden;
+  }
+  .tp-five_tactics .item .left_pic .mtext {
+    bottom:35px;
+    height:58px;
+    line-height:58px;
+    font-size:14px;
+  }
+  .tp-five_tactics .item .right_con {
+    padding:30px 25px 0 25px;
+  }
+  .tp-five_tactics .item .right_con .i_tit {
+    margin-bottom:14px;
+  }
+  .tp-five_tactics .item .right_con .i_con {
+    font-size:15px;
+    line-height:26px;
+  }
+  .tp-five_tactics .item .right_con .i_con p {
+    margin-bottom:15px;
+  }
 }
 @media (min-width:1200px) {
 	.container {
@@ -396,6 +516,39 @@ em {font-style:normal;}
     font-size: 16px;
     line-height: 24px;
   }
+  /* 教学理念 */
+  .teachPhyBanner .banner-item .left-text {
+    margin-top:156px;
+  }
+  .teach_philosophy .title-wrapper {
+    padding-top:0;
+    padding-bottom:70px;
+  }
+  .teach_philosophy .tp_todo {
+    margin-bottom:91px;
+  }
+  .tp-five_tactics .title-wrapper {
+    padding-top: 68px;
+  }
+  .tp-five_tactics .ft_list {
+    margin-bottom:185px;
+  }
+  .tp-five_tactics .item {
+    height:400px;
+    overflow: hidden;
+  }
+  .tp-five_tactics .item05 {
+    height:393px;
+  }
+  .tp-five_tactics .item .right_con {
+    padding:72px 44px 0 44px;
+  }
+  .tp-five_tactics .item .right_con .i_tit {
+    margin-bottom:18px;
+  }
+  .tp-five_tactics .item .right_con .i_con p {
+    margin-bottom:24px;
+  }
 }
 
 
@@ -447,9 +600,74 @@ em {font-style:normal;}
     float:left;
     padding: 28px 0;
   }
+  /* 教学理念 */
+  .teach_philosophy .tp_todo {
+    background: none;
+  }
+  .teach_philosophy .tp_todo .item_todo {
+    margin-bottom:20px;
+  }
+  .teach_philosophy .tp_todo .item_todo .lab {
+    margin-right:20px;
+    margin-bottom:0;
+  }
+  .teach_philosophy .tp_todo .item_todo .todo_con {
+    width:80%;
+    padding-top:4px;
+  }
+  .tp-five_tactics .ft_list {
+    margin-bottom:150px;
+  }
+  .tp-five_tactics .title-wrapper {
+    padding-top: 55px;
+  }
+  .tp-five_tactics .item {
+    height:auto;
+    overflow: hidden;
+    margin-bottom:20px;
+  }
+  .tp-five_tactics .item .left_pic, .tp-five_tactics .item .right_con {
+    width:100%;
+    float:none;
+  }
+  .tp-five_tactics .item .left_pic {
+    background-color: #fde9dc;
+    padding-top: 30px;
+  }
+  .tp-five_tactics .item .left_pic img {
+    margin:30px auto 0;
+  }
+  .tp-five_tactics .item .left_pic .mtext {
+    position: relative;
+    bottom:0px;
+    height:58px;
+    line-height:58px;
+    font-size: 16px;
+    color: #ed772f;
+    font-weight: 800;
+    background-color:transparent;
+  }
+  .tp-five_tactics .item .right_con {
+    padding:0px 25px 20px 25px;
+  }
+  .tp-five_tactics .item .right_con .i_tit {
+    margin-bottom:14px;
+  }
+  .tp-five_tactics .item .right_con .i_con {
+    font-size:15px;
+    line-height:26px;
+  }
+  .tp-five_tactics .item .right_con .i_con p {
+    margin-bottom:15px;
+  }
 }
 
 @media (max-width:767px) {
+  .navbar {border:0;}
+  .nav-right {
+    margin-left:auto;
+    margin-right:auto;
+  }
   /* footer */
   .foot_conact {
     height:auto;
@@ -493,17 +711,15 @@ em {font-style:normal;}
   }
   /* 全省校区 */
 	.sonPageBanner {height:162px;margin-bottom:30px;}
-  .provCampBanner .banner-item .left-text,
-  .aboutRfBanner .banner-item .left-text {
+  .sonPageBanner .banner-item .left-text {
     margin: 0 auto;
     width: 70%;
     float: none;
     margin-top: 0.60rem;
   }
-  .provCampBanner .banner-item .left-text img,
-  .aboutRfBanner .banner-item .left-text img {
+  .sonPageBanner .banner-item .left-text img {
     max-height: 102px;
-    max-width: 242px;
+    max-width: 100%;
     margin:0 auto;
   }
 	.prov_schools .item {
@@ -559,6 +775,68 @@ em {font-style:normal;}
   }
   .rf_principle .right_con .item_yz {
     padding: 15px 0;
+  }
+  /* 教学理念 */
+  /* .teachPhyBanner .banner-item {
+    background-image:url(../img/teachPhilosophy/mob-banner-bg.jpg) !important;
+  } */
+  /* 教学理念 */
+  .teachPhyBanner .banner-item .left-text {
+    width: 85%;
+    margin-top: 1.00rem;
+  }
+  .teachPhyBanner .banner-item .left-text img {
+    max-width:100%;
+  }
+  .teach_philosophy .title-wrapper {padding:0 0 20px;}
+  .teach_philosophy .tp_todo {
+    background:none;
+    margin-bottom:20px;
+  }
+  .teach_philosophy .tp_todo .item_todo {
+    margin-bottom:20px;
+  }
+  .teach_philosophy .tp_todo .item_todo .lab,
+  .teach_philosophy .tp_todo .item_todo .todo_con {
+    width:100%;
+    float:none;
+    text-align:center;
+  }
+  .teach_philosophy .tp_todo .item_todo .lab img {
+    margin-left:auto;
+    margin-right:auto;
+  }
+  .teach_philosophy .tp_todo .item_todo .todo_con .item {
+    margin-bottom:10px;
+  }
+  
+  .tp-five_tactics .title-wrapper {padding:20px 0 20px;}
+  .tp-five_tactics .ft_list {
+    margin-bottom:20px;
+  }
+  .tp-five_tactics .item {
+    height:auto;
+    overflow: hidden;
+    margin-bottom:20px;
+  }
+  .tp-five_tactics .item .left_pic, .tp-five_tactics .item .right_con {
+    width:100%;
+    float:none;
+  }
+  .tp-five_tactics .item .right_con {
+    padding:20px 10px 10px;
+  }
+  .tp-five_tactics .item .right_con .i_tit {
+    font-size:20px;
+    line-height:26px;
+    margin-bottom:10px;
+  }
+  .tp-five_tactics .item .right_con .i_con {
+    font-size: 14px;
+    line-height:22px;
+  }
+  .tp-five_tactics .item .right_con .i_con p {
+    margin-bottom:8px;
   }
 
 }
