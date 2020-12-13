@@ -1171,9 +1171,10 @@
 		padding-bottom: 60px;
 	}
 	.index-part1 .list .item {
-		padding: 38px 25px 10px;
+		padding: 38px 25px 25px;
 	}
 	.index-part1 .list .item h2 {
+		padding: 20px 0 10px;
 		font-size: 26px;
 	}
 	.index-part1 .list .item .text {
@@ -1764,5 +1765,9 @@
 		height: 76%;
 		background: rgba(241, 94, 4, 0.8);
 		transition: 0.3s;
+	}
+	/* part6 */
+	.part6, .part8{
+		padding-bottom: 30px;
 	}
 }

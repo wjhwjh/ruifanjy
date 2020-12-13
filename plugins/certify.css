@@ -8,7 +8,7 @@
 }
 
 #certify .swiper-container {
-	padding-bottom: 20px;
+	padding-bottom: 60px;
 }
 
 #certify  .swiper-slide {
@@ -35,9 +35,12 @@
 	margin: 0;
 }
 #certify  .swiper-slide .text p{
+	padding: 0 20px;
+	font-size: 16px;
 	line-height:1.6;
 }
 #certify .swiper-slide .text h2{
+	padding: 20px 0 15px;
 	font-weight: normal;
 	font-size: 26px;
 	color: #f15e04;
@@ -65,7 +68,7 @@
 	left: 20px;
 	width: 82px;
 	height: 82px;
-	top: 50%;
+	top: 40%;
 	margin-top: -51px;
 	background: url(../img/index/leftjiantou.png) no-repeat;
 	background-position: 0 0;
@@ -81,7 +84,7 @@
 	right: 20px;
 	width: 82px;
 	height: 82px;
-	top: 50%;
+	top: 40%;
 	margin-top: -51px;
 	background: url(../img/index/rightjiantou.png) no-repeat;
 	background-size: 100%;
