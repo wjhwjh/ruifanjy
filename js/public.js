@@ -16,9 +16,23 @@
 	})(window,document);
 
 	//全省校区 hover
-    $('.prov_schools').on('mouseenter touchstart', '.item', function(){
-    	$(this).addClass('hover');
-    }).on('mouseleave touchend', '.item', function(){
-    	$(this).removeClass('hover');
-    });
+  $('.prov_schools').on('mouseenter touchstart', '.item', function(){
+    $(this).addClass('hover');
+  }).on('mouseleave touchend', '.item', function(){
+    $(this).removeClass('hover');
+  });
+
+  // 鼠标滚动 联系方式固定底部
+	// function bottomFixed() {
+  //     var $fContact = $('body').find('.foot_conact');
+  //     $(window).scroll(function () {
+  //         var scrollTop = $(window).scrollTop();
+  //         if (scrollTop > 10) {
+  //             $fContact.addClass('fcFixed');
+  //         } else {
+  //             $fContact.removeClass('fcFixed');
+  //         }
+  //     });
+  // };
+  // bottomFixed();
 })

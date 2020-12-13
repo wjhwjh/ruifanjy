@@ -1054,7 +1054,10 @@
 	.index-part2 .box-wrapper .left li span::after {
 		width: 30px;
 		height: 32px;
-		background: url('../img/index/p2-xuexi-icon.png') no-repeat 0 0;
+    background: url('../img/index/p2-xuexi-icon.png') no-repeat 0 0;
+    position:absolute;
+    left:0;
+    top:7px;
 	}
 	.index-part2 .box-wrapper .left li:nth-child(1) span::after {
 		background: url('../img/index/p2-xuexi-icon.png') no-repeat 0 0;
