@@ -268,10 +268,26 @@ input {
 	border: 1px solid transparent;
 }
 @media(max-width:768px){
+	.logo-brand>img{
+		width: auto;
+	}
 	.nav-right{
 		background: rgb(255, 255, 255);
     margin-left: -16px;
     margin-right: -16px;
+	 }
+	 .navbar .nav>li{
+		 border-bottom: 1px solid #f1f1f1;
+	 }
+	 .navbar .nav>li a{
+		 font-size: 18px;
+		 color: #333;
+	 }
+	 .navbar .nav>li:last-child{
+		 border-bottom: none;
+	 }
+	 .navbar .nav-right{
+		 box-shadow:0 10px 15px rgba(0, 0, 0, 0.05);
 	 }
 }
 @media(min-width:768px){

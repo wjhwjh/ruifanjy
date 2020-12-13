@@ -846,12 +846,19 @@
 		width: 28px;
 	}
 	.index-part1 .list .item {
+		padding: 25px 15px 15px;
 		height: auto;
-		margin-bottom: 12px;
+		margin-bottom: 15px;
+	}
+	.index-part1 .list .item4 {
+		margin-bottom: 0;
 	}
 	.index-part1 .list .item .icon img {
 		width: 80px;
 		height: auto;
+	}
+	.index-part1 .list .item h2{
+		margin: 15px 0 10px;
 	}
 	/* part2 */
 	.index-part2 .box-wrapper .right .item{
@@ -865,9 +872,36 @@
     width: 70%;
     top: 45px;
     left: 40px;
-    font-size: 16px;
+		font-size: 16px;
+		text-align: justify;
+}
+.index-part2 .box-wrapper .right .item1 .text{
+	top: 30px;
+}
+.index-part2 .box-wrapper .right .item2 .text{
+	top: 20px;
+	left: 30px;
+	width: 75%;
+}
+.index-part2 .box-wrapper .right .item3 .text{
+	top: 20px;
+	left: 30px;
+	width: 75%;
+}
+.index-part2 .box-wrapper .right .item4 .text{
+	top: 20px;
+	left: 30px;
+	width: 75%;
+}
+.index-part2 .box-wrapper .right .item5 .text{
+	top: 40px;
+	left: 30px;
+	width: 75%;
 }
 	/* part3 */
+	.index-part3{
+		padding-bottom: 30px;
+	}
 	#certify .swiper-button-prev{
 		left: 10px;
     width: 50px;
@@ -937,11 +971,11 @@
 			width: 100%;
 		}
 		.index-part5 .textBox{
-			padding: 0 18px 0;
+			padding: 0 18px 20px;
 			position: absolute;
 			z-index: 10;
 			width: 100%;
-			height:74%;
+			height:54%;
 			/* height: 45px; */
 			bottom: 0;
 			left: 0;
@@ -949,6 +983,7 @@
 			border-radius: 0 0 4px 4px;
 			background: rgba(241, 94, 4, 0.8);
 			transition: 0.3s;
+			overflow-y: auto;
 		}
 		.index-part5 .textBox .textTit{
 			padding:15px 0 10px;
@@ -968,11 +1003,11 @@
 		.index-part5 .textBox p span{
 			font-weight: bold;
 		}
-		.index-part5 .slideBox:hover .textBox{
+		/* .index-part5 .slideBox:hover .textBox{
 			height: 76%;
 			background: rgba(241, 94, 4, 0.8);
 			transition: 0.3s;
-		}
+		} */
 		.index-part5 .teacher-box .teachBtn{
 			position: absolute;
 			top: 50%;
@@ -1026,7 +1061,7 @@
 			background: url('../img/index/childleft.png') no-repeat center center;
 			background-size:24px 13px;
 			left: -23px;
-			top: 30%;
+			top: 35%;
 		}
 		#childSwiper .child-swiper .child-result .item{
 			margin-bottom: 15px;
@@ -1036,19 +1071,79 @@
 			font-size: 16px;
 			line-height: 1.5;
 		}
+		/* part6 */
+		.child-wrapper .swiper-pagination-bullet{
+			margin: 0 5px;
+			width: 20px;
+			height: 20px;
+		}
 		/* part7 */
 		.index-part7 .list .item {
 			min-height:100px;
-			padding:0 0 10px 0;
-			margin-bottom: 12px;
+			padding:15px 0 15px 0;
+			margin-bottom: 15px;
 		}
 		.index-part7 .list .item .icon img {
 			width: 80px;
 			height: auto;
 		}
 		.index-part7 .list .item h2{
+			margin-bottom: 5px;
 			font-size: 22px;
 		}
+		.index-part7 .list .item .text{
+			padding: 10px 20px 0;
+			line-height: 1.6;
+		}
+		/* part8 */
+		.part8 .yd-box-wrapper .left-menu li h2{
+			padding-left: 50px;
+		}
+		.part8 .yd-box-wrapper li h2 span{
+			position: relative;
+		}
+		.part8 .yd-box-wrapper li h2 span::after{
+			content: '';
+			display: block;
+			clear: both;
+			top: 50%;
+			left: -30px;
+			position: absolute;
+			width: 24px;
+			height: 28px;
+			margin-top: -12px;
+			background: url(../img/index/p8-index-icon.png) no-repeat 0 0;
+		}
+	.part8 .yd-box-wrapper li:nth-child(1) h2 span::after {
+			background: url(../img/index/p8-index-icon.png) no-repeat 0 0;
+			background-size: 250%;
+			background-position: -33px 0;
+	}
+	.part8 .yd-box-wrapper li:nth-child(2) h2 span::after {
+		background: url(../img/index/p8-index-icon.png) no-repeat 0 0;
+		background-size: 250%;
+		background-position: -33px -28px;
+}
+.part8 .yd-box-wrapper li:nth-child(3) h2 span::after {
+	background: url(../img/index/p8-index-icon.png) no-repeat 0 0;
+	background-size: 250%;
+	background-position: -33px -52px;
+}
+.part8 .yd-box-wrapper li:nth-child(4) h2 span::after {
+	background: url(../img/index/p8-index-icon.png) no-repeat 0 0;
+	background-size: 250%;
+	background-position: -33px -78px;
+}
+.part8 .yd-box-wrapper li:nth-child(5) h2 span::after {
+	background: url(../img/index/p8-index-icon.png) no-repeat 0 0;
+	background-size: 250%;
+	background-position: -33px -106px;
+}
+.part8 .yd-box-wrapper li:nth-child(6) h2 span::after {
+	background: url(../img/index/p8-index-icon.png) no-repeat 0 0;
+	background-size: 250%;
+	background-position: -33px -133px;
+}
 
 }
 
