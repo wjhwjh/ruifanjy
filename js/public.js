@@ -16,9 +16,9 @@
 	})(window,document);
 
 	//全省校区 hover
-  $('.prov_schools').on('mouseenter touchstart', '.item', function(){
+  $('.prov_schools').on('mouseenter click', '.item', function(e){
     $(this).addClass('hover');
-  }).on('mouseleave touchend', '.item', function(){
+  }).on('mouseleave', '.item', function(e){
     $(this).removeClass('hover');
   });
 
