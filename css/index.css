@@ -847,7 +847,7 @@
 	}
 	.index-part1 .list .item {
 		padding: 25px 15px 15px;
-		height: auto;
+		height: 270px;
 		margin-bottom: 15px;
 	}
 	.index-part1 .list .item4 {
@@ -1047,13 +1047,14 @@
 			padding: 15px;
 		}
 		#childSwiper .child-swiper .child-result .item .tip{
+			margin-bottom: 4px;
 			width: 100%;
 			flex: 0 0 100%;
 		}
 		#childSwiper .child-swiper .child-result .item span{
-			padding: 0 24px;
-			flex: auto;
-			font-size: 20px;
+			padding: 0 10px;
+			flex: 0 0 50%;
+			font-size: 16px;
 		}
 		#childSwiper .child-swiper .child-result::after{
 			width:24px;
@@ -1064,7 +1065,7 @@
 			top: 35%;
 		}
 		#childSwiper .child-swiper .child-result .item{
-			margin-bottom: 15px;
+			margin-bottom: 10px;
 		}
 		#childSwiper .child-swiper .child-result p{
 			margin-bottom: 0;
@@ -1079,8 +1080,8 @@
 		}
 		/* part7 */
 		.index-part7 .list .item {
-			min-height:100px;
-			padding:15px 0 15px 0;
+			min-height:300px;
+			padding:15px 0 10px 0;
 			margin-bottom: 15px;
 		}
 		.index-part7 .list .item .icon img {
@@ -1092,8 +1093,9 @@
 			font-size: 22px;
 		}
 		.index-part7 .list .item .text{
-			padding: 10px 20px 0;
+			padding: 10px 15px 0;
 			line-height: 1.6;
+			text-align: justify;
 		}
 		/* part8 */
 		.part8 .yd-box-wrapper .left-menu li h2{
@@ -1189,6 +1191,7 @@
 	.index-part2 .box-wrapper .left li {
 		padding: 24px 0 22px 50px;
 		font-size: 22px;
+		cursor: pointer;
 	}
 	.index-part2 .box-wrapper .left li span {
 		padding-left: 40px;
