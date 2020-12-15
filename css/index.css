@@ -79,10 +79,10 @@
 
 .banner-form {
 	position: absolute;
-	top: 84px;
+	top: 40px;
 	z-index: 10;
 	width: 290px;
-	height: 380px;
+	height: 440px;
 	border-radius: 6px;
 	box-shadow: 0 0 20px rgba(87, 87, 87, 0.08);
 	background: #fff;
@@ -116,7 +116,7 @@
 .banner-form .form-wrapper label {
 	position: relative;
 	padding: 0 25px;
-	margin-bottom: 24px;
+	margin-bottom: 20px;
 	height: 50px;
 	width: 100%;
 	border: 1px solid #fe6c53;
@@ -146,6 +146,15 @@
 	cursor: pointer;
 	background: url('../img/index/moreslect.png') no-repeat center;
 	background-size: 100% auto;
+}
+.banner-form .form-wrapper .submitBtn{
+	height: 50px;
+	width: 100%;
+	text-align: center;
+	font-size: 22px;
+	color: #fff;
+	background: #fe6c53;
+	border-radius: 25px;
 }
 
 /* 导航
