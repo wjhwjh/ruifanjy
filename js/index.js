@@ -89,8 +89,8 @@ function teacherSwiperFn(slideNum){
     //paginationClickable: true,
     loop: true,
     //如果需要前进后退按钮
-    nextButton: '.part5 .preBtn',
-    prevButton: '.part5 .nextBtn'
+    prevButton: '.part5 .preBtn',
+    nextButton: '.part5 .nextBtn'
   })
 }
 function teacherSwiperChange(){
