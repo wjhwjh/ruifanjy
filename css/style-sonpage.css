@@ -215,6 +215,7 @@ em {font-style:normal;}
 }
 /* 教学理念 */
 .teach_philosophy .tp_todo {
+  position:relative;
   width:100%;
   background:url(../img/teachPhilosophy/serviceRequire-bg-pic.jpg) no-repeat center center;
   background-size:cover;
@@ -264,6 +265,34 @@ em {font-style:normal;}
   font-size:16px;
   line-height:28px;
   color:#333333;
+}
+@keyframes circleZoom {
+  0% {transform: scale(0.5);opacity: 0.0;}
+  25% {transform: scale(0.7);opacity: 0.1;}
+  50% {transform: scale(0.9);opacity: 0.3;}
+  75% {transform: scale(1.2);opacity: 0.5;}
+  100% {transform: scale(1.4);opacity: 0.0;}
+}
+.teach_philosophy .moveBox {width:100%;height:100%;margin: 0 auto;}
+.teach_philosophy .moveBox .waveCircle {position: absolute;top:0;left:0;right:0; bottom:0; margin:auto; width: 284px;height: 250px; border-radius: 100%;background: #fbd3ba;z-index: 2;-webkit-animation:circleZoom 2s linear infinite;-o-animation:circleZoom 2s linear infinite;animation:circleZoom 2s linear infinite;}
+.teach_philosophy .moveBox .waveCircle:nth-of-type(2) {-webkit-animation-delay: 0.1s;
+  -moz-animation-delay: 0.1s;animation-delay: 0.1s;z-index: 2;}
+.teach_philosophy .moveBox .waveCircle:nth-of-type(3) {-webkit-animation-delay: 0.6s;
+  -moz-animation-delay: 0.6s;animation-delay:0.6s;z-index: 2;}
+.teach_philosophy .moveBox .waveCircle:nth-of-type(4) {  -webkit-animation-delay: 0.8s;
+  -moz-animation-delay: 0.8s;animation-delay: 0.8s;z-index: 2;  }
+.teach_philosophy .moveBox .waveCircle:nth-of-type(5) {  -webkit-animation-delay: 0.8s;
+  -moz-animation-delay: 1s;animation-delay: 1s;z-index: 2;  }
+.teach_philosophy .child {
+  position:absolute;
+  left:50%;
+  top:46%;
+  transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  -o-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  -moz-transform: translate(-50%,-50%);
+  z-index:100;
 }
 
 
@@ -575,6 +604,14 @@ em {font-style:normal;}
   .rf_principle .left_pic {
     width: 55%;
     margin-top: 30px;
+  }
+  /* 教学理念 */
+  .teach_philosophy .moveBox .waveCircle {
+    width:229px;
+    height:202px;
+  }
+  .teach_philosophy .child {
+    width:143px;
   }
 }
 
