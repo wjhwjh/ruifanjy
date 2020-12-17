@@ -79,12 +79,12 @@ em {font-style:normal;}
 .foot_copyright {
   width:100%;
   background-color:#1b1b1b;
-  padding:32px 0;
+  padding:20px 0;
 }
 .foot_copyright .foot_copyright_con {
-  color:#999999;
-  line-height:24px;
-  font-size:12px;
+  color: #999999;
+  line-height: 24px;
+  font-size: 14px;
 }
 
 /* 子页banner */

@@ -153,10 +153,15 @@
 	text-align: center;
 	font-size: 22px;
 	color: #fff;
-	background: #fe6c53;
+	background: #f15e04;
 	border-radius: 25px;
+	cursor: pointer;
+	transition: 0.2s;
 }
-
+.banner-form .form-wrapper .submitBtn:hover{
+	background: rgba(241, 94, 4, 0.9);
+	transition: 0.2s;
+}
 /* 导航
 小于768
 
@@ -1062,7 +1067,7 @@
 		}
 		#childSwiper .child-swiper .child-result .item span{
 			padding: 0 10px;
-			flex: 0 0 50%;
+			flex: 0 0 100%;
 			font-size: 16px;
 		}
 		#childSwiper .child-swiper .child-result::after{
@@ -1385,6 +1390,9 @@
 		background: url('../img/index/teachnext.png') no-repeat center center;
 		background-size: 100% auto;
 	}
+
+
+
 	.index-part7 .list .item{
 		min-height: 330px;
 	}
@@ -1492,6 +1500,7 @@
 
 }
 
+
 @media(min-width:992px) {
 	.banner-form {
 		right: 2%;
@@ -1499,6 +1508,58 @@
 	.index-part1, .index-part2 {
 		padding-bottom: 100px;
 	}
+	#childSwiper .child-swiper .child-result .item .tip{
+		width: 170px;
+		width: 170px;
+		flex: 0 0 170px;
+	}
+	/* part6 */
+	/* #childSwiper .child-swiper .child-result{
+		margin-left: 75px;
+		padding: 60px 80px;
+	}
+	#childSwiper .child-swiper .child-result .item .tip{
+		width: 170px;
+		width: 170px;
+		flex: 0 0 170px;
+	}
+	#childSwiper .child-swiper .child-result .item span{
+		text-align: center;
+	} */
+}
+
+@media (min-width:768px) and (max-width:1024px){
+	/* part6 */
+	/* #childSwiper .child-swiper .child-result .item .tip{
+		width: 170px;
+		width: 170px;
+    flex: 0 0 170px;
+	}
+	#childSwiper .child-swiper .child-result .item span{
+		text-align: center;
+	} */
+	#childSwiper .child-swiper .child-result{
+		margin-left: 45px;
+		padding: 30px;
+	}
+		#childSwiper .child-swiper .child-result .item .tip{
+			margin-bottom: 4px;
+			width: 100%;
+			flex: 0 0 100%;
+		}
+		#childSwiper .child-swiper .child-result .item span {
+			padding: 0 10px;
+			flex: 0 0 100%;
+			font-size: 16px;
+	}
+		#childSwiper .child-swiper .child-result::after{
+			width:24px;
+			height: 26px;
+			background: url('../img/index/childleft.png') no-repeat center center;
+			background-size:24px 13px;
+			left: -23px;
+			top: 35%;
+		}
 }
 
 @media(min-width:1200px) {
@@ -1782,6 +1843,7 @@
 	.part6, .part8{
 		padding-bottom: 30px;
 	}
+
 	/* part7 */
 	.index-part7 .list .item{
 		min-height: 320px;
