@@ -329,67 +329,49 @@
 }
 
 .index-part2 .box-wrapper .left li span::after {
-	width: 15px;
-	height: 16px;
+	width: 30px;
+	height: 32px;
 	top: 50%;
 	margin-top: -8px;
 	background: url('../img/index/p2-xuexi-icon.png') no-repeat 0 0;
-	background-size: 100% auto;
+	background-size: auto auto;
 }
 
 .index-part2 .box-wrapper .left li:nth-child(1) span::after {
 	background: url('../img/index/p2-xuexi-icon.png') no-repeat 0 0;
-	background-size: 200% auto;
 }
-
 .index-part2 .box-wrapper .left li:nth-child(2) span::after {
-	background: url('../img/index/p2-xuexi-icon.png') no-repeat 0 -16px;
-	background-size: 200% auto;
-}
-
-.index-part2 .box-wrapper .left li:nth-child(3) span::after {
 	background: url('../img/index/p2-xuexi-icon.png') no-repeat 0 -32px;
-	background-size: 200% auto;
 }
-
-.index-part2 .box-wrapper .left li:nth-child(4) span::after {
-	background: url('../img/index/p2-xuexi-icon.png') no-repeat 0 -48px;
-	background-size: 200% auto;
-}
-
-.index-part2 .box-wrapper .left li:nth-child(5) span::after {
+.index-part2 .box-wrapper .left li:nth-child(3) span::after {
 	background: url('../img/index/p2-xuexi-icon.png') no-repeat 0 -64px;
-	background-size: 200% auto;
+}
+.index-part2 .box-wrapper .left li:nth-child(4) span::after {
+	background: url('../img/index/p2-xuexi-icon.png') no-repeat 0 -96px;
+}
+.index-part2 .box-wrapper .left li:nth-child(5) span::after {
+	background: url('../img/index/p2-xuexi-icon.png') no-repeat 0 -128px;
 }
 
 .index-part2 .box-wrapper .left li.act span::after {
-	background: url('../img/index/p2-xuexi-icon.png') no-repeat -15px 0;
-	background-size: 200% auto;
+	width: 30px;
+	height: 32px;
+	background: url('../img/index/p2-xuexi-icon.png') no-repeat -30px 0;
 }
-
 .index-part2 .box-wrapper .left li:nth-child(1).act span::after {
-	background: url('../img/index/p2-xuexi-icon.png') no-repeat -15px 0;
-	background-size: 200% auto;
+	background: url('../img/index/p2-xuexi-icon.png') no-repeat -30px 0;
 }
-
 .index-part2 .box-wrapper .left li:nth-child(2).act span::after {
-	background: url('../img/index/p2-xuexi-icon.png') no-repeat -15px -16px;
-	background-size: 200% auto;
+	background: url('../img/index/p2-xuexi-icon.png') no-repeat -30px -32px;
 }
-
 .index-part2 .box-wrapper .left li:nth-child(3).act span::after {
-	background: url('../img/index/p2-xuexi-icon.png') no-repeat -15px -32px;
-	background-size: 200% auto;
+	background: url('../img/index/p2-xuexi-icon.png') no-repeat -30px -64px;
 }
-
 .index-part2 .box-wrapper .left li:nth-child(4).act span::after {
-	background: url('../img/index/p2-xuexi-icon.png') no-repeat -15px -48px;
-	background-size: 200% auto;
+	background: url('../img/index/p2-xuexi-icon.png') no-repeat -30px -96px;
 }
-
 .index-part2 .box-wrapper .left li:nth-child(5).act span::after {
-	background: url('../img/index/p2-xuexi-icon.png') no-repeat -15px -64px;
-	background-size: 200% auto;
+	background: url('../img/index/p2-xuexi-icon.png') no-repeat -30px -128px;
 }
 
 .index-part2 .box-wrapper .left li.act {
@@ -878,9 +860,20 @@
 	.index-part2 .box-wrapper .right .item{
 		background: #fff !important;
 	}
+	.index-part2 .box-wrapper .left li{
+		padding: 23px 0 10px 0;
+	}
 	.index-part2 .box-wrapper .left li span {
-		display: flex;
 		line-height: 1.2;
+    padding-left: 0;
+    display: block;
+		padding-top: 20px;
+		text-align: center;
+	}
+	.index-part2 .box-wrapper .left li span::after{
+		top: -10px;
+    left: 50%;
+    margin-left: -15px;
 	}
 	.index-part2 .box-wrapper .right .item .text {
     width: 70%;
@@ -890,25 +883,25 @@
 		text-align: justify;
 }
 .index-part2 .box-wrapper .right .item1 .text{
-	top: 30px;
+	top: 70px;
 }
 .index-part2 .box-wrapper .right .item2 .text{
-	top: 20px;
+	top: 70px;
 	left: 30px;
 	width: 75%;
 }
 .index-part2 .box-wrapper .right .item3 .text{
-	top: 20px;
+	top: 70px;
 	left: 30px;
 	width: 75%;
 }
 .index-part2 .box-wrapper .right .item4 .text{
-	top: 20px;
+	top: 70px;
 	left: 30px;
 	width: 75%;
 }
 .index-part2 .box-wrapper .right .item5 .text{
-	top: 40px;
+	top: 70px;
 	left: 30px;
 	width: 75%;
 }
