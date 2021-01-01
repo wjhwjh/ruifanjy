@@ -1,1 +1,70 @@
 /*banner*/
+
+
+/*中考是孩子未来第一场战场*/
+ 
+.child-life-list{
+  display: flex;
+  align-items:stretch
+}
+.child-life-list .item{
+  width: 50%;
+  background: #fdedde;
+}
+.child-life-list .item:nth-child(1) img{
+  display: block;
+}
+.child-life-list .item2{
+  padding: 75px 40px 0;
+}
+.child-life-list .item p{
+  line-height: 2.1;
+  text-align: center;
+  font-size: 16px;
+  color: #333333;
+}
+.child-life-list .item2 .global-btn{
+  margin-top: 40px;
+}
+@media(max-width:768px){
+  .uidWrapper .banner-wrapper .slideimg1 {
+    background: url('../img/zhongkao/zhongkaobanner-bg.jpg') no-repeat center bottom;
+    background-size: cover;
+  }
+  .child-life-content{
+    padding-top: 0;
+  }
+  .child-life-list .item{
+    width: 100%;
+  }
+  .child-life-list .item2{
+    padding: 30px 15px 40px;
+  }
+  .child-life-list .item2 .global-btn{
+    margin-top: 20px;
+  }
+}
+@media(min-width:768px) and (max-width:992px){
+  .child-life-content{
+    padding-top: 30px;
+  }
+  .child-life-list .item{
+    width: 100%;
+  }
+  .child-life-list .item2{
+    padding: 40px 40px 40px;
+  }
+  .child-life-list .item2 .global-btn{
+    margin-top: 25px;
+  }
+}
+
+@media(min-width:992px) and (max-width:1200px){
+
+  .child-life-list .item2{
+    padding: 40px 40px 0;
+  }
+  .child-life-list .item2 .global-btn{
+    margin-top: 20px;
+  }
+}

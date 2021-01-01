@@ -268,6 +268,39 @@ input {
 	margin-bottom:0;
 	border: 1px solid transparent;
 }
+/* 链接 */
+.global-btn{
+	width: 100%;
+	text-align: center;
+}
+.global-btn a{
+	display: inline-block;
+	height: 70px;
+	line-height: 70px;
+	border-radius: 35px;
+	padding: 0 120px 0 70px;
+	color: #fff;
+	font-size: 26px;
+	background: #f15e04;
+	transition: 0.2s;
+}
+.global-btn a:hover{
+	background: #e55802;
+}
+.global-btn a span{
+	position: relative;
+}
+.global-btn a span::after{
+	content: '';
+	display: block;
+	width: 41px;
+	height: 43px;
+	position: absolute;
+	right: -55px;
+	top: -3px;
+	background: url('../img/global/dianji.png') no-repeat 0 0;
+	background-size: 100% auto;
+}
 @media(max-width:768px){
 	.logo-brand>img{
 		width: auto;
@@ -290,6 +323,19 @@ input {
 	 .navbar .nav-right{
 		 box-shadow:0 10px 15px rgba(0, 0, 0, 0.05);
 	 }
+	 /* 全局按钮链接 */
+	 .global-btn a{
+		 width: 100%;
+		 font-size: 20px;
+	 }
+	 .global-btn a span::after{
+		width: 30px;
+		height: 43px;
+		right: -45px;
+		top: -3px;
+		background: url('../img/global/dianji.png') no-repeat 0 0;
+		background-size: 100% auto;
+	}
 }
 @media(min-width:768px){
 .navbar-nav>li>a {
