@@ -302,6 +302,7 @@ input {
 	background-size: 100% auto;
 }
 @media(max-width:768px){
+ 
 	.logo-brand>img{
 		width: auto;
 	}
@@ -326,7 +327,13 @@ input {
 	 /* 全局按钮链接 */
 	 .global-btn a{
 		 width: 100%;
+		 height: 60px;
+		 line-height: 60px;
 		 font-size: 20px;
+		 padding: 0;
+	 }
+	 .global-btn a span{
+		 margin-left: -35px;
 	 }
 	 .global-btn a span::after{
 		width: 30px;
