@@ -103,8 +103,69 @@
   display: block;
 }
 .child-result-index .global-btn{
-  margin:50px 0 50px;
+  margin:50px 0 0;
 }
+/* 初中全年级全科目定制学习方案 提分不再难 */
+.child-plane-index .plane-kecheng,
+.child-plane-index .plane-cont{
+  display: flex;
+  justify-content: space-between;
+}
+.child-plane-index .plane-kecheng li{
+  padding: 0 40px;
+  height: 48px;
+  line-height: 48px;
+  border-radius: 24px;
+  border: 1px solid #15a153;
+  font-weight: normal;
+  font-size: 24px;
+  color: #15a153;
+}
+.child-plane-index .plane-kecheng li:nth-child(1){
+  border: 1px solid #15a153;
+  color: #15a153;
+}
+.child-plane-index .plane-kecheng li:nth-child(2){
+  border: 1px solid #fe6c53;
+  color: #fe6c53;
+}
+
+.child-plane-index .plane-kecheng li:nth-child(3){
+  border: 1px solid #609bd2;
+  color: #609bd2;
+}
+.child-plane-index .plane-kecheng li:nth-child(4){
+  border: 1px solid #f39800;
+  color: #f39800;
+}
+.child-plane-index .plane-kecheng li:nth-child(5){
+  border: 1px solid #009944;
+  color: #009944;
+}
+.child-plane-index .plane-kecheng li:nth-child(6){
+  border: 1px solid #fe6c53;
+  color: #fe6c53;
+}
+.child-plane-index .plane-kecheng li:nth-child(7){
+  border: 1px solid #448aca;
+  color: #448aca;
+}
+.child-plane-index .plane-cont li{
+  flex: 1;
+  position: relative;
+}
+.child-plane-index .plane-cont li img{
+  width: 100%;
+}
+.child-plane-index .plane-cont li p{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+
 
 @media(max-width:768px){
   .child-result-index .global-btn{
