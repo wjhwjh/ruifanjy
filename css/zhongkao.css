@@ -1,5 +1,7 @@
 /*banner*/
-
+.uidWrapper .banner-wrapper{
+  height: 520px;
+}
 
 /*中考是孩子未来第一场战场*/
  
@@ -26,7 +28,86 @@
 .child-life-list .item2 .global-btn{
   margin-top: 40px;
 }
+/* 睿凡注重提升孩子5大能力 */
+.child-ability-index .list{
+  display: flex;
+  justify-content:space-between;
+}
+.child-ability-index .list {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.child-ability-index .list>div {
+  width: 20%;;
+  padding-left: 8px;
+  padding-right: 8px;
+  
+}
+.child-ability-index .list .item {
+  padding: 40px 0 37px;
+  margin-bottom: 20px;
+  position: relative;
+  border-radius: 6px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.08);
+}
+.child-ability-index .list .item .icon {
+  text-align: center;
+}
+.child-ability-index .list .item h2 {
+  padding: 30px 0 0;
+  font-size: 24px;
+  text-align: center;
+  font-weight: normal;
+   color: #000;
+}
+/*年中考学魁喜报榜*/
+.child-result-index .list{
+  display: flex;
+  justify-content:space-between;
+}
+.child-result-index .list {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.child-result-index .list>div {
+  width: 20%;;
+  padding-left: 8px;
+  padding-right: 8px;
+  
+}
+.child-result-index .list .item {
+  padding: 5px 5px 0;
+  margin-bottom: 20px;
+  position: relative;
+  border-radius: 6px;
+  background: #f15e04;
+}
+.child-result-index .list .item .icon {
+  text-align: center;
+}
+.child-result-index .list .item .icon img{
+  width: 100%;
+}
+.child-result-index .list .item h2 {
+  padding: 15px 0;
+  font-size: 16px;
+  text-align: center;
+  font-weight: normal;
+   color: #fff;
+}
+.child-result-index .list .item h2 em{
+  font-weight: bold;
+}
+.child-result-index .list .item h2 span{
+  padding-top: 4px;
+  display: block;
+}
+
+
 @media(max-width:768px){
+  .title-wrapper span.year img{
+    width: 90px;
+  }
   .uidWrapper .banner-wrapper .slideimg1 {
     background: url('../img/zhongkao/zhongkaobanner-bg.jpg') no-repeat center bottom;
     background-size: cover;
@@ -43,6 +124,52 @@
   .child-life-list .item2 .global-btn{
     margin-top: 20px;
   }
+
+  .child-ability-index .list{
+    flex-wrap: wrap;
+  }
+  .child-ability-index .list{
+    padding-left: 7px;
+    padding-right: 7px;
+  }
+  .child-ability-index .list>div:nth-child(1),
+  .child-ability-index .list>div:nth-child(2) {
+    width: 50%;
+  }
+  .child-ability-index .list>div:nth-child(3) {
+    width: 100%;
+  }
+  .child-ability-index .list>div:nth-child(3) .item{
+    padding: 20px 0;
+  }
+  .child-ability-index .list>div:nth-child(4),
+  .child-ability-index .list>div:nth-child(5) {
+    width: 50%;
+  }
+  .child-ability-index .list .item h2 {
+    font-size: 22px;
+  }
+  
+  .child-result-index .list{
+    padding-left: 7px;
+    padding-right: 7px;
+  }
+  .child-result-index .list{
+    flex-wrap: wrap;
+  }
+  .child-result-index .list>div:nth-child(1),
+  .child-result-index .list>div:nth-child(2),
+  .child-result-index .list>div:nth-child(3) {
+    width: 33.33%;
+  }
+  .child-result-index .list>div:nth-child(4),
+  .child-result-index .list>div:nth-child(5) {
+    width: 50%;
+  }
+  .child-result-index .list .item h2{
+    font-size: 12px;
+  }
+
 }
 @media(min-width:768px) and (max-width:992px){
   .child-life-content{
@@ -56,6 +183,9 @@
   }
   .child-life-list .item2 .global-btn{
     margin-top: 25px;
+  }
+  .child-ability-index .list .item h2 {
+    font-size: 20px;
   }
 }
 
