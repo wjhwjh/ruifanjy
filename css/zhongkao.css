@@ -1,6 +1,6 @@
 /*banner*/
 .uidWrapper .banner-wrapper{
-  height: 520px;
+ 
 }
 
 /*中考是孩子未来第一场战场*/
@@ -28,6 +28,7 @@
 .child-life-list .item2 .global-btn{
   margin-top: 40px;
 }
+
 /* 睿凡注重提升孩子5大能力 */
 .child-ability-index .list{
   display: flex;
@@ -102,7 +103,8 @@
   padding-top: 4px;
   display: block;
 }
-.child-result-index .global-btn{
+.child-result-index .global-btn,
+.child-plane-index .global-btn{
   margin:50px 0 0;
 }
 /* 初中全年级全科目定制学习方案 提分不再难 */
@@ -110,6 +112,9 @@
 .child-plane-index .plane-cont{
   display: flex;
   justify-content: space-between;
+}
+.child-plane-index .plane-kecheng{
+  margin-bottom: 40px;
 }
 .child-plane-index .plane-kecheng li{
   padding: 0 40px;
@@ -159,17 +164,23 @@
 }
 .child-plane-index .plane-cont li p{
   position: absolute;
-  bottom: 0;
+  bottom: 30px;
   left: 0;
   right: 0;
+  line-height: 1.2;
   text-align: center;
+  font-size: 24px;
+  color: #fff;
+}
+.child-plane-index .plane-cont li p span{
+  display: block;
 }
 
 
 
-@media(max-width:768px){
-  .child-result-index .global-btn{
-    margin:20px 0;
+@media(max-width:767px){
+  .child-result-index .global-btn, .child-plane-index .global-btn{
+    margin:30px 0;
   }
   .title-wrapper span.year img{
     width: 90px;
@@ -235,7 +246,28 @@
   .child-result-index .list .item h2{
     font-size: 12px;
   }
-
+  .child-plane-index .plane-kecheng {
+    margin-bottom: 10px;
+  }
+  .child-plane-index .plane-kecheng li{
+    height: auto;
+    padding: 8px 10px 8px 15px;
+    line-height: 1;
+    border-radius: 100%;
+    font-size: 16px;
+  }
+  .child-plane-index .plane-cont{
+    flex-wrap: wrap;
+  }
+  .child-plane-index .plane-cont li{
+    margin-top:15px;
+    width: 33.33%;
+    flex: 0 0 33.33%;
+  }
+  .child-plane-index .plane-cont li p{
+    font-size: 16px;
+    bottom: 18px;
+  }
 }
 @media(min-width:768px) and (max-width:992px){
   .child-life-content{
@@ -253,6 +285,15 @@
   .child-ability-index .list .item h2 {
     font-size: 20px;
   }
+  .child-plane-index .plane-kecheng li{
+    height: auto;
+    padding: 15px;
+    border-radius: 100%;
+  }
+  .child-plane-index .plane-cont li p{
+    font-size: 14px;
+    bottom: 20px;
+  }
 }
 
 @media(min-width:992px) and (max-width:1200px){
@@ -262,5 +303,8 @@
   }
   .child-life-list .item2 .global-btn{
     margin-top: 20px;
+  }
+  .child-plane-index .plane-cont li p{
+    bottom: 18px;
   }
 }
