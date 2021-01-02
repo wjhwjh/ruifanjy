@@ -2,6 +2,25 @@
 .uidWrapper .banner-wrapper{
  
 }
+.index-part3{
+  padding-bottom: 0;
+}
+.part2{
+  margin-top: 80px;
+}
+.part2 .global-btn{
+  margin-top: 50px;
+}
+.part5 .global-btn{
+  margin-top: 50px;
+}
+.part5{
+  padding-bottom: 0;
+}
+.part7 .global-btn{
+  margin-top: 50px;
+  margin-bottom: 70px;
+}
 
 /*中考是孩子未来第一场战场*/
  
@@ -104,9 +123,12 @@
   display: block;
 }
 .child-result-index .global-btn,
-.child-plane-index .global-btn{
+.child-plane-index .global-btn,
+.index-part1 .global-btn,
+.zixun-index .global-btn{
   margin:50px 0 0;
 }
+
 /* 初中全年级全科目定制学习方案 提分不再难 */
 .child-plane-index .plane-kecheng,
 .child-plane-index .plane-cont{
@@ -175,13 +197,115 @@
 .child-plane-index .plane-cont li p span{
   display: block;
 }
+ /* part1 */
+ .index-part1{
+   padding-bottom: 0;
+ }
+ /* 2021河南中考资讯 */
+ .zixun{
+    
+ }
+.zixun-list{
+  display: flex;
+  align-items: stretch;
+  border: 1px solid #f15e04;
+}
+.zixun-list > div:nth-child(1){
+  width: 54%;
+  flex: 0 0 54%;
+}
+.zixun-list > div:nth-child(2){
+  width: 46%;
+  flex: 0 0 46%;
+}
+.zixun-list .left{
+  padding: 8px;
+  background: #fb9c64;
+}
+.zixun-list .left img{
+  width: 100%;
+}
+.zixun-list .left p{
+  padding: 10px 0 10px;
+ font-size: 20px;
+ color: #fff; 
+ text-align: center;
+}
+.zixun-list .left p a{
+  margin-left: 15px;
+  text-decoration: underline;
+  color: #fff;
+}
+.zixun-list .left p a{
+  text-decoration: underline;
+}
+.zixun-list .right h2{
+  margin:30px 0 30px;
+  text-align: center;
+  font-size: 36px;
+  color: #000;
+}
+.zixun-list .right h2 span{
+  padding: 0 10px;
+  margin: 0 3px;
+  display: inline;
+  border: 1px solid #f15e04;
+  font-size: 40px;
+  font-weight: bold;
+  color: #f15e04;
+  border-radius: 4px;
+}
+.zixun-list .right .right-list{
+  padding: 0 25px;
+}
+.zixun-list .right .right-list li{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 12px;
+  padding: 0 20px 0 40px;
+  height: 73px;
+  line-height: 73px;
+  border-radius: 6px;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+}
+.zixun-list .right .right-list li p{
+  position: relative;
+  color: #f15e04;
+  font-size: 20px;
+}
+.zixun-list .right .right-list li p::after{
+  content: '';
+  display: block;
+  clear: both;
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-radius: 100%;
+  top: 50%;
+  margin-top: -4px;
+  left: -20px;
+  background: #f15e04;
+}
+.zixun-list .right .right-list li a{
+  color: #f15e04;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: underline;
+}
+.zixun-list .right .right-list li a:hover{
+  text-decoration: underline;
+}
 
 
 
 @media(max-width:767px){
   .child-result-index .global-btn, .child-plane-index .global-btn{
-    margin:30px 0;
+    margin:30px 0 10px;
   }
+  .child-result-index .global-btn, .child-plane-index .global-btn, .index-part1 .global-btn, .zixun-index .global-btn {
+    margin:30px 0 20px;
+}
   .title-wrapper span.year img{
     width: 90px;
   }
@@ -268,9 +392,49 @@
     font-size: 16px;
     bottom: 18px;
   }
+  /* 咨询 */
+  .zixun{
+    padding-bottom: 30px;
+  }
+  .zixun-list{
+    flex-wrap: wrap;
+  }
+  .zixun-list > div:nth-child(1){
+    width: 100%;
+    flex: 0 0 100%;
+  }
+  .zixun-list > div:nth-child(2){
+    width: 100%;
+    flex: 0 0 100%;
+  }
+  .zixun-list .right{
+    padding-bottom: 15px;
+  }
+  .zixun-list .right h2{
+    font-size: 32px;
+  }
+  .zixun-list .right .right-list {
+    padding: 0 10px;
+  }
+  .zixun-list .right .right-list li{
+    padding: 0 10px;
+  }
+  .zixun-list .right .right-list li p{
+    font-size: 16px;
+  }
+  .zixun-list .right .right-list li p::after{
+    display: none;
+  }
+  .zixun-list .right .right-list li a{
+    font-size: 16px;
+  }
+  
 }
 @media(min-width:768px) and (max-width:992px){
-  .child-life-content{
+  .title-wrapper span.year img {
+    width: 90px;
+  }
+.child-life-content{
     padding-top: 30px;
   }
   .child-life-list .item{
@@ -294,6 +458,22 @@
     font-size: 14px;
     bottom: 20px;
   }
+
+  .zixun-list{
+    flex-wrap: wrap;
+  }
+  .zixun-list > div:nth-child(1){
+    width: 100%;
+    flex: 0 0 100%;
+  }
+  .zixun-list > div:nth-child(2){
+    width: 100%;
+    flex: 0 0 100%;
+  }
+  .zixun-list .right{
+    padding-bottom: 15px;
+  }
+ 
 }
 
 @media(min-width:992px) and (max-width:1200px){
@@ -306,5 +486,24 @@
   }
   .child-plane-index .plane-cont li p{
     bottom: 18px;
+  }
+
+  .zixun-list .right{
+    padding-bottom: 10px;
+  }
+  .zixun-list > div:nth-child(1){
+    width: 45%;
+    flex: 0 0 45%;
+  }
+  .zixun-list > div:nth-child(2){
+    width:55%;
+    flex: 0 0 55%;
+  }
+  .zixun-list .right .right-list li{
+    height: 60px;
+    line-height: 60px;
+  }
+  .zixun-list .right h2{
+    font-size: 28px;
   }
 }
