@@ -270,8 +270,13 @@ input {
 }
 /* 链接 */
 .global-btn{
+	display: flex;
+  justify-content: center;
 	width: 100%;
 	text-align: center;
+}
+.global-btn .globalInput{
+	margin-right: 85px;
 }
 .global-btn a{
 	display: inline-block;

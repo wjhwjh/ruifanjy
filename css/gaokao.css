@@ -2,11 +2,14 @@
 .uidWrapper .banner-wrapper{
  
 }
+.optionPart .title-wrapper{
+  padding-top: 30px;
+}
 .index-part3{
   padding-bottom: 0;
 }
 .part2{
-  margin-top: 80px;
+  margin-top: 100px;
 }
 .part2 .global-btn{
   margin-top: 50px;
@@ -21,9 +24,33 @@
   margin-top: 50px;
   margin-bottom: 70px;
 }
-.child-life .title-wrapper{
-  padding-top: 30px;
+.part1{
+  margin-top: 100px;
+  background-image: linear-gradient(to bottom,#fef8f2, #fff);
 }
+
+/* 免费获取方案 */
+.optionPart{
+  background: transparent;
+}
+.j-opt--single{
+  display: flex;
+  justify-content: space-between;
+}
+.j-opt--single span{
+  flex: 1;
+}
+.j-opt--single span:nth-child(2){
+  margin: 0 20px;
+}
+.opts3{
+  display: flex;
+  justify-content: space-between;
+}
+.opts3 span{
+  flex: 1;
+}
+
 /*中考是孩子未来第一场战场*/
  
 .child-life-list{
@@ -54,33 +81,44 @@
 .child-ability-index .list{
   display: flex;
   justify-content:space-between;
+  flex-wrap: wrap;
 }
 .child-ability-index .list {
   margin-left: -15px;
   margin-right: -15px;
 }
 .child-ability-index .list>div {
-  width: 20%;;
+  width: 50%;;
   padding-left: 8px;
   padding-right: 8px;
   
 }
 .child-ability-index .list .item {
-  padding: 40px 0 37px;
+  padding:0;
   margin-bottom: 20px;
   position: relative;
   border-radius: 6px;
-  box-shadow: 0 0 15px rgba(0,0,0,0.08);
+  border: 1px solid #f15e04;
 }
-.child-ability-index .list .item .icon {
-  text-align: center;
+.child-ability-index .list .item .icon img{
+  width: 100%;
+  border-radius: 6px 6px 0 0;
+  border-bottom: 1px solid #f15e04;
 }
 .child-ability-index .list .item h2 {
-  padding: 30px 0 0;
+  padding: 30px 0 20px;
   font-size: 24px;
   text-align: center;
   font-weight: normal;
-   color: #000;
+   color:#f15e04;
+}
+.child-ability-index .list .item p{
+  padding: 0 35px 25px;
+  color: #333;
+  font-size: 16px;
+}
+.child-ability-index .global-btn{
+  margin-top: 40px;
 }
 /*年中考学魁喜报榜*/
 .child-result-index .list{
@@ -298,9 +336,22 @@
 .zixun-list .right .right-list li a:hover{
   text-decoration: underline;
 }
+/* 考试只是工具 */
+.index-part1 .list .item::after{
+  background: #f15e04 !important;
+}
+.index-part1 .list .item{
+  padding: 5px 12px 20px;
+  border: 1px solid #f15e04;
+  background: #fff;
+}
+.index-part1 .list .item h2{
+  padding-top: 10px;
+}
 
 
 
+/* 767 */
 @media(max-width:767px){
   .child-result-index .global-btn, .child-plane-index .global-btn{
     margin:30px 0 10px;
@@ -308,11 +359,31 @@
   .child-result-index .global-btn, .child-plane-index .global-btn, .index-part1 .global-btn, .zixun-index .global-btn {
     margin:30px 0 20px;
 }
+.part7 .global-btn{
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
   .title-wrapper span.year img{
     width: 90px;
   }
+  .part1{
+    margin-top: 50px;
+    padding-top: 10px;
+  }
+  .part2{
+    margin-top: 0;
+  }
+  .uidWrapper .banner-wrapper .slideimg1{
+    display: flex;
+    align-items: center;
+  }
+  .uidWrapper .banner-wrapper .slideimg1 .left-text{
+    width: 90%;
+  }
   .uidWrapper .banner-wrapper .slideimg1 {
-    background: url('../img/zhongkao/zhongkaobanner-bg.jpg') no-repeat center bottom;
+    display: flex;
+    align-items: center;
+    background: url('../img/zhongkao/gaokaobanner-bg.jpg') no-repeat center bottom;
     background-size: cover;
   }
   .child-life-content{
@@ -335,24 +406,14 @@
     padding-left: 7px;
     padding-right: 7px;
   }
-  .child-ability-index .list>div:nth-child(1),
-  .child-ability-index .list>div:nth-child(2) {
-    width: 50%;
-  }
-  .child-ability-index .list>div:nth-child(3) {
-    width: 100%;
-  }
-  .child-ability-index .list>div:nth-child(3) .item{
-    padding: 20px 0;
-  }
-  .child-ability-index .list>div:nth-child(4),
-  .child-ability-index .list>div:nth-child(5) {
-    width: 50%;
-  }
   .child-ability-index .list .item h2 {
-    font-size: 22px;
+    padding: 15px 0;
+    font-size: 14px;
   }
-  
+  .child-ability-index .list .item p{
+    padding: 0 10px 10px;
+    font-size: 14px;
+  }
   .child-result-index .list{
     padding-left: 7px;
     padding-right: 7px;
@@ -430,17 +491,44 @@
   .zixun-list .right .right-list li a{
     font-size: 16px;
   }
-.slideimg1{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-  .uidWrapper .banner-wrapper .slideimg1 .left-text{
-    margin: 0 auto;
+  .index-part1 .list .item{
+    padding: 0 15px;
   }
-  
+  .index-part1 .list .item{
+    padding: 0 10px;
+  }
+  .index-part1 .list .item h2{
+    padding-top: 0;
+    margin-top: 0;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .uidWrapper .banner-wrapper .slideimg1 .left-text{
+    /* margin-top: 0; */
+  }
+  .uidWrapper .banner-wrapper .swiper-container .swiper-slide{
+    height: 220px;
+  }
+  .slideimg1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+    .uidWrapper .banner-wrapper .slideimg1 .left-text{
+      margin: 0 auto;
+    }
 }
 @media(min-width:768px) and (max-width:992px){
+  .uidWrapper .banner-wrapper {
+    height: auto;
+  }
+  .uidWrapper .banner-wrapper .swiper-container .swiper-slide{
+    height: 240px;
+  }
+  .part1{
+    margin-top: 70px;
+    padding-top: 50px;
+  }
   .title-wrapper span.year img {
     width: 90px;
   }
@@ -483,8 +571,10 @@
   .zixun-list .right{
     padding-bottom: 15px;
   }
-
-
+  .index-part1 .list .item{
+    min-height: 370px;
+    padding-bottom: 0;
+  }
   .uidWrapper .banner-wrapper{
     height: auto;
   }
@@ -521,10 +611,14 @@
     margin: auto;
     width: 80%;
   }
+
 }
 
 @media(min-width:992px) and (max-width:1200px){
-
+  .part1{
+    margin-top: 70px;
+    padding-top: 50px;
+  }
   .child-life-list .item2{
     padding: 40px 40px 0;
   }
@@ -552,5 +646,11 @@
   }
   .zixun-list .right h2{
     font-size: 28px;
+  }
+  .index-part1 .list .item{
+    min-height: 430px;
+  }
+  .child-ability-index .list .item{
+    min-height: 410px;
   }
 }
