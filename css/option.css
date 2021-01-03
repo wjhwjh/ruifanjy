@@ -1,0 +1,190 @@
+@charset 'utf-8';
+
+/* 选项 1对1 */
+.optionPart {
+  background:url(../img/tongyong/louti-bg.jpg) no-repeat center center;
+  background-size:cover;
+}
+.optionPart .title-wrapper span {
+  padding: 0;
+  vertical-align: baseline;
+  position: relative;
+  top: 5px;
+}
+.optionPart .option-list {
+  margin-bottom:30px;
+}
+.optionPart .option-list h4 {
+  font-size:26px;
+  color:#000000;
+  margin-bottom:30px;
+}
+.optionPart .option-list h4 .ord {
+  font-weight:bold;
+}
+.optionPart .option-list .opts .item {
+  float:left;
+  width:187px;
+  height:63px;
+  line-height:63px;
+  border:1px solid #f15e04;
+  background:#ffffff;
+  border-radius:63px;
+  margin:0 4px 20px;
+  font-size:20px;
+  text-align:center;
+  cursor:pointer;
+}
+.optionPart .option-list .opts .item.cur {
+  background:#f15e04;
+  color:#ffffff;
+}
+.optionPart .multiOpt .opts .item {
+  width:120px;
+}
+.optionPart input::-webkit-input-placeholder,
+.optionPart textarea::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: #f15e04;
+}
+
+.optionPart input:-moz-placeholder,
+.optionPart textarea:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #f15e04;
+}
+
+.optionPart input::-moz-placeholder,
+.optionPart textarea::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #f15e04;
+}
+
+.optionPart input:-ms-input-placeholder,
+.optionPart textarea:-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  color: #f15e04;
+}
+.globalInput .input_text {
+  width:372px;
+  height:70px;
+  border-radius:70px;
+  border:1px solid #f15e04;
+  text-align:center;
+  font-size:20px;
+  line-height:70px;
+  padding:0 40px;
+  color:#f15e04;
+}
+.optionPart .global-btn .globalInput, .optionPart .global-btn a {
+  display:inline-block;
+  margin:0 42px;
+}
+
+@media (min-width:992px) and (max-width:1199px) {
+  .optionPart .option-list .opts .item {
+    width: 140px;
+    height: 51px;
+    line-height: 51px;
+    border-radius: 51px;
+  }
+  .optionPart .multiOpt .opts .item {
+    width:118px;
+  }
+  .globalInput .input_text {
+    width:320px;
+  }
+}
+@media(min-width:768px) and (max-width:991px){  
+  .optionPart .option-list .opts .item {
+    width: 136px;
+    height: 51px;
+    line-height: 51px;
+    border-radius: 51px;
+    font-size:18px;
+  }
+  .optionPart .multiOpt .opts .item {
+    width:118px;
+  }
+  .globalInput .input_text {
+    width:380px;
+  }
+  .optionPart .global-btn .globalInput, .optionPart .global-btn a {
+    margin-bottom:20px;
+  }
+
+  .flowDiagram .fd-item .fd-arrow {
+    display:none;
+  }
+  .flowDiagram .bottomRow .fd-item {
+    float:left;
+  }
+  .flowDiagram .fd-item .diagramWrap {
+    width:80%;
+    margin:0 auto;
+    float:none;
+  }
+  .oneVSonePart .global-btn {
+    margin-top:0;
+    margin-bottom:20px;
+  }
+}
+
+@media(max-width:767px){
+  .title-wrapper {
+    font-size:26px;
+  }
+  .optionPart .title-wrapper span {
+    top:0;
+  }
+  .optionPart .option-list .opts .item {
+    width: auto;
+    height: 36px;
+    line-height: 36px;
+    border-radius: 36px;
+    font-size: 14px;
+    padding: 0 15px;
+    margin-bottom: 10px;
+  }
+  .optionPart .multiOpt .opts .item {
+    width:auto;
+  }  
+  .optionPart .option-list h4 {
+    font-size:20px;
+    margin-bottom:14px;
+  }
+  .globalInput .input_text {
+    width:100%;
+    height:60px;
+    line-height:60px;
+  }
+  .optionPart .global-btn .globalInput, .optionPart .global-btn a {
+    margin:0;
+    margin-bottom:10px;
+  }
+  
+  .flowDiagram .fd-item {
+    margin-bottom:20px;
+  }
+  .flowDiagram .fd-item .fd-arrow {
+    display:none;
+  }
+  .flowDiagram .bottomRow .fd-item {
+    float:left;
+  }
+  .flowDiagram .fd-item .diagramWrap {
+    width:93%;
+    margin:0 auto;
+    float:none;
+  }
+  .flowDiagram .fd-item .fd-tit {
+    font-size:20px;
+  }
+  .flowDiagram .fd-item .fd-intro {
+    font-size:14px;
+  }
+  .oneVSonePart .global-btn {
+    margin-top:0;
+    margin-bottom:10px;
+  }
+}

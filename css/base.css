@@ -301,6 +301,17 @@ input {
 	background: url('../img/global/dianji.png') no-repeat 0 0;
 	background-size: 100% auto;
 }
+.global-btn.white a {
+	color: #f15e04;
+	background: #ffffff;
+}
+.global-btn.white a:hover {
+  background: #ffffff;
+  color:#e55802;
+}
+.global-btn.white a span:after {
+  background-image:url(../img/global/dianji-orange.png);
+}
 @media(max-width:768px){
  
 	.logo-brand>img{

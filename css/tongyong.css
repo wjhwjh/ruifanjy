@@ -1,0 +1,347 @@
+@charset 'utf-8';
+
+/* 通用专题页 样式 */
+.celueFivePart index-part2 .title-wrapper {
+  padding: 60px 0 60px;
+}
+.teach_philosophy .title-wrapper {
+  padding-top:60px;
+} 
+.teach_philosophy .tp_todo {
+  margin-bottom:15px;
+}
+/*banner*/
+.uidWrapper .banner-wrapper{
+  height: 520px;
+}
+/* 8层3严 */
+.floorPart {
+  background:url(../img/tongyong/louti-bg.jpg) no-repeat center center;
+  background-size:cover;
+}
+.floorPart .p4-content{
+  min-height:auto;
+}
+
+/* 在线问答 */
+.onlineQA {
+  margin-bottom:130px;
+}
+.onlineQA .QA_list .item {
+  line-height:80px;
+  border-bottom:1px dashed #d2d2d2;
+  font-size:20px;
+  color:#000000;
+  padding:0 20px;
+}
+.onlineQA .QA_list .item:nth-child(4),
+.onlineQA .QA_list .item:nth-child(8) {
+  border-bottom:0;
+}
+.onlineQA .QA_list .item .ord {
+  font-weight:bold;
+}
+.onlineQA .QA_center {
+  margin:0 15px;
+}
+.onlineQA .global-btn {
+  margin-top:50px;
+}
+.child-ability .global-btn {
+  margin-top:50px;
+  margin-bottom:120px;
+}
+
+.celueFivePart .global-btn, .teacherPart .global-btn {
+  margin-top:80px;
+}
+
+/* 全年级全科定制化辅导方案 */
+.guideWayPartCon .item {
+  position:relative;
+  height:471px;
+}
+.guideWayPartCon .item .gw-btn a {
+  width:230px;
+  height:55px;
+  line-height:55px;
+  padding:0;
+  font-size:20px;
+}
+.guideWayPartCon .item .gw-btn {
+  position:absolute;
+  left:0;
+  right:0;
+  margin:0 auto;
+  bottom:34px;
+}
+.guideWayPartCon .list .item1 {
+  background:#fff0ee;
+  border-color:#fd6d53;
+}
+.guideWayPartCon .list .item1 .gw-btn a {
+  background:#fd6d53;
+}
+.guideWayPartCon .list .item.item1::after {
+  background:#fd6d53;
+}
+.guideWayPartCon .list .item2 {
+  background:#f0fff2;
+  border-color:#009943;
+}
+.guideWayPartCon .list .item2 .gw-btn a {
+  background:#009943;
+}
+.guideWayPartCon .list .item.item2::after {
+  background:#009943;
+}
+.guideWayPartCon .list .item3 {
+  background:#fffbec;
+  border-color:#f39803;
+}
+.guideWayPartCon .list .item3 .gw-btn a {
+  background:#f39803;
+}
+.guideWayPartCon .list .item.item3::after {
+  background:#f39803;
+}
+.guideWayPartCon .gw-btn a span:after, .guideWayPartCon .gw-btn a span::after {
+  display: none;
+}
+.guideWayPartCon .item .t {
+  font-size:32px;
+  margin-bottom:16px;
+}
+.guideWayPartCon .item1 .t {
+  color:#fd6d53;
+}
+.guideWayPartCon .item2 .t {
+  color:#009943;
+}
+.guideWayPartCon .item3 .t {
+  color:#f39803;
+}
+.guideWayPartCon .item .tags {
+  height:70px;
+  margin-bottom:14px;
+}
+.guideWayPartCon .item .tags .i-tag {
+  float:left;
+  font-size:16px;
+  padding:0 13px;
+  line-height:30px;
+  border:1px solid #fd6d53;
+  color:#fd6d53;
+  border-radius:30px;
+  margin-right:6px;
+  margin-bottom:6px;
+}
+.guideWayPartCon .item .wayCon {
+  margin-bottom:50px;
+}
+.guideWayPartCon .item .wayCon dd {
+  line-height:28px;
+  color:#000000;
+  font-size:14px;
+}
+.guideWayPartCon .item .wayCon dd em {
+  margin-right:5px;
+}
+
+/* 1对1 */
+.oneVSonePart .title-wrapper span {
+  padding: 0;
+  vertical-align: baseline;
+  position: relative;
+  top: 5px;
+}
+.flowDiagram .fd-item {
+  position: relative;
+  width:33.333%;
+  margin-bottom:46px;
+}
+.flowDiagram .topRow .fd-item {
+  float:left;
+}
+.flowDiagram .bottomRow .fd-item {
+  float:right;
+}
+.flowDiagram .fd-item .diagramWrap {
+  float:left;
+}
+.flowDiagram .topRow .fd-item .fd-arrow,
+.flowDiagram .bottomRow .fd-item .fd-arrow {
+  position: absolute;
+  top:90px;
+}
+.flowDiagram .fd-item .fd-arrow {
+  right:36px;
+}
+.flowDiagram .fd-item .fd-img {
+  margin-bottom:20px;
+}
+.flowDiagram .fd-item .fd-tit {
+  font-size:26px;
+  color:#f15e04;
+  margin-bottom:10px;
+  font-weight:600;
+}
+.flowDiagram .fd-item .fd-intro {
+  font-size:16px;
+  color:#000000;
+  line-height:24px;
+}
+.flowDiagram .topRow .fd-item .fd-arrow--down {
+  top:285px;
+}
+.oneVSonePart .global-btn {
+  margin-top:60px;
+}
+
+/* 睿凡注重提升孩子5大能力 */
+.child-ability-index .list{
+  display: flex;
+  justify-content:space-between;
+}
+.child-ability-index .list {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.child-ability-index .list>div {
+  width: 20%;;
+  padding-left: 8px;
+  padding-right: 8px;
+  
+}
+.child-ability-index .list .item {
+  padding: 40px 0 37px;
+  margin-bottom: 20px;
+  position: relative;
+  border-radius: 6px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.08);
+}
+.child-ability-index .list .item .icon {
+  text-align: center;
+}
+.child-ability-index .list .item h2 {
+  padding: 30px 0 0;
+  font-size: 24px;
+  text-align: center;
+  font-weight: normal;
+   color: #000;
+}
+
+@media (min-width:992px) and (max-width:1199px) {
+  .flowDiagram .fd-item .fd-arrow {
+    right:10px;
+    width:60px;
+  }
+  .flowDiagram .topRow .fd-item .fd-arrow--down {
+    right:0;
+    width:43px;
+  }
+
+  .guideWayPartCon .list .item {
+    padding: 30px 20px 20px;
+  }
+  .guideWayPartCon .item .tags .i-tag {
+    font-size:14px;
+    padding:0 8px;
+  }
+  .title-wrapper {
+    font-size: 39px;
+    padding:56px 0;
+  }
+  .classTypePart .title-wrapper {
+    padding:56px 0;
+  }
+  
+}
+
+@media(min-width:768px) and (max-width:991px){  
+  .child-ability-index .list .item h2 {
+    font-size: 20px;
+  }
+
+  .guideWayPartCon .item {
+    height:auto;
+  }
+  .guideWayPartCon .item .tags {
+    height:auto;
+  }
+  .guideWayPartCon .item .wayCon {
+    margin-bottom:20px;
+  }
+  .guideWayPartCon .item .gw-btn {
+    position: static;
+    left:auto;
+    right:auto;
+    bottom:auto;
+  }
+
+  .title-wrapper {
+    font-size: 36px;
+    padding:50px 0;
+  }
+  .classTypePart .title-wrapper {
+    padding:56px 0;
+  }
+}
+
+@media(max-width:767px){
+  .title-wrapper span.year img{
+    width: 90px;
+  }
+  .uidWrapper .banner-wrapper .slideimg1 {
+    background: url('../img/zhongkao/zhongkaobanner-bg.jpg') no-repeat center bottom;
+    background-size: cover;
+  }
+  .child-ability-index .list{
+    flex-wrap: wrap;
+  }
+  .child-ability-index .list{
+    padding-left: 7px;
+    padding-right: 7px;
+  }
+  .child-ability-index .list>div:nth-child(1),
+  .child-ability-index .list>div:nth-child(2) {
+    width: 50%;
+  }
+  .child-ability-index .list>div:nth-child(3) {
+    width: 100%;
+  }
+  .child-ability-index .list>div:nth-child(3) .item{
+    padding: 20px 0;
+  }
+  .child-ability-index .list>div:nth-child(4),
+  .child-ability-index .list>div:nth-child(5) {
+    width: 50%;
+  }
+  .child-ability-index .list .item h2 {
+    font-size: 22px;
+  }
+
+  .uidWrapper .banner-wrapper {
+    height:auto;
+  }
+  
+  .guideWayPartCon .list .item {
+    height:auto;
+  }
+  .guideWayPartCon .item .t {
+    font-size:24px;
+  }
+  .guideWayPartCon .item .tags {
+    height:auto;
+  }
+  .guideWayPartCon .item .wayCon {
+    margin-bottom:20px;
+  }
+  .guideWayPartCon .item .gw-btn {
+    position: static;
+    left:auto;
+    right:auto;
+    bottom:auto;
+  }
+
+}
