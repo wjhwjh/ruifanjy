@@ -14,6 +14,19 @@
 .uidWrapper .banner-wrapper{
   height: 520px;
 }
+/* 白色按钮 */
+.global-btn.white a {
+	color: #f15e04;
+	background: #ffffff;
+}
+.global-btn.white a:hover {
+  background: #ffffff;
+  color:#e55802;
+}
+.global-btn.white a span:after {
+  background-image:url(../img/global/dianji-orange.png);
+}
+
 /* 8层3严 */
 .floorPart {
   background:url(../img/tongyong/louti-bg.jpg) no-repeat center center;

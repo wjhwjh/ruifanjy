@@ -301,17 +301,20 @@ input {
 	background: url('../img/global/dianji.png') no-repeat 0 0;
 	background-size: 100% auto;
 }
-.global-btn.white a {
+
+.global-btn-white a{
 	color: #f15e04;
-	background: #ffffff;
+	background:#fff;
 }
-.global-btn.white a:hover {
-  background: #ffffff;
-  color:#e55802;
+.global-btn-white a span::after{
+	background: url('../img/global/dianji1.png') no-repeat 0 0;
+	background-size: 100% auto;
 }
-.global-btn.white a span:after {
-  background-image:url(../img/global/dianji-orange.png);
+.global-btn-white a:hover{
+	opacity: 0.7;
+	background:#fff;
 }
+
 @media(max-width:768px){
  
 	.logo-brand>img{
