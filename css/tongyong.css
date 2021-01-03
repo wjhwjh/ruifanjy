@@ -356,5 +356,11 @@
     right:auto;
     bottom:auto;
   }
+  .onlineQA {
+    margin-bottom:20px;
+  }
+  .title-wrapper {
+    padding:40px 0 20px;
+  }
 
 }
