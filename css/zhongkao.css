@@ -377,10 +377,13 @@
   }
   .child-plane-index .plane-kecheng li{
     height: auto;
-    padding: 8px 10px 8px 15px;
+    padding: 7px 12px 7px 12px;
     line-height: 1;
     border-radius: 100%;
-    font-size: 16px;
+    font-size: 14px;
+    width: 24%;
+    text-align: center;
+    margin-right: 4px;
   }
   .child-plane-index .plane-cont{
     flex-wrap: wrap;
@@ -435,9 +438,13 @@
   justify-content: center;
   align-items: center;
 }
-  .uidWrapper .banner-wrapper .slideimg1 .left-text{
-    margin: 0 auto;
-  }
+.uidWrapper .banner-wrapper .slideimg1 .left-text{
+  margin: 0 auto;
+}
+.child-result-index .list .item h2 span{
+  display: inline;
+  padding-left: 5px;
+}
   
 }
 @media(min-width:768px) and (max-width:992px){

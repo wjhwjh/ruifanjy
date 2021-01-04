@@ -793,6 +793,8 @@
 	}
 	.uidWrapper .banner-wrapper .swiper-container .swiper-slide{
 		height: 162px;
+		display: flex;
+    align-items: center;
 	}
 	.uidWrapper .banner-wrapper .swiper-container .swiper-slide img{
 		position: relative;
@@ -807,27 +809,26 @@
 		background-size: cover;
 
 	}
-	.uidWrapper .banner-wrapper  .slideimg2{
-		background: url('../img/index/mob-banner-bg.jpg') no-repeat center bottom;
+	.uidWrapper .banner-wrapper .slideimg2{
+		background: url('../img/index/zhongkaobanner-bg.jpg') no-repeat center bottom;
 		background-size: cover;
 
 	}
-	.uidWrapper .banner-wrapper  .slideimg3{
-		background: url('../img/index/camp-banner-bg.jpg') no-repeat center bottom;
+	.uidWrapper .banner-wrapper .slideimg3{
+		background: url('../img/index/gaokaobanner-bg.jpg') no-repeat center bottom;
 		background-size: cover;
-
 	}
 	.uidWrapper .banner-wrapper  .slideimg1 .left-text{
-		width: 70%;
-    margin: 0.8rem auto 0;
+		width: 75%;
+    margin: 0 auto;
 	}
 	.uidWrapper .banner-wrapper  .slideimg2 .left-text{
-		width: 70%;
-    margin: 0.8rem auto 0;
+		width: 75%;
+    margin: 0 auto;
 	}
 	.uidWrapper .banner-wrapper  .slideimg3 .left-text{
-		width: 70%;
-    margin: 0.4rem auto 0;
+		width: 75%;
+    margin: 0 auto;
 	}
  
 	/* 导航 */

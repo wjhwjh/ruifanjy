@@ -409,5 +409,20 @@
   .title-wrapper {
     padding:40px 0 20px;
   }
-
+  .onlineQA .QA_list .item{
+    line-height: 50px;
+  }
+  .onlineQA .global-btn,.celueFivePart .global-btn, .teacherPart .global-btn{
+    margin-top: 40px;
+  }
+  .child-ability .global-btn {
+    margin-top: 30px;
+    margin-bottom: 50px;
+  }
+  .block_block{
+    display: inline;
+  }
+  .index-part3 {
+    padding-bottom: 10px;
+}
 }
