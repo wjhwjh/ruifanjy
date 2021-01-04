@@ -1,0 +1,891 @@
+@charset 'utf-8';
+
+/*  */
+body {font-size:14px;font-family:'microsoft YaHei','PingFangSC-Regular', Tahoma, Helvetica, Arial, "\5FAE\8F6F\96C5\9ED1", sans-serif,"iconfont";color:#000;background: #ffffff;}
+/* 移动端手机浏览器页面出现上下滑动页面是涩的感觉，不流畅 */
+body {
+    -webkit-overflow-scrolling: touch;
+    overflow-scrolling: touch;
+}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, span, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td {margin:0; padding:0; }
+ul,li,dl,dt,dd,ol {list-style:none;}
+a:link, a:focus, a:hover {text-decoration: none;outline:none;}
+em {font-style:normal;}
+
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* footer */
+.foot_conact {
+  position: fixed;
+  padding:13px 0;
+  width:100%;
+  height:124px;
+  z-index: 100;
+  bottom: 0;
+  background-color:#f15e04;
+}
+.foot_conact.fcFixed {position: fixed;}
+.foot_conact .fc_service label,
+.foot_conact .fc_service .service_time {
+  font-size:16px;
+  color:#ffffff;
+  line-height:30px;
+  margin-bottom: 0;
+}
+.foot_conact .fc_service .tel_num {
+  font-size:27px;
+  color:#ffffff;
+  font-weight:bold;
+  line-height:40px;
+}
+.foot_conact .fc_service_number .fsn_logo .item {
+  padding-top:2px;
+}
+.foot_conact .foot_search_box {
+  position: relative;
+  width:100%;
+  height:63px;
+  border-radius:63px;
+  background-color:#ffffff;
+  margin-top:18px;
+  padding-top:10px;
+  padding-left:30px;
+}
+.foot_conact .foot_search_box input {
+  width:52%;
+  height:46px;
+  line-height: 46px;
+  font-size:16px;
+  color:#333333;
+}
+.foot_conact .foot_search_box .btn_free_exp {
+  display: block;
+  position: absolute;
+  right:10px;
+  top:9px;
+  width:36%;
+  height:46px;
+  border-radius: 46px;
+  background-color:#f15e04;
+  text-align: center;
+  line-height:46px;
+  color:#ffffff;
+  font-size:16px;
+}
+.foot_copyright {
+  width:100%;
+  background-color:#1b1b1b;
+  padding:20px 0;
+}
+.foot_copyright .foot_copyright_con {
+  color: #999999;
+  line-height: 24px;
+  font-size: 14px;
+}
+
+/* 子页banner */
+.sonPageBanner {
+  position: relative;
+	width:100%;
+	height:520px;	
+  overflow: hidden;
+}
+.sonPageBanner .banner-item {
+	height:100%;
+	background-repeat: no-repeat!important;
+	background-position: center center !important;
+	background-size:cover!important;
+}
+
+/* 全省校区 */
+.provCampBanner .banner-item {
+	background-image:url(../img/provincialCampuses/banner-bg.jpg);
+}
+.prov_schools .item {
+	background-color:#f2f2f2;
+}
+.prov_schools .item .scName {
+	font-size:26px;
+	color:#000000;
+	line-height: 36px;
+}
+.prov_schools .item .contact-way {
+	font-size:16px;
+	color:#000000;
+	line-height:30px;
+}
+.prov_schools .item:hover, .prov_schools .item.hover {
+	background-color:#f16814;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, .25);
+}
+.prov_schools .item:hover .scName, .prov_schools .item:hover .contact-way, .prov_schools .item.hover .scName, .prov_schools .item.hover .contact-way {
+	color:#ffffff;
+}
+
+/* 关于睿凡 */
+.ruifan_intro {
+  background-color:#f15e04;
+}
+.ruifan_intro .show_area {
+  padding:10px;  
+}
+.ruifan_intro .text_area {
+  padding: 34px 34px 0;
+  color:#ffffff;
+  line-height:28px;
+  font-size:16px;
+}
+.ruifan_intro .text_area p {
+  margin-bottom:30px;
+}
+
+.rf_mission {
+  width:100%;
+  background:url(../img/aboutruifan/mission-bg.jpg) no-repeat;
+  background-size:cover;
+}
+.rf_mission .center_declaration {
+  width:300px;
+  margin-left:auto;
+  margin-right:auto;
+  padding-top:30px;
+  padding-bottom:50px;
+}
+.rf_mission .center_declaration .cd_title {
+  font-size:36px;
+  color:#f15e04;
+  line-height:74px;
+  font-weight:bold;
+}
+.rf_mission .center_declaration .cd_text {
+  font-size: 30px;
+  color: #f15e04;
+  line-height:64px;
+  border-top:1px solid #f15e04;
+  border-bottom:1px solid #f15e04;
+}
+.ruifan_intro .text_area {
+  padding: 34px 34px 0;
+  color: #ffffff;
+  line-height: 28px;
+  font-size: 16px;
+}
+.ruifan_intro .text_area p {
+  margin-bottom: 30px;
+}
+
+.rf_principle {
+  margin-top:124px;
+  margin-bottom:170px;
+  border: 1px solid #eae9eb;
+}
+.rf_principle .right_con {
+  padding:0 30px;
+  width:36.9%;
+}
+.rf_principle .right_con .item_yz {
+  border-bottom:1px solid #eae9eb;
+  padding:28px 0;
+}
+.rf_principle .right_con .item_yz .t {
+  position:relative;
+  font-size:16px;
+  line-height:24px;
+  color: #0d0d26;
+  font-weight:bold;
+  padding-left:14px;
+}
+.rf_principle .right_con .item_yz .t:before {
+  position: absolute;
+  left:0;
+  top:6px;
+  content:'';
+  width:2px;
+  height:13px;
+  background-color:#0c0c25;
+}
+.rf_principle .right_con .item_yz .c {
+  font-size:16px;
+  line-height:24px;
+  color:#666666;
+}
+/* 教学理念 */
+.teach_philosophy .tp_todo {
+  position:relative;
+  width:100%;
+  background:url(../img/teachPhilosophy/serviceRequire-bg-pic.jpg) no-repeat center center;
+  background-size:cover;
+}
+.teach_philosophy .fg_block_gray {
+  width:100%;
+  height:20px;
+  background-color:#f2f2f2;
+}
+.tp-five_tactics .item .left_pic,
+.tp-five_tactics .item .right_con {
+  position:relative;
+  width:50%;
+  height:100%;
+  float:left;
+  overflow: hidden;
+}
+.tp-five_tactics .item .left_pic.float_r {
+  float:right;
+}
+.tp-five_tactics .item .left_pic img {
+  min-height: 100%;
+}
+.tp-five_tactics .item .left_pic .mtext {
+  position:absolute;
+  left:0;
+  bottom:40px;
+  width:100%;
+  height:72px;
+  line-height:72px;
+  font-size:18px;
+  background-color:#ed772f;
+  color:#ffffff;
+  font-weight: lighter;
+  text-align:center;
+}
+.tp-five_tactics .item .right_con {
+  background-color:#fde9dc;
+}
+.tp-five_tactics .item .right_con .i_tit {
+  font-size:26px;
+  line-height:30px;
+  color:#000000;
+  font-weight:bold;
+}
+.tp-five_tactics .item .right_con .i_con {
+  font-size:16px;
+  line-height:28px;
+  color:#333333;
+}
+@keyframes circleZoom {
+  0% {transform: scale(0.5);opacity: 0.0;}
+  25% {transform: scale(0.7);opacity: 0.1;}
+  50% {transform: scale(0.9);opacity: 0.3;}
+  75% {transform: scale(1.2);opacity: 0.5;}
+  100% {transform: scale(1.4);opacity: 0.0;}
+}
+.teach_philosophy .moveBox {width:100%;height:100%;margin: 0 auto;}
+.teach_philosophy .moveBox .waveCircle {position: absolute;top:0;left:0;right:0; bottom:0; margin:auto; width: 284px;height: 250px; border-radius: 100%;background: #fbd3ba;z-index: 2;-webkit-animation:circleZoom 3s linear infinite;-o-animation:circleZoom 3s linear infinite;animation:circleZoom 3s linear infinite;}
+.teach_philosophy .moveBox .waveCircle:nth-of-type(2) {-webkit-animation-delay: 0.1s;
+  -moz-animation-delay: 0.1s;animation-delay: 0.1s;z-index: 2;}
+.teach_philosophy .moveBox .waveCircle:nth-of-type(3) {-webkit-animation-delay: 0.6s;
+  -moz-animation-delay: 0.6s;animation-delay:0.6s;z-index: 2;}
+.teach_philosophy .moveBox .waveCircle:nth-of-type(4) {  -webkit-animation-delay: 0.8s;
+  -moz-animation-delay: 0.8s;animation-delay: 0.8s;z-index: 2;  }
+.teach_philosophy .moveBox .waveCircle:nth-of-type(5) {  -webkit-animation-delay: 0.8s;
+  -moz-animation-delay: 1s;animation-delay: 1s;z-index: 2;  }
+.teach_philosophy .child {
+  position:absolute;
+  left:50%;
+  top:46%;
+  transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  -o-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  -moz-transform: translate(-50%,-50%);
+  z-index:100;
+}
+
+
+/* 适配********************* */
+@media (min-width:768px) {
+  footer{
+    padding-bottom: 120px;
+  }
+  /* footer */
+  .foot_conact .fc_service_number .fsn_logo .item {
+    margin-right: 15px;
+  }
+  /* 全省校区 */
+  .sonPageBanner {height:325px;margin-bottom:64px;}
+  .sonPageBanner .banner-item .left-text {
+    width: 50%;
+  }
+  .provCampBanner .banner-item .left-text,
+  .aboutRfBanner .banner-item .left-text {
+    margin-top: 123px;
+  }
+  .provCampBanner .banner-item .right-pic {
+    width: 40%;
+    margin-top: 18px;
+    margin-right: 22px;
+  }
+	.prov_schools .item {
+		padding:18px 24px;
+	  margin-bottom:20px;
+	}
+	.prov_schools .item .scName {
+		margin-bottom:10px;
+	  font-size:18px;
+		line-height: 28px;
+	}
+	/* .prov_schools {padding-top:64px;} */
+	.prov_schools .item .contact-way {
+		font-size:14px;
+		line-height:22px;
+  }
+  
+  /* 关于睿凡 */
+  .aboutRfBanner .banner-item .left-text {
+    margin-left: 36px;
+  }  
+  .aboutRfBanner .banner-item .right-pic {
+    width: 31%;
+    margin-top: 40px;
+    margin-right: 68px;
+  }  
+  .rf_mission .center_declaration {
+    width: 300px;
+    padding-top: 30px;
+    padding-bottom: 50px;
+  }
+  .rf_mission .center_declaration .cd_title {
+    font-size: 36px;
+    line-height: 74px;
+  }
+  .rf_mission .center_declaration .cd_text {
+    font-size: 30px;
+    line-height: 64px;
+  }
+  .ruifan_intro .text_area {
+    padding: 34px 34px 0;
+    color: #ffffff;
+    line-height: 28px;
+    font-size: 16px;
+  }
+  .ruifan_intro .text_area p {
+    margin-bottom: 30px;
+  }
+  /* 教学理念 */
+  .teachPhyBanner .banner-item .left-text {
+    margin-top: 97px;
+    width:56%;
+  }
+
+  .teach_philosophy .title-wrapper {
+    font-size: 30px;
+  }
+  .teach_philosophy .title-wrapper {
+    padding-bottom:56px;
+  }
+  .teach_philosophy .title-wrapper span {
+    padding:0;
+    vertical-align: baseline;
+    position:relative;
+    top:5px;
+  }
+  .teach_philosophy .tp_todo {
+    margin-bottom:74px;
+  }  
+}
+@media (min-width:992px) {
+  /* footer */
+  .foot_conact .customer_service {
+    margin-top: -58px;
+  }
+  .foot_conact .fc_service_number .fsn_logo .item {
+    margin-right: 12px;
+  }
+  /* 全省校区 */
+	.sonPageBanner {height:420px;margin-bottom:82px;}
+	.provCampBanner .banner-item .left-text {width:50%;margin-top:159px;}
+	.provCampBanner .banner-item .right-pic {width:40%;margin-top:23px;margin-right:29px;}
+	.prov_schools .item {
+		padding:24px 30px;
+	    margin-bottom:24px;
+	}
+	.prov_schools .item .scName {
+		margin-bottom:14px;
+	    font-size:21px;
+		line-height: 31px;
+	}
+	/* .prov_schools {padding-top:82px;} */
+	.prov_schools .item .contact-way {
+		font-size:15px;
+		line-height:26px;
+  }
+  /* 关于睿凡 */
+  .aboutRfBanner .banner-item .right-pic {
+    width: 31%;
+    margin-top: 52px;
+    margin-right: 88px;
+  }
+  /* 教学理念 */
+  .teachPhyBanner .banner-item .left-text {
+    margin-top: 126px;
+  }
+  .title-wrapper {
+    font-size:39px;
+  }
+  .teach_philosophy .title-wrapper {
+    padding-bottom: 56px;
+  }
+  .teach_philosophy .tp_todo {
+    margin-bottom:74px;
+  }
+
+  .tp-five_tactics .ft_list {
+    margin-bottom:150px;
+  }
+  .tp-five_tactics .title-wrapper {
+    padding-top: 55px;
+  }
+  .tp-five_tactics .item {
+    height:323px;
+    overflow: hidden;
+  }
+  .tp-five_tactics .item .left_pic .mtext {
+    bottom:35px;
+    height:58px;
+    line-height:58px;
+    font-size:14px;
+  }
+  .tp-five_tactics .item .right_con {
+    padding:30px 25px 0 25px;
+  }
+  .tp-five_tactics .item .right_con .i_tit {
+    margin-bottom:14px;
+  }
+  .tp-five_tactics .item .right_con .i_con {
+    font-size:15px;
+    line-height:26px;
+  }
+  .tp-five_tactics .item .right_con .i_con p {
+    margin-bottom:15px;
+  }
+}
+@media (min-width:1200px) {
+	.container {
+	    width: 1200px;
+  }
+  /* footer */
+  .foot_conact .customer_service {
+    margin-top: -107px;
+  }
+  .foot_conact .fc_service_number {
+    margin-left:-40px;
+  }
+  .foot_conact .fc_service_number .fsn_logo .item {
+    margin-right: 38px;
+  }
+
+  /* 全省校区 */
+  .sonPageBanner {height:520px;margin-bottom:102px;}
+  .sonPageBanner .banner-item .left-text,
+  .sonPageBanner .banner-item .right-pic {
+    width: auto;
+  }
+	.provCampBanner .banner-item .left-text {margin-top:197px;}
+	.provCampBanner .banner-item .right-pic {margin-top:28px;margin-right:36px;}
+	.prov_schools .item {
+		padding:28px 40px;
+	    margin-bottom:30px;
+	}
+	.prov_schools .item .scName {
+		margin-bottom:15px;
+	}
+  /* .prov_schools {padding-top:102px;} */
+
+  /* 关于睿凡 */
+  .aboutRfBanner .banner-item .left-text {
+    margin-top: 197px;
+    margin-left:59px;
+  }  
+  .aboutRfBanner .banner-item .right-pic {
+    margin-top: 65px;
+    margin-right: 110px;
+  }
+  .ruifan_intro {
+    margin-top: 12px;
+    margin-bottom: 123px;
+  }
+  .rf_mission .center_declaration {
+    width:300px;
+    padding-top: 30px;
+    padding-bottom: 50px;    
+  }
+  .rf_mission .center_declaration .cd_title {
+    font-size: 36px;
+    line-height: 74px;
+  }
+  .rf_mission .center_declaration .cd_text {
+    font-size: 30px;
+    line-height: 64px;
+  }
+  .ruifan_intro .text_area {
+    padding: 34px 34px 0;
+    color: #ffffff;
+    line-height: 28px;
+    font-size: 16px;
+  }
+  .ruifan_intro .text_area p {
+    margin-bottom: 30px;
+  }
+
+  .rf_principle {
+    margin-top: 124px;
+    margin-bottom: 170px;
+  }
+  .rf_principle .right_con {
+    padding: 0 30px;
+    width: 36.9%;
+  }
+  .rf_principle .right_con .item_yz {
+    padding: 28px 0;
+  }
+  .rf_principle .right_con .item_yz .t {
+    font-size: 16px;
+    line-height: 24px;
+    padding-left: 14px;
+  }
+  .rf_principle .right_con .item_yz .c {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  /* 教学理念 */
+  .teachPhyBanner .banner-item .left-text {
+    margin-top:156px;
+  }
+  .teach_philosophy .title-wrapper {
+    padding-top:0;
+    padding-bottom:70px;
+  }
+  .teach_philosophy .tp_todo {
+    margin-bottom:91px;
+  }
+  .tp-five_tactics .title-wrapper {
+    padding-top: 68px;
+  }
+  .tp-five_tactics .ft_list {
+    margin-bottom:185px;
+  }
+  .tp-five_tactics .item {
+    height:400px;
+    overflow: hidden;
+  }
+  .tp-five_tactics .item05 {
+    height:393px;
+  }
+  .tp-five_tactics .item .right_con {
+    padding:72px 44px 0 44px;
+  }
+  .tp-five_tactics .item .right_con .i_tit {
+    margin-bottom:18px;
+  }
+  .tp-five_tactics .item .right_con .i_con p {
+    margin-bottom:24px;
+  }
+}
+
+
+@media (min-width:992px) and (max-width:1199px) {
+  /* 全省校区 */
+	.prov_schools .item {
+		height:171px;
+  }
+  /* 关于睿凡 */
+  .ruifan_intro {
+    margin-top: 9px;
+    margin-bottom: 99px;
+  }
+  .rf_principle {
+    margin-top: 100px;
+    margin-bottom: 137px;
+  }
+  .rf_principle .left_pic {
+    width: 55%;
+    margin-top: 30px;
+  }
+  /* 教学理念 */
+  .teach_philosophy .moveBox .waveCircle {
+    width:229px;
+    height:202px;
+  }
+  .teach_philosophy .child {
+    width:143px;
+  }
+}
+
+@media (min-width:768px) and (max-width:991px) {
+  /* 全省校区 */
+	.prov_schools .item {
+		height:140px;
+  }
+  /* 关于睿凡 */
+  .ruifan_intro {
+    margin-top: 7px;
+    margin-bottom: 76px;
+  }
+  .rf_principle {
+    margin-top: 77px;
+    margin-bottom: 106px;
+  }
+  .rf_principle .left_pic {
+    width:80%;
+    margin:20px auto 0;
+    float:none;
+  }
+  .rf_principle .right_con {
+    padding: 0 30px;
+    width: 100%;
+  }
+  .rf_principle .right_con .item_yz {
+    width:50%;
+    float:left;
+    padding: 28px 0;
+  }
+  /* 教学理念 */
+  .teach_philosophy .tp_todo {
+    background: none;
+  }
+  .teach_philosophy .tp_todo .item_todo {
+    margin-bottom:20px;
+  }
+  .teach_philosophy .tp_todo .item_todo .lab {
+    margin-right:20px;
+    margin-bottom:0;
+  }
+  .teach_philosophy .tp_todo .item_todo .todo_con {
+    width:80%;
+    padding-top:4px;
+  }
+  .tp-five_tactics .ft_list {
+    margin-bottom:150px;
+  }
+  .tp-five_tactics .title-wrapper {
+    padding-top: 55px;
+  }
+  .tp-five_tactics .item {
+    height:auto;
+    overflow: hidden;
+    margin-bottom:20px;
+  }
+  .tp-five_tactics .item .left_pic, .tp-five_tactics .item .right_con {
+    width:100%;
+    float:none;
+  }
+  .tp-five_tactics .item .left_pic {
+    background-color: #fde9dc;
+    padding-top: 30px;
+  }
+  .tp-five_tactics .item .left_pic img {
+    margin:30px auto 0;
+  }
+  .tp-five_tactics .item .left_pic .mtext {
+    position: relative;
+    bottom:0px;
+    height:58px;
+    line-height:58px;
+    font-size: 16px;
+    color: #ed772f;
+    font-weight: 800;
+    background-color:transparent;
+  }
+  .tp-five_tactics .item .right_con {
+    padding:0px 25px 20px 25px;
+  }
+  .tp-five_tactics .item .right_con .i_tit {
+    margin-bottom:14px;
+  }
+  .tp-five_tactics .item .right_con .i_con {
+    font-size:15px;
+    line-height:26px;
+  }
+  .tp-five_tactics .item .right_con .i_con p {
+    margin-bottom:15px;
+  }
+}
+
+@media (max-width:767px) {
+  .navbar {border:0;}
+  .nav-right {
+    margin-left:auto;
+    margin-right:auto;
+  }
+  /* footer */
+  footer{
+    padding-bottom: 170px;
+  }
+  .foot_conact {
+    height:auto;
+  }
+  .foot_conact .fc_service label,
+  .foot_conact .fc_service .service_time {
+    font-size: 0.26rem;
+    line-height: 30px;
+  }
+  .foot_conact .fc_service .tel_num {
+    font-size: 0.40rem;
+    line-height: 30px;
+  }
+  .foot_conact .fc_service_number .fsn_logo .item {
+    padding-top: 2px;
+    width:26%;
+    margin-right:8px;
+  }
+  .foot_conact .foot_search_box {
+    height: 50px;
+    border-radius: 50px;
+    margin-top: 10px;
+    padding-top: 5px;
+    padding-left: 26px;
+  }
+  .foot_conact .foot_search_box input {
+    width: 56%;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+  }
+  .foot_conact .foot_search_box .btn_free_exp {
+    right: 5px;
+    top: 5px;
+    height: 40px;
+    border-radius: 40px;
+    line-height: 40px;
+  }
+  .foot_copyright {
+    padding: 12px 0;
+  }
+  /* 全省校区 */
+	.sonPageBanner {height:162px;margin-bottom:30px;}
+  .sonPageBanner .banner-item .left-text {
+    margin: 0 auto;
+    width: 70%;
+    float: none;
+    margin-top: 0.60rem;
+  }
+  .sonPageBanner .banner-item .left-text img {
+    max-height: 102px;
+    max-width: 100%;
+    margin:0 auto;
+  }
+	.prov_schools .item {
+		padding:10px 12px;
+		margin-bottom:15px;
+	}
+	.prov_schools .item .scName {
+    margin-bottom:10px;
+    font-size:20px;
+    line-height:28px;
+  }
+  .prov_schools .item .contact-way {
+    font-size:14px;
+    line-height:28px;
+  }
+  /* 关于睿凡 */
+  .aboutRfBanner .banner-item .left-text {
+    width: 80%;
+    margin-top: 0.97rem;
+  }
+  .ruifan_intro {
+    margin-top: 0px;
+    margin-bottom: 20px;
+  }
+  .rf_mission .center_declaration {
+    width: 80%;
+    padding-top: 0px;
+    padding-bottom: 20px;
+  }
+  .rf_mission .center_declaration .cd_title {
+    font-size: 26px;
+    line-height: 56px;
+  }
+  .rf_mission .center_declaration .cd_text {
+    font-size: 18px;
+    line-height: 45px;
+  }
+  .ruifan_intro .text_area {
+    padding: 5px 10px 0;
+    line-height: 26px;
+    font-size: 14px;
+  }
+  .ruifan_intro .text_area p {
+    margin-bottom: 10px;
+  }
+  .rf_principle {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .rf_principle .right_con {
+    padding: 0 10px;
+    width: 100%;
+  }
+  .rf_principle .right_con .item_yz {
+    padding: 15px 0;
+  }
+  /* 教学理念 */
+  /* .teachPhyBanner .banner-item {
+    background-image:url(../img/teachPhilosophy/mob-banner-bg.jpg) !important;
+  } */
+  /* 教学理念 */
+  .teachPhyBanner .banner-item .left-text {
+    width: 85%;
+    margin-top: 1.00rem;
+  }
+  .teachPhyBanner .banner-item .left-text img {
+    max-width:100%;
+  }
+  .teach_philosophy .title-wrapper {padding:0 0 20px;}
+  .teach_philosophy .tp_todo {
+    background:none;
+    margin-bottom:20px;
+  }
+  .teach_philosophy .tp_todo .item_todo {
+    margin-bottom:20px;
+  }
+  .teach_philosophy .tp_todo .item_todo .lab,
+  .teach_philosophy .tp_todo .item_todo .todo_con {
+    width:100%;
+    float:none;
+    text-align:center;
+  }
+  .teach_philosophy .tp_todo .item_todo .lab img {
+    margin-left:auto;
+    margin-right:auto;
+  }
+  .teach_philosophy .tp_todo .item_todo .todo_con .item {
+    margin-bottom:10px;
+  }
+  
+  .tp-five_tactics .title-wrapper {padding:20px 0 20px;}
+  .tp-five_tactics .ft_list {
+    margin-bottom:20px;
+  }
+  .tp-five_tactics .item {
+    height:auto;
+    overflow: hidden;
+    margin-bottom:20px;
+  }
+  .tp-five_tactics .item .left_pic, .tp-five_tactics .item .right_con {
+    width:100%;
+    float:none;
+  }
+  .tp-five_tactics .item .right_con {
+    padding:20px 10px 10px;
+  }
+  .tp-five_tactics .item .right_con .i_tit {
+    font-size:20px;
+    line-height:26px;
+    margin-bottom:10px;
+  }
+  .tp-five_tactics .item .right_con .i_con {
+    font-size: 14px;
+    line-height:22px;
+  }
+  .tp-five_tactics .item .right_con .i_con p {
+    margin-bottom:8px;
+  }
+
+}
+.fsn_logo{
+  margin-top: 5px;
+}

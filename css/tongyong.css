@@ -299,11 +299,58 @@
   .classTypePart .title-wrapper {
     padding:56px 0;
   }
+
+
+
+  .uidWrapper .banner-wrapper{
+    height: auto;
+  }
+  .uidWrapper .banner-wrapper .swiper-container{
+    height: auto;
+  }
+  .uidWrapper .banner-wrapper .swiper-container .swiper-slide{
+    height: 230px;
+  }
+  .slideimg1{
+    display: flex;
+    align-items: center;
+    margin: 0;
+  } 
+  .uidWrapper .banner-wrapper .slideimg1 .left-text{
+    margin: 0 auto;
+  }
+  .uidWrapper .banner-wrapper .swiper-container .swiper-slide img {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin-left: 0;
+    left: 0;
+    top: 0;
+  }
+  .uidWrapper .banner-wrapper .slideimg1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('../img/zhongkao/zhongkaobanner-bg.jpg') no-repeat center bottom;
+    background-size: cover;
+  }
+  .uidWrapper .banner-wrapper .swiper-container .swiper-slide img{
+    margin: auto;
+    width: 80%;
+  }
 }
 
 @media(max-width:767px){
   .title-wrapper span.year img{
     width: 90px;
+  }
+  .slideimg1{
+    display: flex;
+    align-items: center;
+    margin: 0;
+  } 
+  .uidWrapper .banner-wrapper .slideimg1 .left-text{
+    margin: 0 auto;
   }
   .uidWrapper .banner-wrapper .slideimg1 {
     background: url('../img/zhongkao/zhongkaobanner-bg.jpg') no-repeat center bottom;

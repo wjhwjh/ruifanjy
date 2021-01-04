@@ -22,7 +22,6 @@
 	<link type="text/css" rel="stylesheet" href="../css/base.css">
 	<link rel="stylesheet" href="../css/style-sonpage.css">
 	<link type="text/css" rel="stylesheet" href="../css/index.css">
-	<link type="text/css" rel="stylesheet" href="../css/zhongkao.css">
 </head>
 
 <body>
@@ -49,7 +48,7 @@
 				<!-- 内容-->
 				<div class="collapse navbar-collapse nav-right" id="bs-example-navbar-collapse-1">
 					<ul class="nav navbar-nav">
-						<li class="active"><a href="./index.html" target="_blank">首页 <span class="sr-only">(current)</span></a></li>
+						<li class="active"><a href="javascript:void(0)">首页 <span class="sr-only">(current)</span></a></li>
 						<li><a href="./teach-philosophy.html" target="_blank">教学理念</a></li>
 						<li><a href="./provincial-campuses.html" target="_blank">全省校区</a></li>
 						<li><a href="./about-ruifan.html" target="_blank">关于睿凡</a></li>
@@ -64,21 +63,34 @@
 	<!-- banner -->
 	<div class="uidWrapper">
 		<div class="banner-wrapper">
-			<div class="swiper-container banner">
+			<div class="swiper-container banner" id="banner">
 				<div class="swiper-wrapper">
 					<div class="swiper-slide slideimg slideimg1">
-						<img class="hidden-xs hidden-sm" src="../img/zhongkao/zhongkaobanner.jpg" alt="">
-						<div class="left-text visible-xs visible-sm">
-							<img src="../img/zhongkao/zhongkao_text.png" class="img-responsive" alt=""> 
+						<img class="hidden-xs" src="../img/index/banner1.jpg" alt="">
+						<div class="left-text visible-xs">
+							<img src="../img/index/banner-l-text.png" class="img-responsive" alt=""> 
+						</div>
+					</div>
+					<div class="swiper-slide slideimg slideimg2">
+						<img class="hidden-xs" src="../img/index/banner2.jpg" alt="">
+						<div class="left-text visible-xs">
+							<img src="../img/index/banner-mob-text.png" class="img-responsive" alt=""> 
+						</div>
+					</div>
+					<div class="swiper-slide slideimg slideimg3">
+						<img class="hidden-xs" src="../img/index/banner3.jpg" alt="">
+						<div class="left-text visible-xs">
+							<img src="../img/index/camp-banner-text.png" class="img-responsive" alt=""> 
 						</div>
 					</div>
 				</div>
+			
 				<!-- 如果需要导航按钮 -->
 				<!-- <div class="swiper-button-prev"></div>
 						<div class="swiper-button-next"></div> -->
 			</div>
 				<!-- 如果需要分页器 -->
-				<div class="swiper-pagination swiper-pagination1" style="display:none ;"></div>
+				<div class="swiper-pagination swiper-pagination1"></div>
 			<!-- 表单 -->
 			<div class="banner-form hidden-xs hidden-sm">
 				<div class="formTitle">
@@ -101,283 +113,58 @@
 			</div>
 		</div> <!-- /.banner-wrapper-->
 	</div> <!-- /.uidWrapper-->
-
-	<!-- 中考是孩子未来第一场战场 -->
-	<div class="container-fluit child-life">
-		<div class="container child-life-content">
-			<div class="title-wrapper">中考是孩子未来人生的第一场战斗</div>
-			<ul class="child-life-list">
-				<li class="item hidden-xs hidden-sm">
-					<img src="../img/zhongkao/childlife-pic.jpg" alt="">
-				</li>
-				<li class="item item2">
-					<p>中考孩子考不上好高中，即使孩子改变了学习态度，再努力学习也考不上好大学中考是孩子未来人生战场的第一场战斗，必须胜利！</p>
-					<p>睿凡360°量化服务，激活孩子学习天赋，培养孩子系统化学习方法与技巧！帮助孩子考上好高中，获取良好学习氛围与教育资源！</p>
-				
-					<div class="global-btn">
-						 <a href="#" target="_blank"><span>咨询提升方案</span></a>
-					</div>
-				</li>
-			</ul>
-		</div>	
-	</div>	
-
-	<!-- 睿凡注重提升孩子5大能力 -->
-	<div class="container-fluit child-ability">
-		<div class="container child-ability-index">
-			<div class="title-wrapper">睿凡注重提升孩子<span><img src="../img/zhongkao/title5.png" alt=""></span>大能力 打赢中考战</div>
-			<div class="row_list list">
-				<div class="col-md-2 col-xs-2">
-					<div class="item item1">
-						<div class="icon">
-							<img src="../img/zhongkao/ability_icon1.png" alt="">
-						</div>
-						<h2>自学预习能力</h2>
-					</div>
-				</div>
-				<div class="col-md-2 col-xs-2">
-					<div class="item item2">
-						<div class="icon">
-							<img src="../img/zhongkao/ability_icon2.png" alt="">
-						</div>
-						<h2>精准表达能力</h2>
-					</div>
-				</div>
-				<div class="col-md-2 col-xs-2">
-					<div class="item item3">
-						<div class="icon">
-							<img src="../img/zhongkao/ability_icon3.png" alt="">
-						</div>
-						<h2>归纳总结能力</h2>
-					</div>
-				</div>
-				<div class="col-md-2 col-xs-2">
-					<div class="item item4">
-						<div class="icon">
-							<img src="../img/zhongkao/ability_icon4.png" alt="">
-						</div>
-						<h2>举一反三能力</h2>
-					</div>
-				</div>
-				<div class="col-md-2 col-xs-2">
-					<div class="item item4">
-						<div class="icon">
-							<img src="../img/zhongkao/ability_icon5.png" alt="">
-						</div>
-						<h2>审题分析能力</h2>
-					</div>
-				</div>
-			</div>
-
-		</div>
-	</div>			
-
-	<!-- 年中考学魁喜报榜 -->
-	<div class="container-fluit child-result">
-		<div class="container child-result-index">
-			<div class="title-wrapper"><span class="year"><img src="../img/zhongkao/title2020.png" alt=""></span>年中考学魁喜报榜</div>
-			<div class="row_list list">
-				<div class="col-md-2 col-xs-2">
-					<div class="item item1">
-						<div class="icon">
-							<img src="../img/zhongkao/chuildresult_pic1.png" alt="">
-						</div>
-						<h2>恭喜<em>姓名字</em>同学考入<span>郑州一中</span></h2>
-							
-					</div>
-				</div>
-				<div class="col-md-2 col-xs-2">
-					<div class="item item2">
-						<div class="icon">
-							<img src="../img/zhongkao/chuildresult_pic2.png" alt="">
-						</div>
-						<h2>恭喜<em>姓名字</em>同学考入<span>郑州一中</span></h2>
-					</div>
-				</div>
-				<div class="col-md-2 col-xs-2">
-					<div class="item item3">
-						<div class="icon">
-							<img src="../img/zhongkao/chuildresult_pic3.png" alt="">
-						</div>
-						<h2>恭喜<em>姓名字</em>同学考入<span>郑州一中</span></h2>
-					</div>
-				</div>
-				<div class="col-md-2 col-xs-2">
-					<div class="item item4">
-						<div class="icon">
-							<img src="../img/zhongkao/chuildresult_pic4.png" alt="">
-						</div>
-						<h2>恭喜<em>姓名字</em>同学考入<span>郑州一中</span></h2>
-					</div>
-				</div>
-				<div class="col-md-2 col-xs-2">
-					<div class="item item4">
-						<div class="icon">
-							<img src="../img/zhongkao/chuildresult_pic5.png" alt="">
-						</div>
-						<h2>恭喜<em>姓名字</em>同学考入<span>郑州一中</span></h2>
-					</div>
-				</div>
-			</div>
-			<div class="global-btn">
-				<a href="#" target="_blank"><span>让孩子成为学魁</span></a>
-		 	</div>
-		</div>
-	</div>		
-
-	<!--初中全年级全科目定制学习方案 提分不再难-->
-	<div class="container-fluit child-plane">
-		<div class="container child-plane-index">
-			<div class="title-wrapper">初中全年级全科目定制学习方案 提分不再难</div>
-			<ul class="plane-kecheng">
-				<li>数学</li>
-				<li>语文</li>
-				<li>英语</li>
-				<li>物理</li>
-				<li>化学</li>
-				<li>历史</li>
-				<li>政治</li>
-			</ul>
-			<ul class="plane-cont">
-				<li>
-					<img src="../img/zhongkao/plan_pic1.jpg" alt="">
-					<p>初中知识点<span>全覆盖</span></p>
-				</li>
-				<li>
-					<img src="../img/zhongkao/plan_pic2.jpg" alt="">
-					<p><span>1V1</span>个性化辅导</p>
-				</li>
-				<li>
-					<img src="../img/zhongkao/plan_pic3.jpg" alt="">
-					<p><span>重点难点</span>科学划分</p>
-				</li>
-				<li>
-					<img src="../img/zhongkao/plan_pic4.jpg" alt="">
-					<p><span>薄弱环节</span>精准提升</p>
-				</li>
-				<li>
-					<img src="../img/zhongkao/plan_pic5.jpg" alt="">
-					<p><span>历年考题</span>强化训练</p>
-				</li>
-				<li>
-					<img src="../img/zhongkao/plan_pic6.jpg" alt="">
-					<p><span>分析命题</span>押中考点</p>
-				</li>
-			</ul>
-			<div class="global-btn">
-				<a href="#" target="_blank"><span>免费制定学习方案</span></a>
-		 </div>
-		</div>
-	</div>	
-
-	<!-- part3 -->
-	<div class="container-fluit part3">
-		<div class="container index-part3">
-			<div class="title-wrapper">睿凡<span><img src="../img/index/p1-title3.png" alt=""></span>大精品班型  个性化解决孩子提分盲区</div>
-		
-			<div id="certify">
-				<div class="swiper-container">
-					<div class="swiper-wrapper">
-					<div class="swiper-slide"><img src="../img/index/p3-index-pic1.jpg" /><div class="text"><h2>一对一 VIP定制班</h2><p>1对1教学,6对1服务,精准解决知识盲区提分同时培养学习能⼒</p></div></div>
-					<div class="swiper-slide"><img src="../img/index/p3-index-pic2.jpg" /><div class="text"><h2>一对三/六 精品班组课</h2><p>相近基础，相近学习问题制定成组，提升学习氛围，提高性价⽐</p></div></div>
-					<div class="swiper-slide"><img src="../img/index/p3-index-pic3.jpg" /><div class="text"><h2>中考/高考 全托管理班</h2><p>紧扣教材，结合历年考点靶向教学，课上课下闭环式服务，邀请参与各个环节并监督，真正做到家校结合。</p></div></div>
-					<!-- <div class="swiper-slide"><img src="../img/index/certify04.png" /><p>计算机软件著作权登记证书</p></div>
-					<div class="swiper-slide"><img src="../img/index/certify05.png" /><p>增值电信业务经营许可证</p></div> -->
-					</div>
-					</div>
-					<div class="swiper-pagination"></div>
-					<div class="swiper-button-prev"></div>
-					<div class="swiper-button-next"></div>
-				</div>
-				<div class="global-btn">
-					<a href="#" target="_blank"><span>班型有什么区别？</span></a>
-				 </div>
-		</div>
-	</div><!--/. part3-->
-
-
-
-
-<!-- 2021河南中考资讯 -->
-<div class="container-fluit zixun">
-	<div class="container zixun-index">
-		<div class="title-wrapper"><span class="year"><img src="../img/zhongkao/title2021.png" alt=""></span>河南中考资讯</div>
-	  <div class="zixun-list">
-			<div class="left">
-				<img src="../img/zhongkao/xixun-pic.jpg" alt="">
-				<p>2020河南中考真题练习及答案<a href="#">【领取】</a></p>
-			</div>
-			<div class="right">
-				<h2>距离中考还剩<span>200</span>天</h2>
-				<ul class="right-list">
-					<li><p>中考考前学生心里疏导体验课</p><a href="#" target="_blank">>>免费约课</a></li>
-					<li><p>2020初中优秀学生中考心得分享</p><a href="#" target="_blank">>>免费约课</a></li>
-					<li><p>2021河南中考政策解读公开课</p><a href="#" target="_blank">>>免费约课</a></li>
-					<li><p>2020中考1对1学习大礼包</p><a href="#" target="_blank">>>免费约课</a></li>
-				</ul>
-			</div>
-		</div>
-		<div class="global-btn">
-			<a href="#" target="_blank"><span>2021年河南中考政策咨询</span></a>
-		 </div>
-	</div>
-</div>		
-
 	<!-- part1 -->
-<div class="container-fluit part1">
-		<div class="container index-part1">
-			<div class="title-wrapper">孩子学习<span><img src="../img/index/p1-title.png" alt=""></span>大难  愁坏了爸爸妈妈</div>
-			<div class="row list">
-				<div class="col-md-3 col-xs-6">
-					<div class="item item1">
-						<div class="icon">
-							<img src="../img/index/p1-xuexi-icon1.png" alt="">
+	<div class="container-fluit part1">
+			<div class="container index-part1">
+				<div class="title-wrapper">孩子学习<span><img src="../img/index/p1-title.png" alt=""></span>大难  愁坏了爸爸妈妈</div>
+				<div class="row list">
+					<div class="col-md-3 col-xs-6">
+						<div class="item item1">
+							<div class="icon">
+								<img src="../img/index/p1-xuexi-icon1.png" alt="">
+							</div>
+							<h2>不想学</h2>
+							<p class="text">
+								孩子爱玩，不想学，不愿学。对学习有抵触心理，厌学。
+							</p>
 						</div>
-						<h2>不想学</h2>
-						<p class="text">
-							孩子爱玩，不想学，不愿学。对学习有抵触心理，厌学。
-						</p>
 					</div>
-				</div>
-				<div class="col-md-3 col-xs-6">
-					<div class="item item2">
-						<div class="icon">
-							<img src="../img/index/p1-xuexi-icon2.png" alt="">
+					<div class="col-md-3 col-xs-6">
+						<div class="item item2">
+							<div class="icon">
+								<img src="../img/index/p1-xuexi-icon2.png" alt="">
+							</div>
+							<h2>学不会</h2>
+							<p class="text">
+								孩子学习没方法，认真听，认真学可成绩总是上不去。
+							</p>
 						</div>
-						<h2>学不会</h2>
-						<p class="text">
-							孩子学习没方法，认真听，认真学可成绩总是上不去。
-						</p>
 					</div>
-				</div>
-				<div class="col-md-3 col-xs-6">
-					<div class="item item3">
-						<div class="icon">
-							<img src="../img/index/p1-xuexi-icon3.png" alt="">
+					<div class="col-md-3 col-xs-6">
+						<div class="item item3">
+							<div class="icon">
+								<img src="../img/index/p1-xuexi-icon3.png" alt="">
+							</div>
+							<h2>考不好</h2>
+							<p class="text">
+								孩子聪明伶俐，日常学习还可以可是考试分数上不去。
+							</p>
 						</div>
-						<h2>考不好</h2>
-						<p class="text">
-							孩子聪明伶俐，日常学习还可以可是考试分数上不去。
-						</p>
 					</div>
-				</div>
-				<div class="col-md-3 col-xs-6">
-					<div class="item item4">
-						<div class="icon">
-							<img src="../img/index/p1-xuexi-icon3.png" alt="">
+					<div class="col-md-3 col-xs-6">
+						<div class="item item4">
+							<div class="icon">
+								<img src="../img/index/p1-xuexi-icon3.png" alt="">
+							</div>
+							<h2>拔高难</h2>
+							<p class="text">
+								孩子学习班级前列，但想要拿校以及市好的排名，却难以突破。
+							</p>
 						</div>
-						<h2>拔高难</h2>
-						<p class="text">
-							孩子学习班级前列，但想要拿校以及市好的排名，却难以突破。
-						</p>
 					</div>
 				</div>
 			</div>
-			<div class="global-btn">
-				<a href="#" target="_blank"><span>问问老师怎么办？</span></a>
-		 </div>
-		</div>
-</div> <!--/. part1-->
+	</div> <!--/. part1-->
 
 	<!-- part2 -->
 	<div class="container-fluit part2">
@@ -430,13 +217,31 @@
 					</div>
 				</div>
 			</div>
-			<div class="global-btn global-btn-white">
-				<a href="#" target="_blank"><span>问问老师怎么办？</span></a>
-		 </div>
-
 		</div>
 	</div><!--/. part2-->
-	
+
+	<!-- part3 -->
+	<div class="container-fluit part3">
+		<div class="container index-part3">
+			<div class="title-wrapper">睿凡<span><img src="../img/index/p1-title3.png" alt=""></span>大精品班型  个性化解决孩子提分盲区</div>
+		
+			<div id="certify">
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+					<div class="swiper-slide"><img src="../img/index/p3-index-pic1.jpg" /><div class="text"><h2>一对一 VIP定制班</h2><p>1对1教学,6对1服务,精准解决知识盲区提分同时培养学习能⼒</p></div></div>
+					<div class="swiper-slide"><img src="../img/index/p3-index-pic2.jpg" /><div class="text"><h2>一对三/六 精品班组课</h2><p>相近基础，相近学习问题制定成组，提升学习氛围，提高性价⽐</p></div></div>
+					<div class="swiper-slide"><img src="../img/index/p3-index-pic3.jpg" /><div class="text"><h2>中考/高考 全托管理班</h2><p>紧扣教材，结合历年考点靶向教学，课上课下闭环式服务，邀请参与各个环节并监督，真正做到家校结合。</p></div></div>
+					<!-- <div class="swiper-slide"><img src="../img/index/certify04.png" /><p>计算机软件著作权登记证书</p></div>
+					<div class="swiper-slide"><img src="../img/index/certify05.png" /><p>增值电信业务经营许可证</p></div> -->
+					</div>
+					</div>
+					<div class="swiper-pagination"></div>
+					<div class="swiper-button-prev"></div>
+					<div class="swiper-button-next"></div>
+				</div>
+		</div>
+	</div><!--/. part3-->
+
 	<!-- part4 -->
 	<div class="container-fluit part4">
 		<div class="container index-part4">
@@ -594,16 +399,12 @@
 
 				 <div class="preBtn teachBtn"></div>
 				 <div class="nextBtn teachBtn"></div>
-			</div>
-
-			<div class="global-btn">
-				<a href="#" target="_blank"><span>一键试听老师课程</span></a>
-		 </div>
+				</div>
 		</div>
 	</div><!--/. part5-->
 
 	<!-- part6 -->
-	<div class="container-fluit part6" style="display: none;">
+	<div class="container-fluit part6">
 		<div class="container index-part6">
 			<div class="title-wrapper">每一个来睿凡的孩子都说好</div>
 			<div class="child-wrapper">
@@ -787,15 +588,11 @@
 						</div>
 					</div>
 				</div>
-
-				<div class="global-btn">
-					<a href="#" target="_blank"><span>了解具体承诺内容</span></a>
-			  </div>
 			</div>
-	  </div> <!--/. part7-->
+	</div> <!--/. part7-->
 
 	<!-- part8 -->
-	<div class="container-fluit part8" style="display: none;">
+	<div class="container-fluit part8">
 		<div class="container index-part8">
 			<div class="title-wrapper">睿凡  更懂河南中高考</div>
 			<div class="box-wrapper hidden-xs hidden-sm">
